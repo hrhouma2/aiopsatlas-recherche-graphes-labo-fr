@@ -1,0 +1,73 @@
+# Module 4 — Leçon 03 : vérifier ce que le tableau de bord « Labo — Trafic du site » affiche
+# quand on le filtre (contrôle pays, barre KQL, clic croisé). Lecture seule sur `acces`.
+# Rejouer : node outils/tester-requetes.mjs elasticsearch/requetes/04-03-tableau-de-bord-verification.txt
+
+# 1. Sans filtre, plage « Derniers 90 jours » : 12 000 documents, moyenne 493,6 ms, médiane 461,8 ms
+GET acces/_search
+{
+  "size": 0,
+  "track_total_hits": true,
+  "aggs": {
+    "duree_moyenne": { "avg": { "field": "duree_ms" } },
+    "duree_mediane": { "percentiles": { "field": "duree_ms", "percents": [50] } }
+  }
+}
+
+# 2. Contrôle « pays » = FR : 3 089 documents ; 45 erreurs serveur (500 → 29, 503 → 16) ;
+#    moyenne 493,4 ms ; top chemin /inscription (141) puis /cours (133)
+GET acces/_search
+{
+  "size": 0,
+  "track_total_hits": true,
+  "query": { "term": { "pays": "FR" } },
+  "aggs": {
+    "par_statut": { "terms": { "field": "statut", "size": 10 } },
+    "duree_moyenne": { "avg": { "field": "duree_ms" } },
+    "top_chemins": { "terms": { "field": "chemin", "size": 3 } }
+  }
+}
+
+# 3. Barre KQL `statut >= 400` : 581 documents (404 → 403, 500 → 122, 503 → 56),
+#    moyenne 1 213,4 ms ; le panneau « Erreurs serveur » reste à 178 (500 + 503)
+GET acces/_search
+{
+  "size": 0,
+  "track_total_hits": true,
+  "query": { "range": { "statut": { "gte": 400 } } },
+  "aggs": {
+    "par_statut": { "terms": { "field": "statut", "size": 10 } },
+    "duree_moyenne": { "avg": { "field": "duree_ms" } },
+    "top_chemins": { "terms": { "field": "chemin", "size": 3 } }
+  }
+}
+
+# 4. Clic croisé sur la barre 404 (pastille « statut: 404 ») cumulé à la KQL : 403 documents,
+#    moyenne 449,6 ms, aucune erreur serveur (« Résultat introuvable »), CA 190 / FR 105
+GET acces/_search
+{
+  "size": 0,
+  "track_total_hits": true,
+  "query": {
+    "bool": {
+      "filter": [
+        { "range": { "statut": { "gte": 400 } } },
+        { "term": { "statut": 404 } }
+      ]
+    }
+  },
+  "aggs": {
+    "duree_moyenne": { "avg": { "field": "duree_ms" } },
+    "duree_mediane": { "percentiles": { "field": "duree_ms", "percents": [50] } },
+    "par_pays": { "terms": { "field": "pays", "size": 5 } },
+    "erreurs_serveur": { "filter": { "range": { "statut": { "gte": 500 } } } }
+  }
+}
+
+# 5. Le panneau « Erreurs serveur » (recherche enregistrée, KQL statut >= 500) : 178 documents,
+#    2 pages de 100 lignes dans le tableau du panneau
+GET acces/_search
+{
+  "size": 0,
+  "track_total_hits": true,
+  "query": { "range": { "statut": { "gte": 500 } } }
+}

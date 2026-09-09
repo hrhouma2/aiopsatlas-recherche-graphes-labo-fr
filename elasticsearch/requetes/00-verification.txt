@@ -1,0 +1,25 @@
+﻿# Vérification rapide du labo
+GET _cluster/health
+
+GET _cat/indices/cours,avis,acces?v&s=index
+
+GET cours/_search
+{
+  "query": { "match": { "titre": "déployer conteneurs" } },
+  "size": 3,
+  "_source": ["titre", "niveau"]
+}
+
+GET cours/_analyze
+{
+  "analyzer": "french",
+  "text": "Les conteneurs déployés en production"
+}
+
+# attendu: 404
+GET index-inexistant/_doc/1
+
+POST _query?format=json
+{
+  "query": "FROM cours | STATS n = COUNT(*) BY categorie | SORT n DESC"
+}

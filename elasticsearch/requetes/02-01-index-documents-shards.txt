@@ -1,0 +1,47 @@
+# Module 2 — Leçon 01 : Index, documents, shards : le vocabulaire en pratique
+# Rejouable : ne touche pas à cours/avis/acces ; crée puis supprime bac-a-sable-yellow.
+
+# 1. Qui répond ? Nom du nœud, du cluster, version
+GET /
+
+# 2. Santé du cluster
+GET _cluster/health
+
+# 3. Les nœuds (un seul dans le labo)
+GET _cat/nodes?v
+
+# 4. Les index du labo
+GET _cat/indices/cours,avis,acces?v&s=index
+
+# 5. Les shards de l'index cours
+GET _cat/shards/cours?v
+
+# 6. Un index créé sans réglages : 1 shard + 1 réplica → yellow sur un seul nœud
+PUT bac-a-sable-yellow
+
+GET _cat/indices/bac-a-sable-yellow?v
+
+GET _cat/shards/bac-a-sable-yellow?v
+
+# 7. On enlève le réplica : l'index passe green
+PUT bac-a-sable-yellow/_settings
+{
+  "index": { "number_of_replicas": 0 }
+}
+
+GET _cat/indices/bac-a-sable-yellow?v
+
+DELETE bac-a-sable-yellow
+
+# 8. Settings + mappings de l'index cours
+GET cours
+
+# 9. Compter les documents
+GET cours/_count
+
+# 10. Lire un document par son identifiant
+GET cours/_doc/C0001
+
+# 11. Un identifiant inexistant : 404, ce n'est pas une panne
+# attendu: 404
+GET cours/_doc/C9999

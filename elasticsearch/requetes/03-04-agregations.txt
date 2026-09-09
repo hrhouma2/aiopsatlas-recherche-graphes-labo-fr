@@ -1,0 +1,193 @@
+# Module 3 — Leçon 04 : agrégations (compter, grouper, moyenner)
+# Lecture seule sur `cours`, `avis`, `acces`.
+# Rejouer : node outils/tester-requetes.mjs elasticsearch/requetes/03-04-agregations.txt
+
+# 1. terms sur categorie, size: 0 pour ne pas ramener de documents
+GET cours/_search
+{
+  "size": 0,
+  "aggs": {
+    "par_categorie": { "terms": { "field": "categorie" } }
+  }
+}
+
+# 2. Sous-agrégation : niveau dans chaque catégorie
+GET cours/_search
+{
+  "size": 0,
+  "aggs": {
+    "par_categorie": {
+      "terms": { "field": "categorie", "size": 3 },
+      "aggs": {
+        "par_niveau": { "terms": { "field": "niveau" } }
+      }
+    }
+  }
+}
+
+# 3. Métriques : avg et stats sur prix
+GET cours/_search
+{
+  "size": 0,
+  "aggs": {
+    "prix_moyen": { "avg": { "field": "prix" } },
+    "prix_stats": { "stats": { "field": "prix" } }
+  }
+}
+
+# 4. Métrique dans un bucket : prix moyen par catégorie, trié par prix moyen
+GET cours/_search
+{
+  "size": 0,
+  "aggs": {
+    "par_categorie": {
+      "terms": { "field": "categorie", "order": { "prix_moyen": "desc" } },
+      "aggs": { "prix_moyen": { "avg": { "field": "prix" } } }
+    }
+  }
+}
+
+# 5. histogram sur prix, tranches de 25
+GET cours/_search
+{
+  "size": 0,
+  "aggs": {
+    "tranches_prix": { "histogram": { "field": "prix", "interval": 25 } }
+  }
+}
+
+# 6. date_histogram par mois sur date_publication (2026 seulement)
+GET cours/_search
+{
+  "size": 0,
+  "query": { "range": { "date_publication": { "gte": "2026-01-01" } } },
+  "aggs": {
+    "par_mois": {
+      "date_histogram": { "field": "date_publication", "calendar_interval": "month", "format": "yyyy-MM" }
+    }
+  }
+}
+
+# 7. date_histogram par jour sur les accès (7 derniers jours du jeu)
+GET acces/_search
+{
+  "size": 0,
+  "query": { "range": { "@timestamp": { "gte": "2026-09-02", "lt": "2026-09-09" } } },
+  "aggs": {
+    "par_jour": {
+      "date_histogram": { "field": "@timestamp", "calendar_interval": "day", "format": "yyyy-MM-dd" }
+    }
+  }
+}
+
+# 8. cardinality : combien de professeurs distincts
+GET cours/_search
+{
+  "size": 0,
+  "aggs": {
+    "nb_professeurs": { "cardinality": { "field": "professeur.id" } }
+  }
+}
+
+# 9. range agg sur duree_heures : courts, moyens, longs
+GET cours/_search
+{
+  "size": 0,
+  "aggs": {
+    "durees": {
+      "range": {
+        "field": "duree_heures",
+        "ranges": [
+          { "key": "court (< 10 h)", "to": 10 },
+          { "key": "moyen (10 à 25 h)", "from": 10, "to": 25 },
+          { "key": "long (25 h et +)", "from": 25 }
+        ]
+      }
+    }
+  }
+}
+
+# 10. filter agg : une statistique sur un sous-ensemble, à côté du total
+GET cours/_search
+{
+  "size": 0,
+  "aggs": {
+    "prix_moyen_global": { "avg": { "field": "prix" } },
+    "gratuits": {
+      "filter": { "term": { "gratuit": true } },
+      "aggs": { "nb_avis_moyen": { "avg": { "field": "nb_avis" } } }
+    },
+    "payants_fr": {
+      "filter": { "bool": { "filter": [ { "term": { "gratuit": false } }, { "term": { "langue": "fr" } } ] } },
+      "aggs": { "prix_moyen": { "avg": { "field": "prix" } } }
+    }
+  }
+}
+
+# 11. Sur avis : villes les plus actives et note moyenne par ville
+GET avis/_search
+{
+  "size": 0,
+  "aggs": {
+    "par_ville": {
+      "terms": { "field": "ville", "size": 5 },
+      "aggs": { "note_moyenne": { "avg": { "field": "note" } } }
+    }
+  }
+}
+
+# 12. top_hits : les 2 cours les mieux notés de chaque catégorie
+GET cours/_search
+{
+  "size": 0,
+  "aggs": {
+    "par_categorie": {
+      "terms": { "field": "categorie", "size": 2 },
+      "aggs": {
+        "meilleurs": {
+          "top_hits": {
+            "size": 2,
+            "sort": [ { "note_moyenne": "desc" }, { "nb_avis": "desc" } ],
+            "_source": ["titre", "note_moyenne", "nb_avis"]
+          }
+        }
+      }
+    }
+  }
+}
+
+# 13. percentiles sur acces.duree_ms
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "latence": { "percentiles": { "field": "duree_ms", "percents": [50, 90, 95, 99] } }
+  }
+}
+
+# 14. terms sur acces.statut (short) : répartition des codes HTTP
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "codes": { "terms": { "field": "statut" } }
+  }
+}
+
+# 15. Combinaison : erreurs 5xx par pays
+GET acces/_search
+{
+  "size": 0,
+  "query": { "range": { "statut": { "gte": 500 } } },
+  "aggs": {
+    "par_pays": { "terms": { "field": "pays", "size": 5 } }
+  }
+}
+
+# 16. Erreur classique (« Si ça coince ») : terms sur un champ text
+# attendu: 400
+GET cours/_search
+{
+  "size": 0,
+  "aggs": { "titres": { "terms": { "field": "titre" } } }
+}

@@ -1,0 +1,28 @@
+# Module 1 — Leçon 03 : première visite dans Kibana Dev Tools
+# À coller dans Kibana → menu ☰ → Management → Dev Tools, puis ▶ ligne par ligne.
+
+# 1. Qui répond ? Version du moteur et nom du cluster
+GET /
+
+# 2. Santé du cluster : green attendu (yellow acceptable sur un seul nœud)
+GET _cluster/health
+
+# 3. Les index présents, avec en-têtes (v) et triés par nom (s=index)
+GET _cat/indices/cours,avis,acces?v&s=index
+
+# 4. Le ou les nœuds du cluster (un seul dans le labo : labo-es-1)
+GET _cat/nodes?v
+
+# 5. Compter les documents de chaque index du labo
+GET cours/_count
+
+GET avis/_count
+
+GET acces/_count
+
+# 6. Un premier document, pour voir à quoi ressemble un « cours »
+GET cours/_search
+{
+  "query": { "match_all": {} },
+  "size": 1
+}

@@ -1,0 +1,45 @@
+# Module 5 — Leçon 03 : requêtes de contrôle pour OpenSearch Dashboards (port 9201)
+#   node outils/tester-requetes.mjs elasticsearch/requetes/05-03-dashboards-sql-ppl.txt --url http://localhost:9201
+# Chaque requête ici correspond à un écran de Dashboards : on vérifie les chiffres avant de les chercher dans l'interface.
+
+# 1. Bornes réelles des journaux : à régler dans le sélecteur de temps de Discover
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "premier": { "min": { "field": "@timestamp" } },
+    "dernier": { "max": { "field": "@timestamp" } }
+  }
+}
+
+# 2. Requêtes par statut HTTP : les chiffres attendus dans la visualisation
+GET acces/_search
+{
+  "size": 0,
+  "aggs": { "par_statut": { "terms": { "field": "statut", "size": 10 } } }
+}
+
+# 3. La même chose en SQL, à coller dans Query Workbench
+POST _plugins/_sql
+{
+  "query": "SELECT statut, COUNT(*) AS n FROM acces GROUP BY statut ORDER BY n DESC"
+}
+
+# 4. Et en PPL, dans l'onglet PPL de Query Workbench
+POST _plugins/_ppl
+{
+  "query": "source=acces | stats count() as n by statut | sort - n"
+}
+
+# 5. Ce que Discover affiche avec la barre de recherche (DQL) « statut >= 500 and pays = CA »
+GET acces/_count
+{
+  "query": {
+    "bool": {
+      "filter": [
+        { "range": { "statut": { "gte": 500 } } },
+        { "term": { "pays": "CA" } }
+      ]
+    }
+  }
+}

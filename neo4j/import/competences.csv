@@ -1,0 +1,23 @@
+id,nom
+K01,Conteneurisation
+K02,Orchestration
+K03,Infrastructure as Code
+K04,Intégration continue
+K05,Observabilité
+K06,Recherche full-text
+K07,Modélisation de graphes
+K08,Streaming de données
+K09,SQL
+K10,Apprentissage supervisé
+K11,Réseaux de neurones
+K12,Ingénierie de prompts
+K13,Développement front-end
+K14,Développement back-end
+K15,Tests automatisés
+K16,Sécurité applicative
+K17,Analyse réseau
+K18,Architecture cloud
+K19,Serverless
+K20,Gestion des coûts
+K21,Administration Linux
+K22,Bases de données NoSQL

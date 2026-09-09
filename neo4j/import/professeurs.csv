@@ -1,0 +1,31 @@
+id,prenom,nom,ville,pays,specialite,annees_experience
+P001,Karim,Caron,Gatineau,Canada,DevOps,23
+P002,Camille,Simard,Québec,Canada,Données,17
+P003,Emma,Kaci,Sherbrooke,Canada,IA,6
+P004,Samir,Diallo,Lyon,France,Développement web,23
+P005,Chloé,Sow,Tunis,Tunisie,Sécurité,12
+P006,Karim,Rahmani,Alger,Algérie,Cloud,14
+P007,Samir,Haddad,Montréal,Canada,DevOps,22
+P008,Chloé,Bergeron,Montréal,Canada,Données,13
+P009,Amina,Haddad,Gatineau,Canada,IA,10
+P010,Yasmine,Boucher,Bruxelles,Belgique,Développement web,16
+P011,Léa,Fortin,Casablanca,Maroc,Sécurité,12
+P012,Léa,Boucher,Sherbrooke,Canada,Cloud,21
+P013,Lina,Bouchard,Gatineau,Canada,DevOps,4
+P014,Ali,Nguyen,Marseille,France,Données,24
+P015,Lucas,Rahmani,Montréal,Canada,IA,6
+P016,Maya,Fortin,Gatineau,Canada,Développement web,4
+P017,Thomas,Nadeau,Toronto,Canada,Sécurité,3
+P018,Adam,Gauthier,Abidjan,Côte d’Ivoire,Cloud,24
+P019,Sarah,Mansour,Lyon,France,DevOps,12
+P020,Chloé,Pelletier,Genève,Suisse,Données,25
+P021,Alice,Lévesque,Marseille,France,IA,17
+P022,Omar,Pelletier,Dakar,Sénégal,Développement web,22
+P023,Omar,Nadeau,Toronto,Canada,Sécurité,17
+P024,Rania,Pelletier,Gatineau,Canada,Cloud,18
+P025,Camille,Sow,Abidjan,Côte d’Ivoire,DevOps,19
+P026,Rayan,Mansour,Abidjan,Côte d’Ivoire,Données,22
+P027,Yasmine,Haddad,Lyon,France,IA,8
+P028,Omar,Mansour,Laval,Canada,Développement web,24
+P029,Chloé,Traoré,Laval,Canada,Sécurité,5
+P030,Yasmine,Morin,Dakar,Sénégal,Cloud,14

@@ -1,0 +1,18 @@
+# Module 5 — Leçon 02 : ce qui n'existe QUE sur Elasticsearch (port 9200)
+#   node outils/tester-requetes.mjs elasticsearch/requetes/05-02-elasticsearch-seulement.txt
+# Sur OpenSearch (9201) ces requêtes échouent : voir 05-02-opensearch-seulement.txt pour les équivalents.
+
+# 1. ES|QL : la même agrégation que le SQL d'OpenSearch
+POST _query?format=json
+{
+  "query": "FROM cours | STATS n = COUNT(*) BY categorie | SORT n DESC"
+}
+
+# 2. ES|QL : erreurs 5xx par pays (équivalent du PPL « source=acces | where statut >= 500 | stats count() by pays »)
+POST _query?format=txt
+{
+  "query": "FROM acces | WHERE statut >= 500 | STATS n = COUNT(*) BY pays | SORT n DESC"
+}
+
+# 3. Les plugins : la liste est vide, tout est intégré dans la distribution
+GET _cat/plugins?v&h=component,version&s=component

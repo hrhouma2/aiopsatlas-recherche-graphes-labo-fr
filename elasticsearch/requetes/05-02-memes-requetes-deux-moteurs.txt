@@ -1,0 +1,89 @@
+# Module 5 — Leçon 02 : les mêmes requêtes sur Elasticsearch (9200) et OpenSearch (9201)
+# Ce fichier doit passer à 100 % sur les DEUX moteurs :
+#   node outils/tester-requetes.mjs elasticsearch/requetes/05-02-memes-requetes-deux-moteurs.txt
+#   node outils/tester-requetes.mjs elasticsearch/requetes/05-02-memes-requetes-deux-moteurs.txt --url http://localhost:9201
+
+# 1. match : recherche plein texte avec l'analyseur french
+GET cours/_search
+{
+  "query": { "match": { "titre": "déployer conteneurs" } },
+  "size": 3,
+  "_source": ["id", "titre", "niveau"]
+}
+
+# 2. bool : must + filter + must_not
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [ { "match": { "description": "kubernetes" } } ],
+      "filter": [
+        { "term": { "categorie": "DevOps" } },
+        { "term": { "langue": "fr" } }
+      ],
+      "must_not": [ { "term": { "niveau": "debutant" } } ]
+    }
+  },
+  "size": 3,
+  "_source": ["id", "titre", "categorie", "niveau", "langue"]
+}
+
+# 3. range + sort : cours payants de moins de 50 $, les mieux notés d'abord
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "filter": [
+        { "range": { "prix": { "gt": 0, "lt": 50 } } },
+        { "range": { "nb_avis": { "gte": 3 } } }
+      ]
+    }
+  },
+  "sort": [ { "note_moyenne": "desc" }, { "id": "asc" } ],
+  "size": 3,
+  "_source": ["id", "titre", "prix", "note_moyenne", "nb_avis"]
+}
+
+# 4. fuzzy : une faute de frappe dans « kubernetes »
+GET cours/_search
+{
+  "query": { "match": { "titre": { "query": "kubernetess", "fuzziness": "AUTO" } } },
+  "size": 3,
+  "_source": ["id", "titre"]
+}
+
+# 5. terms : nombre de cours par catégorie
+GET cours/_search
+{
+  "size": 0,
+  "aggs": { "par_categorie": { "terms": { "field": "categorie", "size": 10 } } }
+}
+
+# 6. date_histogram : erreurs 5xx par jour sur les journaux d'accès
+GET acces/_search
+{
+  "size": 0,
+  "query": { "range": { "statut": { "gte": 500 } } },
+  "aggs": {
+    "par_jour": {
+      "date_histogram": { "field": "@timestamp", "calendar_interval": "day", "min_doc_count": 1 }
+    }
+  }
+}
+
+# 7. search_after — page 1 : tri stable (date_publication puis id)
+GET cours/_search
+{
+  "size": 3,
+  "sort": [ { "date_publication": "desc" }, { "id": "asc" } ],
+  "_source": ["id", "titre", "date_publication"]
+}
+
+# 8. search_after — page 2 : on repart des valeurs de tri du dernier hit de la page 1
+GET cours/_search
+{
+  "size": 3,
+  "sort": [ { "date_publication": "desc" }, { "id": "asc" } ],
+  "search_after": [ 1784505600000, "C0097" ],
+  "_source": ["id", "titre", "date_publication"]
+}

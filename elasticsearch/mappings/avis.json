@@ -1,0 +1,16 @@
+{
+  "settings": { "number_of_shards": 1, "number_of_replicas": 0 },
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "cours_id": { "type": "keyword" },
+      "etudiant": { "type": "keyword" },
+      "ville": { "type": "keyword" },
+      "pays": { "type": "keyword" },
+      "note": { "type": "byte" },
+      "texte": { "type": "text", "analyzer": "french" },
+      "date": { "type": "date" },
+      "utile": { "type": "integer" }
+    }
+  }
+}

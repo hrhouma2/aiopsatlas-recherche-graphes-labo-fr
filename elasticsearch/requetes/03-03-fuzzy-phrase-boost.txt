@@ -1,0 +1,165 @@
+# Module 3 — Leçon 03 : fautes de frappe et pertinence (fuzzy, phrase, boost)
+# Lecture seule sur `cours`.
+# Rejouer : node outils/tester-requetes.mjs elasticsearch/requetes/03-03-fuzzy-phrase-boost.txt
+
+# 1. Surprise : « kubernets » sans fuzziness trouve quand même (merci le stemmer)
+GET cours/_search
+{
+  "query": { "match": { "titre": "kubernets" } },
+  "size": 2,
+  "_source": ["titre"]
+}
+
+# 1 bis. Une vraie faute (lettres inversées) sans fuzziness : rien
+GET cours/_search
+{
+  "query": { "match": { "titre": "kubrenetes" } },
+  "size": 2,
+  "_source": ["titre"]
+}
+
+# 2. Même faute avec fuzziness AUTO : trouvé
+GET cours/_search
+{
+  "query": { "match": { "titre": { "query": "kubrenetes", "fuzziness": "AUTO" } } },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 3. Deux fautes dans un mot long : elasticsearh
+GET cours/_search
+{
+  "query": { "match": { "titre": { "query": "elasticsearh", "fuzziness": "AUTO" } } },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 3 bis. elasticsearh sans fuzziness : rien
+GET cours/_count
+{
+  "query": { "match": { "titre": "elasticsearh" } }
+}
+
+# 4. Ce que devient le mot mal écrit après analyse (pour comprendre la distance)
+GET cours/_analyze
+{
+  "field": "titre",
+  "text": "elasticsearh kubernets kubrenetes"
+}
+
+# 5. match_phrase : les mots dans l'ordre, collés
+GET cours/_search
+{
+  "query": { "match_phrase": { "titre": "conteneurs production" } },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 6. match_phrase avec slop : tolère « en » entre les deux mots
+GET cours/_search
+{
+  "query": { "match_phrase": { "titre": { "query": "conteneurs production", "slop": 1 } } },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 7. Autocomplétion : match_phrase_prefix sur « kub »
+GET cours/_search
+{
+  "query": { "match_phrase_prefix": { "titre": "les bases de kub" } },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 8. prefix sur le keyword titre.brut (sensible à la casse)
+GET cours/_search
+{
+  "query": { "prefix": { "titre.brut": "Kub" } },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 9. wildcard sur sujet : tout ce qui finit par « search »
+GET cours/_search
+{
+  "query": { "wildcard": { "sujet": { "value": "*search" } } },
+  "size": 0,
+  "aggs": { "sujets": { "terms": { "field": "sujet" } } }
+}
+
+# 9 bis. wildcard insensible à la casse : OpenSearch entre dans le lot
+GET cours/_search
+{
+  "query": { "wildcard": { "sujet": { "value": "*search", "case_insensitive": true } } },
+  "size": 0,
+  "aggs": { "sujets": { "terms": { "field": "sujet" } } }
+}
+
+# 10. AVANT : classement par pertinence textuelle seule
+GET cours/_search
+{
+  "query": { "match": { "titre": "docker" } },
+  "size": 4,
+  "_source": ["titre", "note_moyenne", "nb_avis"]
+}
+
+# 11. APRÈS : bool.should avec boosts pour favoriser les cours bien notés
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [ { "match": { "titre": "docker" } } ],
+      "should": [
+        { "range": { "note_moyenne": { "gte": 4.5, "boost": 3 } } },
+        { "range": { "nb_avis": { "gte": 200, "boost": 1.5 } } }
+      ]
+    }
+  },
+  "size": 4,
+  "_source": ["titre", "note_moyenne", "nb_avis"]
+}
+
+# 12. APRÈS bis : function_score avec field_value_factor sur nb_avis
+GET cours/_search
+{
+  "query": {
+    "function_score": {
+      "query": { "match": { "titre": "docker" } },
+      "field_value_factor": {
+        "field": "nb_avis",
+        "modifier": "log1p",
+        "factor": 1,
+        "missing": 0
+      },
+      "boost_mode": "multiply"
+    }
+  },
+  "size": 4,
+  "_source": ["titre", "note_moyenne", "nb_avis"]
+}
+
+# 13. explain : lire le calcul du score d'un document précis
+GET cours/_explain/C0010
+{
+  "query": { "match": { "titre": "kubernetes" } }
+}
+
+# 14. explain: true dans une recherche (pour chaque hit)
+GET cours/_search
+{
+  "query": { "match": { "titre": "kubernetes" } },
+  "size": 1,
+  "explain": true,
+  "_source": ["titre"]
+}
+
+# 15. min_score : couper les résultats faibles
+GET cours/_search
+{
+  "query": {
+    "multi_match": { "query": "kubernetes production", "fields": ["titre^3", "description"] }
+  },
+  "min_score": 15,
+  "size": 10,
+  "_source": ["titre"]
+}

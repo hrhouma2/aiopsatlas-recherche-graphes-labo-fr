@@ -1,0 +1,505 @@
+id,titre,categorie,sujet,niveau,prix,duree_heures,date_publication,professeur_id
+C0001,Docker expliqué simplement,DevOps,Docker,debutant,129,5,2024-08-14,P001
+C0002,Docker avancé : industrialiser des conteneurs en production,DevOps,Docker,avance,29,27,2024-01-15,P019
+C0003,Docker : le guide complet,DevOps,Docker,debutant,19,7,2026-01-10,P025
+C0004,Docker pour les débutants,DevOps,Docker,debutant,199,3,2023-02-14,P019
+C0005,Docker par la pratique : industrialiser vos applications,DevOps,Docker,intermediaire,49,13,2025-12-09,P019
+C0006,Maîtriser Docker,DevOps,Docker,debutant,49,3,2024-06-27,P007
+C0007,Atelier Docker : un cluster,DevOps,Docker,avance,19,18,2023-06-08,P019
+C0008,Kubernetes avancé : superviser des conteneurs en production,DevOps,Kubernetes,avance,39,23,2025-02-22,P013
+C0009,Kubernetes : le guide complet,DevOps,Kubernetes,debutant,0,5,2025-07-31,P007
+C0010,Les bases de Kubernetes,DevOps,Kubernetes,debutant,0,5,2025-02-14,P019
+C0011,Kubernetes en pratique,DevOps,Kubernetes,debutant,129,12,2025-03-08,P019
+C0012,Kubernetes pour les débutants,DevOps,Kubernetes,debutant,29,4,2026-04-04,P019
+C0013,Kubernetes : de zéro à la production,DevOps,Kubernetes,avance,59,19,2024-04-18,P025
+C0014,Kubernetes expliqué simplement,DevOps,Kubernetes,debutant,129,10,2023-04-08,P019
+C0015,Terraform en pratique,DevOps,Terraform,debutant,0,5,2023-07-30,P025
+C0016,Les bases de Terraform,DevOps,Terraform,debutant,149,9,2023-12-23,P007
+C0017,Maîtriser Terraform,DevOps,Terraform,intermediaire,129,9,2024-02-27,P019
+C0018,Terraform avancé : industrialiser des conteneurs en production,DevOps,Terraform,avance,59,17,2025-04-29,P025
+C0019,Terraform par la pratique : automatiser un pipeline CI/CD,DevOps,Terraform,intermediaire,129,17,2024-10-29,P019
+C0020,Terraform pour les débutants,DevOps,Terraform,debutant,99,5,2024-08-11,P013
+C0021,Terraform expliqué simplement,DevOps,Terraform,debutant,29,4,2025-09-30,P001
+C0022,Les bases de Ansible,DevOps,Ansible,debutant,149,10,2023-05-10,P013
+C0023,Atelier Ansible : une infrastructure,DevOps,Ansible,avance,129,35,2025-10-16,P007
+C0024,Ansible : de zéro à la production,DevOps,Ansible,intermediaire,99,19,2025-07-20,P013
+C0025,Ansible expliqué simplement,DevOps,Ansible,debutant,39,4,2024-02-02,P025
+C0026,Maîtriser Ansible,DevOps,Ansible,avance,19,45,2026-04-05,P007
+C0027,Ansible en pratique,DevOps,Ansible,avance,99,19,2024-06-12,P007
+C0028,Ansible avancé : superviser un cluster,DevOps,Ansible,avance,99,24,2025-01-03,P025
+C0029,Atelier Jenkins : un cluster,DevOps,Jenkins,avance,39,19,2023-01-06,P001
+C0030,Jenkins pour les débutants,DevOps,Jenkins,debutant,49,4,2023-10-01,P019
+C0031,Jenkins : le guide complet,DevOps,Jenkins,debutant,19,9,2023-09-14,P001
+C0032,Jenkins expliqué simplement,DevOps,Jenkins,debutant,0,7,2024-12-09,P019
+C0033,Jenkins : de zéro à la production,DevOps,Jenkins,avance,99,42,2025-07-16,P025
+C0034,Jenkins par la pratique : fiabiliser vos applications,DevOps,Jenkins,avance,29,15,2025-10-26,P019
+C0035,Jenkins avancé : déployer un cluster,DevOps,Jenkins,avance,129,29,2024-09-22,P025
+C0036,GitHub Actions : de zéro à la production,DevOps,GitHub Actions,debutant,49,3,2026-05-27,P025
+C0037,GitHub Actions pour les débutants,DevOps,GitHub Actions,debutant,19,9,2025-07-17,P025
+C0038,GitHub Actions expliqué simplement,DevOps,GitHub Actions,debutant,19,6,2025-04-26,P019
+C0039,GitHub Actions en pratique,DevOps,GitHub Actions,avance,129,43,2026-03-07,P019
+C0040,Les bases de GitHub Actions,DevOps,GitHub Actions,debutant,0,5,2026-06-30,P001
+C0041,Atelier GitHub Actions : vos applications,DevOps,GitHub Actions,debutant,199,8,2025-05-15,P019
+C0042,GitHub Actions avancé : industrialiser des conteneurs en production,DevOps,GitHub Actions,avance,99,45,2025-08-10,P001
+C0043,Helm avancé : fiabiliser un cluster,DevOps,Helm,avance,0,43,2026-02-22,P001
+C0044,Atelier Helm : des conteneurs en production,DevOps,Helm,debutant,199,7,2025-01-27,P013
+C0045,Helm par la pratique : superviser un pipeline CI/CD,DevOps,Helm,debutant,199,4,2024-06-18,P025
+C0046,Helm en pratique,DevOps,Helm,debutant,39,8,2025-06-06,P007
+C0047,Helm : de zéro à la production,DevOps,Helm,intermediaire,49,11,2024-07-11,P001
+C0048,Helm : le guide complet,DevOps,Helm,debutant,59,9,2023-07-01,P013
+C0049,Helm pour les débutants,DevOps,Helm,debutant,149,4,2023-10-02,P001
+C0050,GitLab CI par la pratique : déployer des conteneurs en production,DevOps,GitLab CI,avance,99,20,2024-03-02,P013
+C0051,GitLab CI en pratique,DevOps,GitLab CI,intermediaire,149,25,2026-01-11,P025
+C0052,Les bases de GitLab CI,DevOps,GitLab CI,debutant,19,4,2024-11-19,P025
+C0053,Atelier GitLab CI : une infrastructure,DevOps,GitLab CI,intermediaire,29,12,2025-05-04,P025
+C0054,GitLab CI pour les débutants,DevOps,GitLab CI,debutant,29,12,2023-01-25,P013
+C0055,Maîtriser GitLab CI,DevOps,GitLab CI,intermediaire,19,12,2024-06-26,P007
+C0056,GitLab CI : le guide complet,DevOps,GitLab CI,avance,79,15,2025-04-13,P013
+C0057,Prometheus avancé : industrialiser vos applications,DevOps,Prometheus,avance,129,15,2024-02-28,P013
+C0058,Prometheus pour les débutants,DevOps,Prometheus,debutant,59,4,2024-04-30,P013
+C0059,Prometheus en pratique,DevOps,Prometheus,debutant,19,9,2025-03-13,P007
+C0060,Les bases de Prometheus,DevOps,Prometheus,debutant,29,3,2024-02-19,P013
+C0061,Maîtriser Prometheus,DevOps,Prometheus,debutant,59,3,2025-11-01,P001
+C0062,Prometheus : de zéro à la production,DevOps,Prometheus,debutant,199,8,2026-02-14,P013
+C0063,Atelier Prometheus : vos applications,DevOps,Prometheus,debutant,59,10,2024-08-04,P019
+C0064,Grafana en pratique,DevOps,Grafana,debutant,129,10,2026-05-30,P007
+C0065,Grafana expliqué simplement,DevOps,Grafana,debutant,49,10,2023-06-26,P007
+C0066,Grafana : le guide complet,DevOps,Grafana,debutant,0,10,2024-05-21,P019
+C0067,Les bases de Grafana,DevOps,Grafana,debutant,59,6,2025-11-01,P025
+C0068,Maîtriser Grafana,DevOps,Grafana,intermediaire,0,14,2025-08-26,P019
+C0069,Atelier Grafana : une infrastructure,DevOps,Grafana,avance,49,16,2023-06-29,P025
+C0070,Grafana pour les débutants,DevOps,Grafana,debutant,149,10,2023-01-01,P007
+C0071,Les bases de Nginx,DevOps,Nginx,debutant,0,3,2025-08-06,P025
+C0072,Nginx pour les débutants,DevOps,Nginx,debutant,29,9,2024-12-12,P007
+C0073,Nginx en pratique,DevOps,Nginx,avance,59,38,2025-10-21,P019
+C0074,Maîtriser Nginx,DevOps,Nginx,debutant,19,3,2024-04-09,P025
+C0075,Nginx avancé : superviser un pipeline CI/CD,DevOps,Nginx,avance,29,45,2023-11-30,P025
+C0076,Nginx : de zéro à la production,DevOps,Nginx,debutant,29,9,2025-09-10,P007
+C0077,Atelier Nginx : vos applications,DevOps,Nginx,avance,129,23,2025-02-12,P025
+C0078,Les bases de Linux,DevOps,Linux,debutant,39,9,2023-10-16,P001
+C0079,Linux : le guide complet,DevOps,Linux,avance,99,34,2023-10-27,P025
+C0080,Maîtriser Linux,DevOps,Linux,debutant,0,7,2024-10-29,P007
+C0081,Atelier Linux : un cluster,DevOps,Linux,intermediaire,0,21,2025-12-26,P025
+C0082,Linux : de zéro à la production,DevOps,Linux,avance,49,38,2023-02-17,P013
+C0083,Linux expliqué simplement,DevOps,Linux,debutant,0,8,2025-04-20,P019
+C0084,Linux avancé : déployer des conteneurs en production,DevOps,Linux,avance,39,23,2023-01-20,P007
+C0085,Elasticsearch expliqué simplement,Données,Elasticsearch,debutant,79,7,2026-07-13,P008
+C0086,Elasticsearch avancé : interroger des journaux applicatifs,Données,Elasticsearch,avance,49,31,2025-06-21,P002
+C0087,Elasticsearch pour les débutants,Données,Elasticsearch,debutant,129,3,2025-10-21,P020
+C0088,Maîtriser Elasticsearch,Données,Elasticsearch,avance,99,21,2023-01-18,P008
+C0089,Atelier Elasticsearch : des journaux applicatifs,Données,Elasticsearch,debutant,149,7,2024-05-05,P008
+C0090,Les bases de Elasticsearch,Données,Elasticsearch,debutant,199,3,2023-04-02,P026
+C0091,Elasticsearch par la pratique : indexer un graphe de connaissances,Données,Elasticsearch,avance,19,16,2026-07-16,P008
+C0092,OpenSearch par la pratique : modéliser des journaux applicatifs,Données,OpenSearch,avance,39,42,2023-01-15,P014
+C0093,OpenSearch pour les débutants,Données,OpenSearch,debutant,29,10,2025-09-28,P014
+C0094,Atelier OpenSearch : un entrepôt de données,Données,OpenSearch,debutant,99,6,2024-05-30,P008
+C0095,Les bases de OpenSearch,Données,OpenSearch,debutant,79,8,2023-02-19,P008
+C0096,OpenSearch avancé : modéliser un graphe de connaissances,Données,OpenSearch,avance,149,20,2025-04-09,P008
+C0097,OpenSearch : de zéro à la production,Données,OpenSearch,intermediaire,59,15,2026-07-20,P020
+C0098,OpenSearch en pratique,Données,OpenSearch,debutant,79,8,2025-07-19,P026
+C0099,Kibana expliqué simplement,Données,Kibana,debutant,199,11,2024-09-22,P008
+C0100,Les bases de Kibana,Données,Kibana,debutant,129,9,2025-02-06,P026
+C0101,Kibana par la pratique : nettoyer un graphe de connaissances,Données,Kibana,avance,199,27,2025-11-15,P020
+C0102,Kibana : de zéro à la production,Données,Kibana,debutant,199,12,2024-08-19,P002
+C0103,Kibana pour les débutants,Données,Kibana,debutant,19,4,2026-05-06,P020
+C0104,Atelier Kibana : des flux temps réel,Données,Kibana,debutant,39,5,2025-06-07,P020
+C0105,Kibana avancé : nettoyer des flux temps réel,Données,Kibana,avance,79,43,2024-03-09,P020
+C0106,Neo4j en pratique,Données,Neo4j,intermediaire,0,18,2025-10-02,P020
+C0107,Neo4j avancé : modéliser des journaux applicatifs,Données,Neo4j,avance,199,27,2023-08-17,P014
+C0108,Neo4j pour les débutants,Données,Neo4j,debutant,49,10,2024-09-24,P002
+C0109,Neo4j : le guide complet,Données,Neo4j,avance,0,20,2023-06-20,P014
+C0110,Maîtriser Neo4j,Données,Neo4j,avance,29,18,2025-10-10,P002
+C0111,Neo4j : de zéro à la production,Données,Neo4j,debutant,0,4,2024-01-19,P014
+C0112,Neo4j par la pratique : interroger des journaux applicatifs,Données,Neo4j,intermediaire,49,16,2024-01-29,P002
+C0113,Maîtriser Cypher,Données,Cypher,intermediaire,19,12,2025-04-05,P014
+C0114,Cypher pour les débutants,Données,Cypher,debutant,19,11,2023-07-31,P014
+C0115,Cypher avancé : analyser un graphe de connaissances,Données,Cypher,avance,199,25,2024-12-27,P014
+C0116,Cypher : le guide complet,Données,Cypher,avance,99,36,2025-12-05,P020
+C0117,Cypher expliqué simplement,Données,Cypher,debutant,0,8,2025-12-05,P002
+C0118,Atelier Cypher : des millions de documents,Données,Cypher,debutant,129,7,2023-06-01,P008
+C0119,Cypher : de zéro à la production,Données,Cypher,debutant,149,3,2024-05-27,P020
+C0120,PostgreSQL en pratique,Données,PostgreSQL,debutant,29,5,2025-07-15,P002
+C0121,Les bases de PostgreSQL,Données,PostgreSQL,debutant,79,4,2024-06-26,P014
+C0122,Maîtriser PostgreSQL,Données,PostgreSQL,intermediaire,49,21,2024-04-10,P008
+C0123,PostgreSQL : le guide complet,Données,PostgreSQL,intermediaire,199,13,2025-05-15,P014
+C0124,PostgreSQL : de zéro à la production,Données,PostgreSQL,avance,149,32,2024-11-07,P020
+C0125,Atelier PostgreSQL : des journaux applicatifs,Données,PostgreSQL,debutant,39,9,2026-03-28,P014
+C0126,PostgreSQL avancé : modéliser un graphe de connaissances,Données,PostgreSQL,avance,29,30,2025-04-15,P008
+C0127,Atelier MongoDB : des journaux applicatifs,Données,MongoDB,avance,29,31,2023-09-13,P008
+C0128,MongoDB pour les débutants,Données,MongoDB,debutant,29,3,2025-03-07,P008
+C0129,MongoDB : de zéro à la production,Données,MongoDB,intermediaire,79,21,2025-04-24,P002
+C0130,Maîtriser MongoDB,Données,MongoDB,intermediaire,99,18,2023-01-08,P020
+C0131,MongoDB en pratique,Données,MongoDB,debutant,49,12,2025-08-08,P026
+C0132,MongoDB : le guide complet,Données,MongoDB,debutant,29,10,2025-08-02,P014
+C0133,Les bases de MongoDB,Données,MongoDB,debutant,99,8,2025-12-19,P026
+C0134,Kafka expliqué simplement,Données,Kafka,debutant,199,12,2025-07-30,P002
+C0135,Kafka : le guide complet,Données,Kafka,debutant,39,4,2023-03-15,P002
+C0136,Kafka avancé : nettoyer un graphe de connaissances,Données,Kafka,avance,0,31,2024-08-11,P026
+C0137,Kafka pour les débutants,Données,Kafka,debutant,0,8,2026-04-12,P020
+C0138,Maîtriser Kafka,Données,Kafka,avance,79,43,2023-05-25,P014
+C0139,Kafka : de zéro à la production,Données,Kafka,intermediaire,0,13,2023-10-19,P002
+C0140,Atelier Kafka : un entrepôt de données,Données,Kafka,intermediaire,19,18,2024-07-08,P020
+C0141,Les bases de Spark,Données,Spark,debutant,0,7,2023-04-11,P026
+C0142,Spark pour les débutants,Données,Spark,debutant,39,9,2023-08-06,P020
+C0143,Spark avancé : modéliser des flux temps réel,Données,Spark,avance,79,15,2023-11-23,P002
+C0144,Spark : de zéro à la production,Données,Spark,debutant,129,6,2023-11-22,P014
+C0145,Spark : le guide complet,Données,Spark,debutant,19,8,2025-07-27,P014
+C0146,Spark expliqué simplement,Données,Spark,debutant,0,8,2023-08-07,P026
+C0147,Maîtriser Spark,Données,Spark,debutant,149,3,2026-04-05,P008
+C0148,Maîtriser Airflow,Données,Airflow,intermediaire,99,13,2025-11-02,P008
+C0149,Airflow en pratique,Données,Airflow,avance,59,30,2025-11-02,P026
+C0150,Airflow pour les débutants,Données,Airflow,debutant,29,5,2025-10-04,P008
+C0151,Airflow avancé : indexer des millions de documents,Données,Airflow,avance,29,40,2023-01-24,P008
+C0152,Airflow : le guide complet,Données,Airflow,debutant,19,8,2023-10-08,P008
+C0153,Atelier Airflow : des millions de documents,Données,Airflow,intermediaire,199,13,2026-03-04,P026
+C0154,Airflow expliqué simplement,Données,Airflow,debutant,129,3,2024-06-19,P002
+C0155,dbt expliqué simplement,Données,dbt,debutant,79,10,2024-01-20,P026
+C0156,dbt en pratique,Données,dbt,avance,199,30,2023-01-25,P002
+C0157,dbt : le guide complet,Données,dbt,intermediaire,0,24,2024-11-27,P026
+C0158,dbt par la pratique : indexer des flux temps réel,Données,dbt,debutant,19,5,2026-06-26,P014
+C0159,Atelier dbt : des flux temps réel,Données,dbt,avance,19,19,2023-05-30,P014
+C0160,Les bases de dbt,Données,dbt,debutant,19,7,2026-07-15,P020
+C0161,dbt pour les débutants,Données,dbt,debutant,79,3,2023-08-18,P008
+C0162,Redis en pratique,Données,Redis,avance,149,18,2024-04-27,P020
+C0163,Redis : de zéro à la production,Données,Redis,intermediaire,19,10,2024-06-25,P020
+C0164,Maîtriser Redis,Données,Redis,debutant,0,4,2025-12-18,P002
+C0165,Redis avancé : indexer un graphe de connaissances,Données,Redis,avance,59,35,2025-10-11,P026
+C0166,Redis par la pratique : indexer des flux temps réel,Données,Redis,intermediaire,19,14,2025-07-29,P020
+C0167,Redis : le guide complet,Données,Redis,intermediaire,0,14,2025-05-13,P020
+C0168,Redis pour les débutants,Données,Redis,debutant,149,4,2025-04-21,P014
+C0169,Machine learning pour les débutants,IA,Machine learning,debutant,149,4,2023-09-10,P003
+C0170,Machine learning : de zéro à la production,IA,Machine learning,intermediaire,99,19,2025-09-11,P027
+C0171,Machine learning avancé : comprendre des agents autonomes,IA,Machine learning,avance,0,20,2026-06-17,P009
+C0172,Maîtriser Machine learning,IA,Machine learning,avance,99,18,2025-12-22,P015
+C0173,Atelier Machine learning : un système de recommandation,IA,Machine learning,avance,39,35,2023-12-07,P003
+C0174,Machine learning expliqué simplement,IA,Machine learning,debutant,29,7,2025-05-07,P027
+C0175,Machine learning en pratique,IA,Machine learning,debutant,149,9,2024-09-22,P021
+C0176,Deep learning pour les débutants,IA,Deep learning,debutant,59,5,2025-04-08,P009
+C0177,Deep learning : le guide complet,IA,Deep learning,intermediaire,0,17,2024-09-29,P003
+C0178,Deep learning avancé : orchestrer un pipeline de prédiction,IA,Deep learning,avance,0,30,2023-08-07,P009
+C0179,Les bases de Deep learning,IA,Deep learning,debutant,29,4,2025-11-12,P021
+C0180,Deep learning expliqué simplement,IA,Deep learning,debutant,19,7,2025-08-04,P003
+C0181,Deep learning par la pratique : orchestrer un assistant conversationnel,IA,Deep learning,debutant,99,7,2025-12-18,P009
+C0182,Deep learning : de zéro à la production,IA,Deep learning,intermediaire,79,23,2023-12-01,P027
+C0183,Scikit-learn pour les débutants,IA,Scikit-learn,debutant,29,10,2025-02-21,P027
+C0184,Scikit-learn en pratique,IA,Scikit-learn,avance,59,42,2024-09-18,P027
+C0185,Scikit-learn : de zéro à la production,IA,Scikit-learn,intermediaire,49,9,2024-05-09,P003
+C0186,Scikit-learn expliqué simplement,IA,Scikit-learn,debutant,129,7,2024-06-26,P015
+C0187,Les bases de Scikit-learn,IA,Scikit-learn,debutant,199,8,2023-05-31,P009
+C0188,Atelier Scikit-learn : un système de recommandation,IA,Scikit-learn,intermediaire,39,12,2025-09-24,P015
+C0189,Scikit-learn par la pratique : orchestrer des agents autonomes,IA,Scikit-learn,debutant,29,5,2023-09-29,P021
+C0190,PyTorch par la pratique : évaluer un pipeline de prédiction,IA,PyTorch,debutant,49,12,2024-01-30,P021
+C0191,PyTorch : de zéro à la production,IA,PyTorch,debutant,99,4,2025-03-06,P003
+C0192,PyTorch : le guide complet,IA,PyTorch,intermediaire,0,17,2023-06-30,P015
+C0193,PyTorch expliqué simplement,IA,PyTorch,debutant,199,10,2026-06-20,P027
+C0194,PyTorch pour les débutants,IA,PyTorch,debutant,29,4,2025-10-24,P003
+C0195,PyTorch en pratique,IA,PyTorch,avance,99,41,2025-11-08,P015
+C0196,Les bases de PyTorch,IA,PyTorch,debutant,19,10,2026-07-22,P003
+C0197,LangChain : le guide complet,IA,LangChain,debutant,129,8,2024-09-04,P021
+C0198,LangChain par la pratique : entraîner un pipeline de prédiction,IA,LangChain,avance,79,38,2024-12-29,P009
+C0199,Les bases de LangChain,IA,LangChain,debutant,199,4,2024-12-28,P003
+C0200,LangChain en pratique,IA,LangChain,avance,79,42,2023-05-01,P015
+C0201,LangChain avancé : déployer un système de recommandation,IA,LangChain,avance,0,38,2024-01-02,P027
+C0202,Atelier LangChain : un système de recommandation,IA,LangChain,debutant,49,8,2024-01-09,P027
+C0203,Maîtriser LangChain,IA,LangChain,avance,19,38,2024-11-16,P027
+C0204,RAG avancé : évaluer un système de recommandation,IA,RAG,avance,99,37,2025-03-02,P027
+C0205,Atelier RAG : un modèle de classification,IA,RAG,intermediaire,39,18,2023-09-28,P009
+C0206,RAG par la pratique : déployer un modèle de classification,IA,RAG,debutant,39,12,2025-11-12,P021
+C0207,Maîtriser RAG,IA,RAG,intermediaire,129,8,2026-07-15,P015
+C0208,RAG pour les débutants,IA,RAG,debutant,39,9,2023-09-21,P021
+C0209,RAG en pratique,IA,RAG,debutant,149,3,2025-10-08,P015
+C0210,RAG expliqué simplement,IA,RAG,debutant,149,7,2025-04-08,P027
+C0211,Agents IA : le guide complet,IA,Agents IA,intermediaire,99,22,2025-12-05,P027
+C0212,Agents IA par la pratique : évaluer un pipeline de prédiction,IA,Agents IA,avance,0,45,2024-11-16,P009
+C0213,Agents IA avancé : entraîner un assistant conversationnel,IA,Agents IA,avance,199,29,2025-10-20,P015
+C0214,Agents IA : de zéro à la production,IA,Agents IA,intermediaire,0,20,2024-02-04,P027
+C0215,Les bases de Agents IA,IA,Agents IA,debutant,49,7,2026-03-11,P015
+C0216,Agents IA pour les débutants,IA,Agents IA,debutant,0,9,2025-12-23,P015
+C0217,Atelier Agents IA : un assistant conversationnel,IA,Agents IA,avance,129,26,2023-11-17,P027
+C0218,Prompt engineering par la pratique : entraîner un pipeline de prédiction,IA,Prompt engineering,avance,0,40,2026-06-04,P027
+C0219,Prompt engineering avancé : déployer un système de recommandation,IA,Prompt engineering,avance,129,44,2024-09-26,P015
+C0220,Prompt engineering en pratique,IA,Prompt engineering,debutant,99,12,2025-09-02,P021
+C0221,Prompt engineering expliqué simplement,IA,Prompt engineering,debutant,29,10,2023-11-18,P027
+C0222,Prompt engineering : le guide complet,IA,Prompt engineering,avance,149,21,2024-04-10,P009
+C0223,Atelier Prompt engineering : un pipeline de prédiction,IA,Prompt engineering,debutant,149,8,2025-12-20,P015
+C0224,Prompt engineering pour les débutants,IA,Prompt engineering,debutant,49,8,2026-04-10,P015
+C0225,Les bases de Vision par ordinateur,IA,Vision par ordinateur,debutant,0,10,2025-02-21,P021
+C0226,Vision par ordinateur par la pratique : orchestrer un modèle de classification,IA,Vision par ordinateur,debutant,19,6,2025-10-18,P003
+C0227,Maîtriser Vision par ordinateur,IA,Vision par ordinateur,debutant,49,10,2024-03-07,P027
+C0228,Atelier Vision par ordinateur : un modèle de classification,IA,Vision par ordinateur,intermediaire,129,10,2024-06-13,P027
+C0229,Vision par ordinateur pour les débutants,IA,Vision par ordinateur,debutant,149,8,2026-03-07,P021
+C0230,Vision par ordinateur : de zéro à la production,IA,Vision par ordinateur,intermediaire,99,25,2025-12-31,P009
+C0231,Vision par ordinateur avancé : orchestrer un assistant conversationnel,IA,Vision par ordinateur,avance,79,40,2024-11-01,P021
+C0232,NLP pour les débutants,IA,NLP,debutant,29,6,2025-04-15,P021
+C0233,NLP en pratique,IA,NLP,avance,149,18,2023-05-07,P003
+C0234,NLP : de zéro à la production,IA,NLP,intermediaire,199,22,2023-11-05,P009
+C0235,Les bases de NLP,IA,NLP,debutant,129,3,2024-11-08,P003
+C0236,NLP avancé : évaluer un système de recommandation,IA,NLP,avance,59,38,2024-06-10,P009
+C0237,Atelier NLP : des agents autonomes,IA,NLP,intermediaire,129,22,2025-03-09,P015
+C0238,NLP : le guide complet,IA,NLP,avance,0,16,2023-03-12,P027
+C0239,Les bases de MLOps,IA,MLOps,debutant,129,9,2025-07-01,P027
+C0240,Maîtriser MLOps,IA,MLOps,intermediaire,49,19,2025-10-18,P009
+C0241,Atelier MLOps : des agents autonomes,IA,MLOps,avance,199,15,2024-06-18,P021
+C0242,MLOps expliqué simplement,IA,MLOps,debutant,79,10,2025-05-09,P021
+C0243,MLOps avancé : évaluer un pipeline de prédiction,IA,MLOps,avance,99,25,2024-03-26,P003
+C0244,MLOps : de zéro à la production,IA,MLOps,debutant,0,6,2025-02-03,P009
+C0245,MLOps par la pratique : évaluer un pipeline de prédiction,IA,MLOps,intermediaire,129,14,2025-07-19,P003
+C0246,LLM open source pour les débutants,IA,LLM open source,debutant,0,7,2025-10-13,P015
+C0247,LLM open source : de zéro à la production,IA,LLM open source,debutant,29,9,2023-08-24,P003
+C0248,LLM open source avancé : déployer un modèle de classification,IA,LLM open source,avance,199,33,2025-04-11,P027
+C0249,LLM open source en pratique,IA,LLM open source,debutant,199,12,2023-03-10,P021
+C0250,LLM open source expliqué simplement,IA,LLM open source,debutant,19,7,2025-11-14,P027
+C0251,LLM open source par la pratique : comprendre un pipeline de prédiction,IA,LLM open source,debutant,49,6,2025-12-18,P003
+C0252,Les bases de LLM open source,IA,LLM open source,debutant,0,3,2023-02-02,P003
+C0253,Atelier React : une application web complète,Développement web,React,intermediaire,0,24,2026-01-02,P022
+C0254,React en pratique,Développement web,React,avance,0,39,2025-06-02,P016
+C0255,React expliqué simplement,Développement web,React,debutant,199,12,2024-12-10,P016
+C0256,Maîtriser React,Développement web,React,debutant,129,8,2024-05-04,P004
+C0257,Les bases de React,Développement web,React,debutant,29,4,2025-10-19,P016
+C0258,React pour les débutants,Développement web,React,debutant,49,4,2023-10-08,P004
+C0259,React avancé : optimiser une API,Développement web,React,avance,79,17,2024-08-05,P022
+C0260,Next.js : le guide complet,Développement web,Next.js,debutant,99,5,2026-05-22,P022
+C0261,Next.js par la pratique : sécuriser une application web complète,Développement web,Next.js,intermediaire,39,10,2026-01-23,P016
+C0262,Next.js expliqué simplement,Développement web,Next.js,debutant,19,4,2023-10-19,P016
+C0263,Next.js avancé : construire une API,Développement web,Next.js,avance,199,27,2026-05-14,P004
+C0264,Atelier Next.js : une API,Développement web,Next.js,debutant,39,11,2023-03-27,P016
+C0265,Next.js en pratique,Développement web,Next.js,avance,19,39,2025-09-08,P004
+C0266,Next.js : de zéro à la production,Développement web,Next.js,intermediaire,59,22,2026-03-07,P028
+C0267,Atelier TypeScript : un SaaS,Développement web,TypeScript,debutant,79,7,2023-07-10,P004
+C0268,Les bases de TypeScript,Développement web,TypeScript,debutant,19,11,2025-10-15,P010
+C0269,TypeScript avancé : sécuriser une boutique en ligne,Développement web,TypeScript,avance,19,18,2026-02-21,P016
+C0270,TypeScript en pratique,Développement web,TypeScript,debutant,79,4,2023-10-30,P016
+C0271,Maîtriser TypeScript,Développement web,TypeScript,intermediaire,59,18,2023-01-22,P028
+C0272,TypeScript : de zéro à la production,Développement web,TypeScript,intermediaire,129,9,2025-10-08,P016
+C0273,TypeScript par la pratique : tester une boutique en ligne,Développement web,TypeScript,intermediaire,39,22,2023-10-05,P004
+C0274,Node.js avancé : tester un SaaS,Développement web,Node.js,avance,59,31,2026-07-23,P028
+C0275,Node.js en pratique,Développement web,Node.js,avance,0,29,2025-05-15,P022
+C0276,Node.js expliqué simplement,Développement web,Node.js,debutant,99,7,2023-06-11,P010
+C0277,Node.js pour les débutants,Développement web,Node.js,debutant,39,8,2024-03-25,P004
+C0278,Maîtriser Node.js,Développement web,Node.js,debutant,129,10,2026-02-12,P004
+C0279,Node.js : le guide complet,Développement web,Node.js,intermediaire,0,11,2024-06-17,P016
+C0280,Atelier Node.js : une application web complète,Développement web,Node.js,avance,29,22,2026-05-05,P022
+C0281,Vue.js pour les débutants,Développement web,Vue.js,debutant,39,11,2026-03-21,P010
+C0282,Vue.js : de zéro à la production,Développement web,Vue.js,intermediaire,149,9,2023-09-30,P022
+C0283,Vue.js : le guide complet,Développement web,Vue.js,avance,99,23,2026-01-21,P028
+C0284,Vue.js en pratique,Développement web,Vue.js,intermediaire,39,16,2025-12-17,P022
+C0285,Vue.js par la pratique : optimiser une API,Développement web,Vue.js,debutant,149,8,2023-08-06,P028
+C0286,Vue.js avancé : publier un SaaS,Développement web,Vue.js,avance,129,30,2026-06-28,P028
+C0287,Maîtriser Vue.js,Développement web,Vue.js,intermediaire,39,23,2023-09-27,P028
+C0288,Tailwind CSS : de zéro à la production,Développement web,Tailwind CSS,avance,49,27,2025-05-13,P028
+C0289,Maîtriser Tailwind CSS,Développement web,Tailwind CSS,debutant,0,12,2025-06-30,P010
+C0290,Tailwind CSS : le guide complet,Développement web,Tailwind CSS,intermediaire,129,23,2023-01-09,P028
+C0291,Les bases de Tailwind CSS,Développement web,Tailwind CSS,debutant,0,5,2024-11-04,P028
+C0292,Tailwind CSS expliqué simplement,Développement web,Tailwind CSS,debutant,49,10,2025-09-10,P028
+C0293,Tailwind CSS avancé : publier un SaaS,Développement web,Tailwind CSS,avance,0,20,2025-01-19,P022
+C0294,Tailwind CSS pour les débutants,Développement web,Tailwind CSS,debutant,49,5,2025-04-12,P022
+C0295,Maîtriser REST API,Développement web,REST API,intermediaire,199,14,2024-02-01,P028
+C0296,Les bases de REST API,Développement web,REST API,debutant,199,10,2026-01-15,P004
+C0297,REST API expliqué simplement,Développement web,REST API,debutant,79,5,2023-09-07,P016
+C0298,REST API avancé : construire une application web complète,Développement web,REST API,avance,19,39,2025-07-31,P016
+C0299,REST API : le guide complet,Développement web,REST API,avance,0,28,2025-04-10,P004
+C0300,Atelier REST API : un portfolio,Développement web,REST API,intermediaire,19,24,2023-06-26,P016
+C0301,REST API par la pratique : construire un portfolio,Développement web,REST API,avance,59,44,2026-02-19,P010
+C0302,GraphQL pour les débutants,Développement web,GraphQL,debutant,79,4,2024-10-12,P028
+C0303,GraphQL avancé : sécuriser un portfolio,Développement web,GraphQL,avance,59,24,2025-07-22,P022
+C0304,GraphQL expliqué simplement,Développement web,GraphQL,debutant,149,12,2024-02-14,P028
+C0305,GraphQL par la pratique : optimiser un SaaS,Développement web,GraphQL,intermediaire,99,11,2025-04-18,P004
+C0306,GraphQL : le guide complet,Développement web,GraphQL,avance,0,22,2023-07-16,P022
+C0307,Atelier GraphQL : une API,Développement web,GraphQL,intermediaire,39,22,2025-07-28,P028
+C0308,GraphQL : de zéro à la production,Développement web,GraphQL,avance,0,33,2025-08-08,P028
+C0309,Atelier Supabase : une application web complète,Développement web,Supabase,debutant,149,3,2025-12-29,P016
+C0310,Supabase expliqué simplement,Développement web,Supabase,debutant,129,6,2025-08-18,P004
+C0311,Supabase : le guide complet,Développement web,Supabase,intermediaire,49,24,2026-07-12,P022
+C0312,Supabase en pratique,Développement web,Supabase,intermediaire,59,25,2025-05-01,P022
+C0313,Supabase par la pratique : tester une application web complète,Développement web,Supabase,debutant,59,7,2024-07-03,P022
+C0314,Supabase avancé : optimiser une boutique en ligne,Développement web,Supabase,avance,149,21,2023-08-07,P004
+C0315,Supabase pour les débutants,Développement web,Supabase,debutant,0,12,2024-01-10,P016
+C0316,Stripe en pratique,Développement web,Stripe,intermediaire,0,8,2024-09-03,P004
+C0317,Stripe pour les débutants,Développement web,Stripe,debutant,149,8,2025-11-02,P016
+C0318,Stripe par la pratique : publier une boutique en ligne,Développement web,Stripe,avance,149,26,2025-04-29,P022
+C0319,Maîtriser Stripe,Développement web,Stripe,avance,79,42,2026-01-21,P004
+C0320,Les bases de Stripe,Développement web,Stripe,debutant,79,7,2026-07-07,P004
+C0321,Stripe : le guide complet,Développement web,Stripe,avance,129,41,2024-08-07,P028
+C0322,Atelier Stripe : une application web complète,Développement web,Stripe,intermediaire,129,19,2026-01-25,P028
+C0323,Playwright avancé : construire un SaaS,Développement web,Playwright,avance,59,19,2025-08-21,P022
+C0324,Playwright par la pratique : publier un SaaS,Développement web,Playwright,avance,79,31,2023-08-11,P010
+C0325,Playwright expliqué simplement,Développement web,Playwright,debutant,39,11,2023-07-09,P016
+C0326,Atelier Playwright : une boutique en ligne,Développement web,Playwright,avance,99,35,2024-02-29,P004
+C0327,Maîtriser Playwright,Développement web,Playwright,avance,0,26,2024-09-12,P010
+C0328,Les bases de Playwright,Développement web,Playwright,debutant,79,7,2024-05-26,P004
+C0329,Playwright : le guide complet,Développement web,Playwright,debutant,39,9,2023-01-10,P004
+C0330,HTML et CSS : le guide complet,Développement web,HTML et CSS,avance,199,33,2024-12-06,P028
+C0331,HTML et CSS : de zéro à la production,Développement web,HTML et CSS,debutant,0,12,2025-11-13,P004
+C0332,HTML et CSS en pratique,Développement web,HTML et CSS,debutant,199,5,2024-12-14,P028
+C0333,HTML et CSS pour les débutants,Développement web,HTML et CSS,debutant,49,4,2024-08-04,P004
+C0334,HTML et CSS avancé : publier un portfolio,Développement web,HTML et CSS,avance,129,35,2026-07-01,P004
+C0335,HTML et CSS par la pratique : sécuriser une application web complète,Développement web,HTML et CSS,debutant,149,5,2023-10-20,P022
+C0336,Les bases de HTML et CSS,Développement web,HTML et CSS,debutant,99,11,2026-02-26,P004
+C0337,Maîtriser Cybersécurité,Sécurité,Cybersécurité,avance,149,18,2024-05-02,P023
+C0338,Cybersécurité expliqué simplement,Sécurité,Cybersécurité,debutant,0,9,2026-04-12,P023
+C0339,Les bases de Cybersécurité,Sécurité,Cybersécurité,debutant,19,8,2026-03-06,P023
+C0340,Cybersécurité avancé : protéger des conteneurs,Sécurité,Cybersécurité,avance,29,43,2024-11-13,P017
+C0341,Cybersécurité : le guide complet,Sécurité,Cybersécurité,intermediaire,39,12,2026-04-23,P011
+C0342,Atelier Cybersécurité : un serveur exposé,Sécurité,Cybersécurité,intermediaire,19,19,2025-12-14,P017
+C0343,Cybersécurité par la pratique : analyser une application web,Sécurité,Cybersécurité,intermediaire,149,19,2023-09-29,P005
+C0344,Analyse de ports avancé : auditer un serveur exposé,Sécurité,Analyse de ports,avance,19,32,2026-07-11,P011
+C0345,Analyse de ports pour les débutants,Sécurité,Analyse de ports,debutant,29,12,2024-10-26,P023
+C0346,Analyse de ports par la pratique : auditer des conteneurs,Sécurité,Analyse de ports,debutant,0,5,2023-08-10,P011
+C0347,Atelier Analyse de ports : des accès utilisateurs,Sécurité,Analyse de ports,intermediaire,39,14,2023-11-24,P017
+C0348,Analyse de ports expliqué simplement,Sécurité,Analyse de ports,debutant,39,11,2026-01-05,P011
+C0349,Les bases de Analyse de ports,Sécurité,Analyse de ports,debutant,19,8,2023-10-22,P029
+C0350,Analyse de ports en pratique,Sécurité,Analyse de ports,debutant,39,8,2025-09-28,P029
+C0351,Maîtriser Pare-feu Linux,Sécurité,Pare-feu Linux,avance,149,29,2026-01-19,P023
+C0352,Atelier Pare-feu Linux : des conteneurs,Sécurité,Pare-feu Linux,intermediaire,199,20,2026-05-25,P017
+C0353,Pare-feu Linux : le guide complet,Sécurité,Pare-feu Linux,debutant,0,4,2023-03-06,P023
+C0354,Les bases de Pare-feu Linux,Sécurité,Pare-feu Linux,debutant,129,12,2023-11-13,P023
+C0355,Pare-feu Linux avancé : détecter un serveur exposé,Sécurité,Pare-feu Linux,avance,79,18,2023-07-08,P023
+C0356,Pare-feu Linux en pratique,Sécurité,Pare-feu Linux,debutant,129,9,2025-11-02,P029
+C0357,Pare-feu Linux expliqué simplement,Sécurité,Pare-feu Linux,debutant,29,7,2025-09-30,P029
+C0358,OWASP par la pratique : protéger un serveur exposé,Sécurité,OWASP,avance,49,20,2023-04-30,P029
+C0359,OWASP : le guide complet,Sécurité,OWASP,avance,39,35,2025-09-28,P029
+C0360,OWASP pour les débutants,Sécurité,OWASP,debutant,19,3,2023-07-31,P011
+C0361,OWASP expliqué simplement,Sécurité,OWASP,debutant,149,5,2023-12-19,P029
+C0362,Les bases de OWASP,Sécurité,OWASP,debutant,129,4,2025-06-15,P029
+C0363,Atelier OWASP : des accès utilisateurs,Sécurité,OWASP,avance,0,40,2024-12-27,P011
+C0364,Maîtriser OWASP,Sécurité,OWASP,intermediaire,149,13,2024-05-24,P011
+C0365,Cryptographie : de zéro à la production,Sécurité,Cryptographie,debutant,19,7,2024-01-10,P011
+C0366,Maîtriser Cryptographie,Sécurité,Cryptographie,intermediaire,29,9,2025-06-06,P029
+C0367,Cryptographie pour les débutants,Sécurité,Cryptographie,debutant,79,4,2023-12-05,P023
+C0368,Cryptographie expliqué simplement,Sécurité,Cryptographie,debutant,59,10,2025-08-22,P029
+C0369,Atelier Cryptographie : des accès utilisateurs,Sécurité,Cryptographie,avance,19,27,2026-02-19,P023
+C0370,Cryptographie avancé : analyser un serveur exposé,Sécurité,Cryptographie,avance,49,42,2026-03-25,P011
+C0371,Cryptographie en pratique,Sécurité,Cryptographie,intermediaire,149,10,2024-01-25,P023
+C0372,Pentest : le guide complet,Sécurité,Pentest,debutant,99,6,2024-06-12,P011
+C0373,Pentest par la pratique : durcir des accès utilisateurs,Sécurité,Pentest,intermediaire,0,21,2024-08-28,P011
+C0374,Pentest en pratique,Sécurité,Pentest,intermediaire,39,15,2025-05-17,P005
+C0375,Pentest pour les débutants,Sécurité,Pentest,debutant,149,11,2025-01-01,P005
+C0376,Pentest : de zéro à la production,Sécurité,Pentest,avance,149,15,2023-10-06,P017
+C0377,Atelier Pentest : un serveur exposé,Sécurité,Pentest,avance,0,18,2025-12-24,P017
+C0378,Maîtriser Pentest,Sécurité,Pentest,avance,19,19,2023-03-13,P005
+C0379,Atelier SIEM : une application web,Sécurité,SIEM,intermediaire,59,15,2025-02-05,P005
+C0380,SIEM pour les débutants,Sécurité,SIEM,debutant,79,5,2025-11-08,P029
+C0381,SIEM expliqué simplement,Sécurité,SIEM,debutant,79,10,2025-02-22,P005
+C0382,SIEM avancé : analyser une application web,Sécurité,SIEM,avance,99,43,2025-07-03,P005
+C0383,SIEM : de zéro à la production,Sécurité,SIEM,intermediaire,79,24,2024-10-25,P023
+C0384,SIEM par la pratique : détecter une application web,Sécurité,SIEM,avance,0,26,2025-11-22,P017
+C0385,Maîtriser SIEM,Sécurité,SIEM,avance,0,23,2023-06-28,P023
+C0386,Atelier Zero Trust : des conteneurs,Sécurité,Zero Trust,debutant,19,4,2025-09-17,P029
+C0387,Zero Trust avancé : durcir des accès utilisateurs,Sécurité,Zero Trust,avance,79,31,2025-02-19,P017
+C0388,Les bases de Zero Trust,Sécurité,Zero Trust,debutant,79,12,2026-05-09,P029
+C0389,Maîtriser Zero Trust,Sécurité,Zero Trust,debutant,199,3,2023-03-04,P011
+C0390,Zero Trust pour les débutants,Sécurité,Zero Trust,debutant,39,3,2025-04-16,P005
+C0391,Zero Trust : de zéro à la production,Sécurité,Zero Trust,avance,99,42,2026-03-25,P005
+C0392,Zero Trust en pratique,Sécurité,Zero Trust,intermediaire,39,13,2023-11-19,P023
+C0393,Gestion des identités en pratique,Sécurité,Gestion des identités,intermediaire,99,12,2024-11-16,P017
+C0394,Gestion des identités avancé : durcir des conteneurs,Sécurité,Gestion des identités,avance,79,26,2024-03-22,P023
+C0395,Gestion des identités expliqué simplement,Sécurité,Gestion des identités,debutant,0,3,2023-02-08,P011
+C0396,Gestion des identités par la pratique : détecter une application web,Sécurité,Gestion des identités,avance,39,45,2026-07-04,P011
+C0397,Maîtriser Gestion des identités,Sécurité,Gestion des identités,intermediaire,39,22,2026-06-13,P011
+C0398,Atelier Gestion des identités : une application web,Sécurité,Gestion des identités,intermediaire,0,25,2025-11-03,P029
+C0399,Gestion des identités : le guide complet,Sécurité,Gestion des identités,debutant,59,9,2026-06-02,P005
+C0400,Les bases de Sécurité Docker,Sécurité,Sécurité Docker,debutant,19,5,2024-04-30,P005
+C0401,Sécurité Docker par la pratique : analyser un réseau d’entreprise,Sécurité,Sécurité Docker,intermediaire,0,11,2023-09-02,P029
+C0402,Sécurité Docker : de zéro à la production,Sécurité,Sécurité Docker,intermediaire,29,16,2024-01-06,P023
+C0403,Atelier Sécurité Docker : un serveur exposé,Sécurité,Sécurité Docker,avance,99,34,2025-07-31,P017
+C0404,Sécurité Docker expliqué simplement,Sécurité,Sécurité Docker,debutant,49,7,2023-06-02,P017
+C0405,Sécurité Docker en pratique,Sécurité,Sécurité Docker,avance,199,17,2025-06-26,P017
+C0406,Sécurité Docker pour les débutants,Sécurité,Sécurité Docker,debutant,99,8,2023-07-02,P011
+C0407,Wireshark : le guide complet,Sécurité,Wireshark,avance,19,40,2025-02-13,P023
+C0408,Wireshark en pratique,Sécurité,Wireshark,avance,59,21,2023-01-30,P017
+C0409,Wireshark pour les débutants,Sécurité,Wireshark,debutant,59,12,2024-05-09,P023
+C0410,Wireshark : de zéro à la production,Sécurité,Wireshark,intermediaire,19,23,2026-02-25,P023
+C0411,Wireshark expliqué simplement,Sécurité,Wireshark,debutant,19,4,2025-07-21,P029
+C0412,Atelier Wireshark : une application web,Sécurité,Wireshark,avance,149,43,2025-11-25,P005
+C0413,Wireshark avancé : détecter un réseau d’entreprise,Sécurité,Wireshark,avance,0,41,2025-09-30,P023
+C0414,Maîtriser Nmap,Sécurité,Nmap,intermediaire,49,12,2025-12-24,P005
+C0415,Les bases de Nmap,Sécurité,Nmap,debutant,79,7,2025-07-31,P011
+C0416,Nmap pour les débutants,Sécurité,Nmap,debutant,0,6,2025-07-26,P023
+C0417,Nmap en pratique,Sécurité,Nmap,avance,79,16,2024-08-26,P011
+C0418,Nmap avancé : auditer des conteneurs,Sécurité,Nmap,avance,0,23,2023-09-21,P023
+C0419,Atelier Nmap : des accès utilisateurs,Sécurité,Nmap,intermediaire,0,23,2024-09-19,P005
+C0420,Nmap : de zéro à la production,Sécurité,Nmap,intermediaire,149,25,2023-05-19,P017
+C0421,AWS : de zéro à la production,Cloud,AWS,avance,99,41,2025-05-09,P012
+C0422,Maîtriser AWS,Cloud,AWS,debutant,99,5,2025-04-24,P030
+C0423,Atelier AWS : une application serverless,Cloud,AWS,avance,29,36,2024-07-22,P030
+C0424,AWS en pratique,Cloud,AWS,intermediaire,0,12,2023-12-02,P018
+C0425,AWS : le guide complet,Cloud,AWS,avance,39,16,2023-07-01,P012
+C0426,AWS pour les débutants,Cloud,AWS,debutant,59,12,2025-03-19,P018
+C0427,AWS avancé : optimiser une plateforme multi-comptes,Cloud,AWS,avance,199,22,2024-02-22,P006
+C0428,Azure en pratique,Cloud,Azure,avance,79,34,2023-11-19,P006
+C0429,Azure : le guide complet,Cloud,Azure,debutant,0,9,2025-11-11,P006
+C0430,Maîtriser Azure,Cloud,Azure,avance,29,44,2025-02-21,P024
+C0431,Azure expliqué simplement,Cloud,Azure,debutant,79,9,2023-05-06,P006
+C0432,Azure par la pratique : architecturer une application serverless,Cloud,Azure,avance,19,28,2024-04-05,P018
+C0433,Azure avancé : migrer un data lake,Cloud,Azure,avance,29,24,2025-04-06,P006
+C0434,Azure pour les débutants,Cloud,Azure,debutant,199,6,2023-12-31,P018
+C0435,Google Cloud : de zéro à la production,Cloud,Google Cloud,debutant,149,12,2024-12-10,P012
+C0436,Maîtriser Google Cloud,Cloud,Google Cloud,debutant,79,10,2024-02-04,P018
+C0437,Google Cloud expliqué simplement,Cloud,Google Cloud,debutant,129,7,2026-03-16,P030
+C0438,Google Cloud en pratique,Cloud,Google Cloud,debutant,99,5,2023-04-26,P018
+C0439,Atelier Google Cloud : une plateforme multi-comptes,Cloud,Google Cloud,intermediaire,99,15,2023-02-18,P006
+C0440,Google Cloud avancé : migrer une application serverless,Cloud,Google Cloud,avance,49,41,2025-07-29,P006
+C0441,Les bases de Google Cloud,Cloud,Google Cloud,debutant,39,5,2026-04-11,P024
+C0442,AWS Lambda avancé : sécuriser une application serverless,Cloud,AWS Lambda,avance,79,17,2025-01-13,P018
+C0443,Atelier AWS Lambda : une application serverless,Cloud,AWS Lambda,avance,149,41,2025-02-04,P012
+C0444,Les bases de AWS Lambda,Cloud,AWS Lambda,debutant,29,9,2023-10-21,P024
+C0445,AWS Lambda : le guide complet,Cloud,AWS Lambda,debutant,19,7,2023-02-14,P024
+C0446,Maîtriser AWS Lambda,Cloud,AWS Lambda,avance,39,22,2024-04-09,P012
+C0447,AWS Lambda pour les débutants,Cloud,AWS Lambda,debutant,149,4,2025-07-17,P024
+C0448,AWS Lambda par la pratique : sécuriser un site à fort trafic,Cloud,AWS Lambda,debutant,79,5,2025-10-01,P024
+C0449,S3 et CloudFront par la pratique : migrer un site à fort trafic,Cloud,S3 et CloudFront,debutant,149,9,2025-08-22,P024
+C0450,S3 et CloudFront expliqué simplement,Cloud,S3 et CloudFront,debutant,19,10,2024-10-23,P030
+C0451,Les bases de S3 et CloudFront,Cloud,S3 et CloudFront,debutant,79,11,2026-05-25,P018
+C0452,Maîtriser S3 et CloudFront,Cloud,S3 et CloudFront,avance,199,29,2023-11-15,P018
+C0453,Atelier S3 et CloudFront : une charge de travail critique,Cloud,S3 et CloudFront,intermediaire,29,21,2024-08-25,P030
+C0454,S3 et CloudFront : le guide complet,Cloud,S3 et CloudFront,debutant,59,4,2025-12-03,P018
+C0455,S3 et CloudFront avancé : optimiser une plateforme multi-comptes,Cloud,S3 et CloudFront,avance,29,33,2025-04-30,P018
+C0456,IAM : de zéro à la production,Cloud,IAM,debutant,79,12,2026-05-24,P024
+C0457,IAM : le guide complet,Cloud,IAM,intermediaire,39,13,2024-06-08,P018
+C0458,IAM expliqué simplement,Cloud,IAM,debutant,0,11,2025-12-19,P024
+C0459,Atelier IAM : un data lake,Cloud,IAM,intermediaire,59,17,2025-04-11,P018
+C0460,Maîtriser IAM,Cloud,IAM,avance,19,44,2026-01-23,P018
+C0461,Les bases de IAM,Cloud,IAM,debutant,29,6,2023-12-14,P018
+C0462,IAM avancé : migrer une application serverless,Cloud,IAM,avance,19,20,2025-04-10,P006
+C0463,EKS pour les débutants,Cloud,EKS,debutant,59,12,2023-05-23,P024
+C0464,EKS : le guide complet,Cloud,EKS,avance,59,28,2024-10-28,P012
+C0465,Les bases de EKS,Cloud,EKS,debutant,0,5,2025-11-05,P006
+C0466,Maîtriser EKS,Cloud,EKS,debutant,39,11,2024-09-13,P024
+C0467,EKS expliqué simplement,Cloud,EKS,debutant,59,9,2023-04-04,P006
+C0468,EKS en pratique,Cloud,EKS,debutant,59,6,2026-03-07,P030
+C0469,EKS par la pratique : déployer une plateforme multi-comptes,Cloud,EKS,avance,59,33,2024-06-12,P030
+C0470,Bedrock en pratique,Cloud,Bedrock,intermediaire,129,24,2023-09-22,P006
+C0471,Bedrock par la pratique : architecturer un site à fort trafic,Cloud,Bedrock,debutant,149,12,2023-06-19,P018
+C0472,Bedrock : le guide complet,Cloud,Bedrock,avance,0,33,2023-01-06,P024
+C0473,Bedrock pour les débutants,Cloud,Bedrock,debutant,39,9,2024-08-23,P012
+C0474,Bedrock : de zéro à la production,Cloud,Bedrock,intermediaire,19,22,2024-06-15,P024
+C0475,Bedrock avancé : architecturer un data lake,Cloud,Bedrock,avance,149,31,2023-05-28,P024
+C0476,Bedrock expliqué simplement,Cloud,Bedrock,debutant,59,12,2023-01-21,P018
+C0477,Serverless par la pratique : déployer une charge de travail critique,Cloud,Serverless,debutant,49,6,2025-04-25,P012
+C0478,Les bases de Serverless,Cloud,Serverless,debutant,99,3,2024-07-28,P006
+C0479,Serverless en pratique,Cloud,Serverless,intermediaire,49,24,2025-09-29,P030
+C0480,Serverless : le guide complet,Cloud,Serverless,avance,149,20,2025-09-19,P024
+C0481,Maîtriser Serverless,Cloud,Serverless,intermediaire,29,15,2024-09-12,P012
+C0482,Atelier Serverless : un site à fort trafic,Cloud,Serverless,avance,79,35,2025-09-20,P024
+C0483,Serverless expliqué simplement,Cloud,Serverless,debutant,129,11,2024-06-07,P018
+C0484,Coûts cloud avancé : optimiser une application serverless,Cloud,Coûts cloud,avance,199,25,2025-10-24,P018
+C0485,Coûts cloud par la pratique : optimiser une charge de travail critique,Cloud,Coûts cloud,avance,149,28,2025-08-04,P024
+C0486,Maîtriser Coûts cloud,Cloud,Coûts cloud,debutant,0,12,2025-12-05,P018
+C0487,Les bases de Coûts cloud,Cloud,Coûts cloud,debutant,99,12,2023-01-30,P012
+C0488,Coûts cloud : de zéro à la production,Cloud,Coûts cloud,debutant,199,9,2023-01-19,P024
+C0489,Coûts cloud pour les débutants,Cloud,Coûts cloud,debutant,149,4,2025-06-16,P018
+C0490,Coûts cloud en pratique,Cloud,Coûts cloud,intermediaire,29,8,2023-05-26,P006
+C0491,Atelier Architecture cloud : une charge de travail critique,Cloud,Architecture cloud,intermediaire,199,16,2024-03-09,P006
+C0492,Maîtriser Architecture cloud,Cloud,Architecture cloud,avance,129,32,2024-07-09,P012
+C0493,Architecture cloud expliqué simplement,Cloud,Architecture cloud,debutant,29,3,2024-11-13,P024
+C0494,Architecture cloud pour les débutants,Cloud,Architecture cloud,debutant,49,9,2024-03-15,P006
+C0495,Architecture cloud : de zéro à la production,Cloud,Architecture cloud,debutant,79,9,2025-03-13,P012
+C0496,Architecture cloud : le guide complet,Cloud,Architecture cloud,debutant,199,11,2026-01-26,P006
+C0497,Architecture cloud par la pratique : migrer un site à fort trafic,Cloud,Architecture cloud,avance,129,36,2024-12-31,P030
+C0498,Les bases de Migration cloud,Cloud,Migration cloud,debutant,0,12,2025-01-07,P006
+C0499,Migration cloud par la pratique : migrer un site à fort trafic,Cloud,Migration cloud,avance,0,31,2026-04-24,P012
+C0500,Maîtriser Migration cloud,Cloud,Migration cloud,debutant,49,5,2023-04-25,P012
+C0501,Migration cloud expliqué simplement,Cloud,Migration cloud,debutant,99,11,2023-10-30,P006
+C0502,Migration cloud : le guide complet,Cloud,Migration cloud,debutant,59,9,2023-02-25,P018
+C0503,Migration cloud pour les débutants,Cloud,Migration cloud,debutant,149,3,2025-10-15,P012
+C0504,Atelier Migration cloud : une plateforme multi-comptes,Cloud,Migration cloud,avance,29,18,2025-11-04,P024

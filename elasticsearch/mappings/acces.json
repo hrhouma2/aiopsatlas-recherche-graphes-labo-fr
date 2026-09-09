@@ -1,0 +1,21 @@
+{
+  "settings": { "number_of_shards": 1, "number_of_replicas": 0 },
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "@timestamp": { "type": "date" },
+      "methode": { "type": "keyword" },
+      "chemin": { "type": "keyword" },
+      "cours_id": { "type": "keyword" },
+      "categorie": { "type": "keyword" },
+      "statut": { "type": "short" },
+      "octets": { "type": "long" },
+      "duree_ms": { "type": "integer" },
+      "ip": { "type": "ip" },
+      "pays": { "type": "keyword" },
+      "appareil": { "type": "keyword" },
+      "navigateur": { "type": "keyword" },
+      "referent": { "type": "keyword" }
+    }
+  }
+}

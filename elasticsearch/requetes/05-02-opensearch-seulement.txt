@@ -1,0 +1,43 @@
+# Module 5 — Leçon 02 : ce qui n'existe QUE sur OpenSearch (port 9201)
+#   node outils/tester-requetes.mjs elasticsearch/requetes/05-02-opensearch-seulement.txt --url http://localhost:9201
+# Sur Elasticsearch (9200) ces requêtes échouent : c'est normal, c'est le sujet de la leçon.
+
+# 1. ES|QL n'existe pas : OpenSearch prend « _query » pour un nom d'index → 405
+# attendu: 405
+POST _query?format=json
+{
+  "query": "FROM cours | STATS n = COUNT(*) BY categorie | SORT n DESC"
+}
+
+# 2. Plugin SQL : la même agrégation en SQL
+POST _plugins/_sql
+{
+  "query": "SELECT categorie, COUNT(*) AS n FROM cours GROUP BY categorie ORDER BY n DESC"
+}
+
+# 3. Plugin SQL : format tabulaire (CSV) pratique pour un tableur
+POST _plugins/_sql?format=csv
+{
+  "query": "SELECT niveau, ROUND(AVG(prix), 2) AS prix_moyen, COUNT(*) AS n FROM cours WHERE gratuit = false GROUP BY niveau"
+}
+
+# 4. Plugin PPL : erreurs 5xx par pays dans les journaux d'accès
+POST _plugins/_ppl
+{
+  "query": "source=acces | where statut >= 500 | stats count() by pays"
+}
+
+# 5. PPL enchaîné : les 5 chemins qui produisent le plus de 404
+POST _plugins/_ppl
+{
+  "query": "source=acces | where statut = 404 | stats count() as n by chemin | sort - n | head 5"
+}
+
+# 6. Que fait vraiment le plugin ? _explain traduit le SQL en Query DSL
+POST _plugins/_sql/_explain
+{
+  "query": "SELECT titre, prix FROM cours WHERE categorie = 'IA' AND prix < 30 ORDER BY prix LIMIT 3"
+}
+
+# 7. La liste des plugins installés (26 sur l'image officielle 3.8.0)
+GET _cat/plugins?v&h=component,version&s=component

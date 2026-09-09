@@ -1,0 +1,111 @@
+# Module 2 — Leçon 03 : Mapping et analyseurs : pourquoi « déployés » trouve « déployer »
+# Rejouable : crée l'index bac-a-sable-dyn et le supprime à la fin. Ne touche pas à cours/avis/acces.
+
+DELETE bac-a-sable-dyn?ignore_unavailable=true
+
+# 1. Mapping dynamique : on indexe sans avoir créé l'index ni déclaré de champ
+PUT bac-a-sable-dyn/_doc/1
+{
+  "titre": "Déployer des conteneurs en production",
+  "categorie": "DevOps",
+  "prix": 49,
+  "note_moyenne": 4.5,
+  "gratuit": false,
+  "date_publication": "2026-03-15",
+  "tags": ["docker", "kubernetes"],
+  "professeur": { "nom": "Karim Caron", "ville": "Gatineau" }
+}
+
+# 2. Ce qu'Elasticsearch a deviné
+GET bac-a-sable-dyn/_mapping
+
+# 3. text vs keyword sur le mapping du kit : match sur titre (analysé)
+GET cours/_search
+{
+  "query": { "match": { "titre": "Docker" } },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 4. term sur titre.brut : il faut la valeur exacte, casse comprise
+GET cours/_search
+{
+  "query": { "term": { "titre.brut": "Docker expliqué simplement" } },
+  "_source": ["titre"]
+}
+
+# 5. term sur titre.brut avec un seul mot : 0 résultat (le keyword n'est pas découpé)
+GET cours/_search
+{
+  "query": { "term": { "titre.brut": "Docker" } }
+}
+
+# 6. term sur le champ text avec une majuscule : 0 résultat (l'index contient « docker », pas « Docker »)
+GET cours/_search
+{
+  "query": { "term": { "titre": "Docker" } }
+}
+
+# 7. L'analyseur standard : minuscules et découpage, rien de plus
+GET _analyze
+{
+  "analyzer": "standard",
+  "text": "Les conteneurs déployés en production"
+}
+
+# 8. L'analyseur french : mots vides retirés, élision, racinisation
+GET _analyze
+{
+  "analyzer": "french",
+  "text": "Les conteneurs déployés en production"
+}
+
+# 9. Le même texte vu par le champ titre de l'index cours (analyseur « francais » du kit)
+GET cours/_analyze
+{
+  "field": "titre",
+  "text": "Les conteneurs déployés en production"
+}
+
+# 10. « déployés » et « déployer » donnent la même racine : la recherche trouve
+GET cours/_search
+{
+  "query": { "match": { "titre": "déployés" } },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 11. Le même mot vu par le mapping dynamique (analyseur standard) : la racine n'est pas la même
+GET bac-a-sable-dyn/_analyze
+{
+  "field": "titre",
+  "text": "déployés déployer"
+}
+
+# 12. Ajouter un champ à un mapping existant : autorisé
+PUT bac-a-sable-dyn/_mapping
+{
+  "properties": {
+    "duree_heures": { "type": "integer" }
+  }
+}
+
+# 13. Changer le type d'un champ existant : refusé (400). Il faut réindexer.
+# attendu: 400
+PUT bac-a-sable-dyn/_mapping
+{
+  "properties": {
+    "categorie": { "type": "keyword" }
+  }
+}
+
+# 14. Une valeur incompatible avec le type deviné : refusée (400)
+# attendu: 400
+PUT bac-a-sable-dyn/_doc/2
+{
+  "titre": "Un prix en toutes lettres",
+  "prix": "quarante-neuf"
+}
+
+# 15. Nettoyage
+DELETE bac-a-sable-dyn

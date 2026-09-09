@@ -1,0 +1,65 @@
+# Module 4 — Leçon 01 : vérifier les chiffres de Discover avec _count
+# Lecture seule sur `acces`. Chaque requête reproduit une saisie KQL faite dans Discover
+# (plage de temps « Derniers 90 jours », qui couvre tout le jeu : 2026-08-10 → 2026-09-08).
+# Rejouer : node outils/tester-requetes.mjs elasticsearch/requetes/04-01-discover-verification.txt
+
+# 1. Discover sans requête : « Documents (12 000) »
+GET acces/_count
+
+# 2. Bornes réelles du jeu (pourquoi « 15 dernières minutes » affiche 0 résultat)
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "premier": { "min": { "field": "@timestamp" } },
+    "dernier": { "max": { "field": "@timestamp" } }
+  }
+}
+
+# 3. KQL `statut >= 500` → 178
+GET acces/_count
+{
+  "query": { "range": { "statut": { "gte": 500 } } }
+}
+
+# 4. KQL `pays : "CA" and appareil : "mobile"` → 1 994
+GET acces/_count
+{
+  "query": {
+    "bool": {
+      "filter": [
+        { "term": { "pays": "CA" } },
+        { "term": { "appareil": "mobile" } }
+      ]
+    }
+  }
+}
+
+# 5. KQL `chemin : /cours/*` → 7 308 (joker sur un keyword)
+GET acces/_count
+{
+  "query": { "wildcard": { "chemin": { "value": "/cours/*" } } }
+}
+
+# 6. Filtre par clic « pays: CA » combiné à la KQL `statut >= 500`
+GET acces/_count
+{
+  "query": {
+    "bool": {
+      "filter": [
+        { "range": { "statut": { "gte": 500 } } },
+        { "term": { "pays": "CA" } }
+      ]
+    }
+  }
+}
+
+# 7. Ce que calcule « Valeurs les plus élevées » du champ statut, mais sur TOUS les documents
+#    (Discover, lui, estime sur un échantillon de 5 000 documents)
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "par_statut": { "terms": { "field": "statut", "size": 6 } }
+  }
+}

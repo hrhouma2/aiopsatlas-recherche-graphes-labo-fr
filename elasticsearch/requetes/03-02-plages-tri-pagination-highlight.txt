@@ -1,0 +1,184 @@
+# Module 3 — Leçon 02 : plages, tri, pagination et mise en évidence
+# Lecture seule sur `cours`.
+# Rejouer : node outils/tester-requetes.mjs elasticsearch/requetes/03-02-plages-tri-pagination-highlight.txt
+
+# 1. range sur prix : entre 20 et 50 inclus
+GET cours/_search
+{
+  "query": { "range": { "prix": { "gte": 20, "lte": 50 } } },
+  "size": 3,
+  "_source": ["titre", "prix"]
+}
+
+# 2. range sur duree_heures : cours longs (plus de 30 h)
+GET cours/_count
+{
+  "query": { "range": { "duree_heures": { "gt": 30 } } }
+}
+
+# 3. range sur une date relative : publiés depuis un an (arrondi au jour)
+GET cours/_search
+{
+  "query": {
+    "range": { "date_publication": { "gte": "now-1y/d" } }
+  },
+  "size": 2,
+  "sort": [ { "date_publication": "desc" } ],
+  "_source": ["titre", "date_publication"]
+}
+
+# 4. range avec format : dates écrites à la française
+GET cours/_count
+{
+  "query": {
+    "range": {
+      "date_publication": {
+        "gte": "01/01/2026",
+        "lt": "01/07/2026",
+        "format": "dd/MM/yyyy"
+      }
+    }
+  }
+}
+
+# 5. sort multi-critères : note desc, nb_avis desc, puis _score
+GET cours/_search
+{
+  "query": { "match": { "titre": "kubernetes" } },
+  "sort": [
+    { "note_moyenne": "desc" },
+    { "nb_avis": "desc" },
+    "_score"
+  ],
+  "size": 4,
+  "_source": ["titre", "note_moyenne", "nb_avis"]
+}
+
+# 6. sort + track_scores pour conserver le _score malgré le tri
+GET cours/_search
+{
+  "query": { "match": { "titre": "kubernetes" } },
+  "sort": [ { "note_moyenne": "desc" }, { "nb_avis": "desc" } ],
+  "track_scores": true,
+  "size": 2,
+  "_source": ["titre", "note_moyenne", "nb_avis"]
+}
+
+# 7. from/size : page 3 de 10 (résultats 21 à 30)
+GET cours/_search
+{
+  "query": { "term": { "categorie": "IA" } },
+  "sort": [ { "id": "asc" } ],
+  "from": 20,
+  "size": 10,
+  "_source": ["id", "titre"]
+}
+
+# 8. La limite 10 000 : from + size > index.max_result_window
+# attendu: 400
+GET cours/_search
+{
+  "query": { "match_all": {} },
+  "from": 10000,
+  "size": 10
+}
+
+# 8 bis. Au-delà de 10 000 documents, hits.total devient « gte » (index acces : 12 000)
+GET acces/_search
+{
+  "size": 0,
+  "query": { "match_all": {} }
+}
+
+# 8 ter. track_total_hits force le comptage exact
+GET acces/_search
+{
+  "size": 0,
+  "track_total_hits": true,
+  "query": { "match_all": {} }
+}
+
+# 9. search_after — page 1 : tri stable avec id en tie-breaker
+GET cours/_search
+{
+  "query": { "term": { "categorie": "DevOps" } },
+  "sort": [ { "note_moyenne": "desc" }, { "id": "asc" } ],
+  "size": 3,
+  "_source": ["id", "titre", "note_moyenne"]
+}
+
+# 10. search_after — page 2 : on repart du sort du dernier résultat de la page 1
+GET cours/_search
+{
+  "query": { "term": { "categorie": "DevOps" } },
+  "sort": [ { "note_moyenne": "desc" }, { "id": "asc" } ],
+  "search_after": [4.9, "C0011"],
+  "size": 3,
+  "_source": ["id", "titre", "note_moyenne"]
+}
+
+# 11. highlight sur description avec balises personnalisées
+GET cours/_search
+{
+  "query": { "match": { "description": "journaux applicatifs" } },
+  "size": 2,
+  "_source": ["titre"],
+  "highlight": {
+    "pre_tags": ["<mark>"],
+    "post_tags": ["</mark>"],
+    "fields": { "description": {} }
+  }
+}
+
+# 12. highlight sur plusieurs champs, fragments courts
+GET cours/_search
+{
+  "query": { "multi_match": { "query": "sécuriser conteneurs", "fields": ["titre", "description"] } },
+  "size": 1,
+  "_source": false,
+  "highlight": {
+    "pre_tags": ["**"],
+    "post_tags": ["**"],
+    "fields": {
+      "titre": { "number_of_fragments": 0 },
+      "description": { "fragment_size": 80, "number_of_fragments": 1 }
+    }
+  }
+}
+
+# 13. exists : cours qui ont une note_moyenne
+GET cours/_count
+{
+  "query": { "exists": { "field": "note_moyenne" } }
+}
+
+# 14. must_not exists : les cours sans note (nb_avis = 0)
+GET cours/_search
+{
+  "query": {
+    "bool": { "must_not": [ { "exists": { "field": "note_moyenne" } } ] }
+  },
+  "_source": ["id", "titre", "note_moyenne", "nb_avis"]
+}
+
+# 15. ids : récupérer une liste de documents connus
+GET cours/_search
+{
+  "query": { "ids": { "values": ["C0010", "C0087", "C0106"] } },
+  "_source": ["id", "titre", "sujet"]
+}
+
+# 16. terms : plusieurs valeurs exactes pour un keyword (OR)
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "filter": [
+        { "terms": { "sujet": ["Elasticsearch", "OpenSearch", "Kibana", "Neo4j"] } },
+        { "term": { "langue": "fr" } }
+      ]
+    }
+  },
+  "size": 0,
+  "track_total_hits": true
+}

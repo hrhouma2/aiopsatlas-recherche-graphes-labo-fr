@@ -1,0 +1,43 @@
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "analysis": {
+      "analyzer": {
+        "francais": {
+          "type": "french"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "titre": {
+        "type": "text",
+        "analyzer": "francais",
+        "fields": { "brut": { "type": "keyword" } }
+      },
+      "description": { "type": "text", "analyzer": "francais" },
+      "categorie": { "type": "keyword" },
+      "sujet": { "type": "keyword" },
+      "niveau": { "type": "keyword" },
+      "langue": { "type": "keyword" },
+      "prix": { "type": "float" },
+      "gratuit": { "type": "boolean" },
+      "duree_heures": { "type": "integer" },
+      "tags": { "type": "keyword" },
+      "date_publication": { "type": "date" },
+      "note_moyenne": { "type": "float" },
+      "nb_avis": { "type": "integer" },
+      "professeur": {
+        "properties": {
+          "id": { "type": "keyword" },
+          "nom": { "type": "text", "fields": { "brut": { "type": "keyword" } } },
+          "ville": { "type": "keyword" }
+        }
+      },
+      "competences": { "type": "keyword" }
+    }
+  }
+}

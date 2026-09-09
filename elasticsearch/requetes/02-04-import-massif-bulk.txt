@@ -1,0 +1,81 @@
+# Module 2 — Leçon 04 : Import massif avec _bulk
+# Rejouable : crée bac-a-sable et bac-a-sable-copie, les supprime à la fin. Ne touche pas à cours/avis/acces.
+
+DELETE bac-a-sable,bac-a-sable-copie?ignore_unavailable=true
+
+PUT bac-a-sable
+{
+  "settings": { "number_of_shards": 1, "number_of_replicas": 0 }
+}
+
+# 1. Trois documents en une seule requête. Une ligne d'action, une ligne de document.
+POST _bulk
+{ "index": { "_index": "bac-a-sable", "_id": "B1" } }
+{ "titre": "Docker pour les nuls", "categorie": "DevOps", "prix": 49 }
+{ "index": { "_index": "bac-a-sable" } }
+{ "titre": "Kubernetes en 3 jours", "categorie": "DevOps", "prix": 99 }
+{ "create": { "_index": "bac-a-sable", "_id": "B3" } }
+{ "titre": "Elasticsearch de zéro", "categorie": "Données", "prix": 79 }
+
+# 2. Le _bulk n'attend pas le refresh : on le force pour compter
+POST bac-a-sable/_refresh
+
+GET bac-a-sable/_count
+
+# 3. L'index dans l'URL, et des actions mélangées : update, delete, create qui échoue
+POST bac-a-sable/_bulk
+{ "update": { "_id": "B1" } }
+{ "doc": { "prix": 59 } }
+{ "delete": { "_id": "B3" } }
+{ "create": { "_id": "B1" } }
+{ "titre": "Doublon de B1" }
+{ "index": { "_id": "B4" } }
+{ "titre": "Un prix en toutes lettres", "prix": "quarante-neuf" }
+
+GET bac-a-sable/_doc/B1
+
+# 3b. Le même filtre que labo.sh importer : ne garder que errors et les erreurs éventuelles
+POST bac-a-sable/_bulk?filter_path=errors,items.*.error
+{ "index": { "_id": "B5" } }
+{ "titre": "Terraform en pratique", "categorie": "Cloud", "prix": 89 }
+{ "index": { "_id": "B6" } }
+{ "titre": "Prix illisible", "prix": "gratuit" }
+
+# 4. Copier une partie de l'index cours : d'abord l'index cible (sinon mapping deviné)
+PUT bac-a-sable-copie
+{
+  "settings": { "number_of_shards": 1, "number_of_replicas": 0 },
+  "mappings": {
+    "properties": {
+      "titre": { "type": "text", "analyzer": "french", "fields": { "brut": { "type": "keyword" } } },
+      "categorie": { "type": "keyword" },
+      "sujet": { "type": "keyword" },
+      "prix": { "type": "float" },
+      "date_publication": { "type": "date" }
+    }
+  }
+}
+
+# 5. _reindex avec un filtre : seuls les cours DevOps
+POST _reindex?refresh=true
+{
+  "source": {
+    "index": "cours",
+    "query": { "term": { "categorie": "DevOps" } }
+  },
+  "dest": { "index": "bac-a-sable-copie" }
+}
+
+# 6. Comparer : même nombre côté source (avec le même filtre) et côté copie
+GET cours/_count
+{
+  "query": { "term": { "categorie": "DevOps" } }
+}
+
+GET bac-a-sable-copie/_count
+
+# 7. Les champs non déclarés ont été devinés (ex. description → text + keyword)
+GET bac-a-sable-copie/_mapping/field/description,titre
+
+# 8. Nettoyage
+DELETE bac-a-sable,bac-a-sable-copie

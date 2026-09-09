@@ -1,0 +1,301 @@
+id,prenom,nom,ville,pays,inscription_le,interet
+E0001,Nathan,Ben Ali,Sherbrooke,Canada,2023-05-15,DevOps
+E0002,Léa,Gagnon,Lyon,France,2026-06-10,DevOps
+E0003,Clara,Ouellet,Montréal,Canada,2025-02-10,Développement web
+E0004,Maya,Diallo,Tunis,Tunisie,2023-09-17,Cloud
+E0005,Omar,Caron,Tunis,Tunisie,2023-05-09,Développement web
+E0006,Youssef,Mansour,Montréal,Canada,2026-04-16,IA
+E0007,Amina,Diallo,Paris,France,2023-01-01,Cloud
+E0008,Sofia,Fortin,Tunis,Tunisie,2024-09-08,IA
+E0009,Noah,Morin,Montréal,Canada,2024-05-20,IA
+E0010,Rayan,Traoré,Tunis,Tunisie,2025-11-16,Cloud
+E0011,Bilal,Fortin,Genève,Suisse,2026-05-22,Développement web
+E0012,Hugo,Gauthier,Laval,Canada,2023-08-06,Données
+E0013,Rayan,Rehouma,Gatineau,Canada,2024-04-03,DevOps
+E0014,Hugo,Caron,Paris,France,2023-02-05,Développement web
+E0015,Lucas,Fortin,Gatineau,Canada,2024-06-17,Cloud
+E0016,Gabriel,Gauthier,Québec,Canada,2024-03-18,DevOps
+E0017,Chloé,Mansour,Casablanca,Maroc,2025-06-24,Sécurité
+E0018,Lina,Bouchard,Québec,Canada,2024-11-29,Développement web
+E0019,Jade,Gagnon,Laval,Canada,2023-05-31,DevOps
+E0020,Samir,Kaci,Marseille,France,2026-01-07,IA
+E0021,Malik,Roy,Montréal,Canada,2026-06-27,Cloud
+E0022,Amina,Traoré,Gatineau,Canada,2024-05-12,Sécurité
+E0023,Yasmine,Traoré,Québec,Canada,2026-06-17,Données
+E0024,Lucas,Nguyen,Montréal,Canada,2024-11-04,IA
+E0025,Élias,Bélanger,Dakar,Sénégal,2023-07-16,Données
+E0026,Bilal,Haddad,Québec,Canada,2025-11-07,IA
+E0027,Manon,Pelletier,Montréal,Canada,2024-10-02,DevOps
+E0028,Jade,Morin,Paris,France,2023-12-18,Cloud
+E0029,Gabriel,Rahmani,Montréal,Canada,2025-02-01,Développement web
+E0030,Inès,Ouellet,Gatineau,Canada,2023-02-09,DevOps
+E0031,Emma,Diallo,Abidjan,Côte d’Ivoire,2025-08-21,Données
+E0032,Malik,Ben Ali,Alger,Algérie,2025-10-04,DevOps
+E0033,Idris,Bélanger,Abidjan,Côte d’Ivoire,2024-02-15,Cloud
+E0034,Idris,Diallo,Casablanca,Maroc,2024-02-27,IA
+E0035,Youssef,Tremblay,Abidjan,Côte d’Ivoire,2024-10-04,DevOps
+E0036,Karim,Bouchard,Casablanca,Maroc,2026-03-01,DevOps
+E0037,Gabriel,Ben Ali,Laval,Canada,2024-08-31,Développement web
+E0038,Salma,Morin,Montréal,Canada,2024-11-17,Cloud
+E0039,Adam,Morin,Abidjan,Côte d’Ivoire,2025-11-05,Cloud
+E0040,Thomas,Sow,Toronto,Canada,2025-04-08,DevOps
+E0041,Sarah,Pelletier,Lyon,France,2024-07-20,Cloud
+E0042,Gabriel,Bergeron,Toronto,Canada,2026-01-03,DevOps
+E0043,Alice,Pelletier,Marseille,France,2024-07-03,Sécurité
+E0044,Rania,Boucher,Gatineau,Canada,2024-12-15,IA
+E0045,Zoé,Mansour,Genève,Suisse,2026-05-01,DevOps
+E0046,Sofia,Nadeau,Toronto,Canada,2025-12-22,Sécurité
+E0047,Gabriel,Nadeau,Lyon,France,2023-06-30,IA
+E0048,Jade,Roy,Toronto,Canada,2024-11-04,Cloud
+E0049,Chloé,Lavoie,Dakar,Sénégal,2023-11-10,DevOps
+E0050,Nour,Côté,Québec,Canada,2023-04-12,DevOps
+E0051,Nour,Simard,Tunis,Tunisie,2024-03-06,Données
+E0052,Manon,Tremblay,Genève,Suisse,2025-11-23,IA
+E0053,Omar,Nguyen,Québec,Canada,2026-06-24,IA
+E0054,Léa,Boucher,Alger,Algérie,2023-01-17,DevOps
+E0055,Sofia,Lavoie,Marseille,France,2023-11-13,Développement web
+E0056,Ismaël,Bergeron,Genève,Suisse,2024-04-12,Données
+E0057,Salma,Chen,Alger,Algérie,2024-05-07,IA
+E0058,Ismaël,Lavoie,Casablanca,Maroc,2023-03-09,IA
+E0059,Clara,Nguyen,Montréal,Canada,2023-10-16,Sécurité
+E0060,Emma,Nadeau,Gatineau,Canada,2023-02-10,IA
+E0061,Louise,Côté,Toronto,Canada,2025-11-14,Données
+E0062,Julie,Traoré,Québec,Canada,2023-07-28,Sécurité
+E0063,Ismaël,Sow,Genève,Suisse,2024-05-01,Développement web
+E0064,Clara,Mansour,Paris,France,2025-04-04,Sécurité
+E0065,Ismaël,Pelletier,Paris,France,2025-01-13,Développement web
+E0066,Élias,Traoré,Marseille,France,2026-01-02,Développement web
+E0067,Amina,Morin,Casablanca,Maroc,2025-02-02,DevOps
+E0068,Ali,Caron,Genève,Suisse,2025-04-21,Cloud
+E0069,Salma,Lévesque,Casablanca,Maroc,2023-01-21,DevOps
+E0070,Ismaël,Ouellet,Tunis,Tunisie,2023-01-02,Données
+E0071,Hugo,Bélanger,Tunis,Tunisie,2024-10-29,DevOps
+E0072,Chloé,Boucher,Sherbrooke,Canada,2023-01-15,Sécurité
+E0073,Clara,Mansour,Dakar,Sénégal,2025-10-09,Cloud
+E0074,Yasmine,Bélanger,Alger,Algérie,2025-07-17,Sécurité
+E0075,Thomas,Chen,Paris,France,2025-05-15,Sécurité
+E0076,Clara,Tremblay,Gatineau,Canada,2025-07-06,Sécurité
+E0077,Adam,Chen,Tunis,Tunisie,2024-03-22,Sécurité
+E0078,Alice,Bergeron,Toronto,Canada,2026-03-24,IA
+E0079,Nour,Roy,Laval,Canada,2025-11-07,DevOps
+E0080,Thomas,Haddad,Paris,France,2024-11-19,IA
+E0081,Lina,Nadeau,Sherbrooke,Canada,2024-04-11,Cloud
+E0082,Sofia,Tremblay,Toronto,Canada,2024-10-25,Cloud
+E0083,Adam,Ouellet,Tunis,Tunisie,2026-02-19,Développement web
+E0084,Karim,Traoré,Bruxelles,Belgique,2023-10-06,Cloud
+E0085,Malik,Pelletier,Gatineau,Canada,2023-04-23,Cloud
+E0086,Jade,Diallo,Dakar,Sénégal,2023-05-10,Données
+E0087,Louise,Fortin,Montréal,Canada,2025-06-17,Sécurité
+E0088,Rania,Bergeron,Marseille,France,2024-08-01,DevOps
+E0089,Maya,Caron,Québec,Canada,2024-09-29,IA
+E0090,Lina,Haddad,Paris,France,2024-01-04,Développement web
+E0091,Lucas,Bouchard,Tunis,Tunisie,2024-03-29,Cloud
+E0092,Rania,Mansour,Lyon,France,2024-07-25,DevOps
+E0093,Samir,Bouchard,Québec,Canada,2025-11-13,Données
+E0094,Ismaël,Côté,Casablanca,Maroc,2025-07-05,Sécurité
+E0095,Alice,Fortin,Toronto,Canada,2025-11-02,Cloud
+E0096,Léa,Gauthier,Laval,Canada,2025-09-21,Sécurité
+E0097,Camille,Nguyen,Sherbrooke,Canada,2024-02-01,Données
+E0098,Malik,Bergeron,Marseille,France,2024-08-31,Développement web
+E0099,Salma,Haddad,Lyon,France,2023-07-15,Cloud
+E0100,Idris,Bergeron,Casablanca,Maroc,2024-07-13,Cloud
+E0101,Thomas,Bouchard,Gatineau,Canada,2026-05-18,Développement web
+E0102,Emma,Diallo,Tunis,Tunisie,2025-01-09,Cloud
+E0103,Samir,Gagnon,Marseille,France,2023-05-14,Données
+E0104,Alice,Boucher,Genève,Suisse,2026-03-30,Sécurité
+E0105,Bilal,Lévesque,Sherbrooke,Canada,2024-12-11,IA
+E0106,Ismaël,Côté,Toronto,Canada,2023-10-13,IA
+E0107,Salma,Rehouma,Bruxelles,Belgique,2024-02-28,Sécurité
+E0108,Nathan,Gagnon,Tunis,Tunisie,2026-03-12,Développement web
+E0109,Malik,Fortin,Toronto,Canada,2026-01-29,Cloud
+E0110,Noah,Traoré,Abidjan,Côte d’Ivoire,2023-05-14,DevOps
+E0111,Ali,Lavoie,Laval,Canada,2024-08-18,Cloud
+E0112,Karim,Rahmani,Abidjan,Côte d’Ivoire,2025-06-15,DevOps
+E0113,Samir,Nguyen,Marseille,France,2025-11-05,Cloud
+E0114,Hugo,Fortin,Dakar,Sénégal,2024-08-14,Données
+E0115,Maya,Ben Ali,Dakar,Sénégal,2026-01-02,Sécurité
+E0116,Hugo,Traoré,Alger,Algérie,2024-03-03,DevOps
+E0117,Julie,Nguyen,Casablanca,Maroc,2023-08-14,Développement web
+E0118,Adam,Lavoie,Paris,France,2025-12-20,DevOps
+E0119,Zoé,Lévesque,Alger,Algérie,2024-07-15,Cloud
+E0120,Bilal,Rehouma,Québec,Canada,2023-08-11,Cloud
+E0121,Inès,Traoré,Québec,Canada,2023-06-17,Développement web
+E0122,Salma,Gagnon,Tunis,Tunisie,2023-03-08,Développement web
+E0123,Emma,Côté,Bruxelles,Belgique,2024-06-27,DevOps
+E0124,Louise,Morin,Paris,France,2025-06-08,Sécurité
+E0125,Adam,Ben Ali,Gatineau,Canada,2026-04-29,DevOps
+E0126,Hugo,Bergeron,Lyon,France,2023-04-25,DevOps
+E0127,Lucas,Diallo,Québec,Canada,2024-02-25,Données
+E0128,Mehdi,Chen,Sherbrooke,Canada,2025-09-08,DevOps
+E0129,Jade,Nadeau,Bruxelles,Belgique,2024-01-19,Cloud
+E0130,Maya,Côté,Montréal,Canada,2025-03-10,IA
+E0131,Adam,Gauthier,Québec,Canada,2023-09-08,Données
+E0132,Rania,Nguyen,Toronto,Canada,2026-07-13,Données
+E0133,Jade,Gagnon,Genève,Suisse,2025-03-29,IA
+E0134,Camille,Fortin,Alger,Algérie,2023-10-06,Développement web
+E0135,Adam,Fortin,Lyon,France,2026-03-03,Développement web
+E0136,Idris,Bergeron,Sherbrooke,Canada,2025-11-07,Cloud
+E0137,Amina,Sow,Bruxelles,Belgique,2026-06-23,Développement web
+E0138,Yasmine,Bergeron,Genève,Suisse,2023-03-27,Cloud
+E0139,Hugo,Côté,Lyon,France,2025-07-13,Cloud
+E0140,Sarah,Ben Ali,Abidjan,Côte d’Ivoire,2023-08-08,Données
+E0141,Maya,Rahmani,Québec,Canada,2024-05-23,DevOps
+E0142,Clara,Diallo,Alger,Algérie,2026-05-24,Données
+E0143,Noah,Haddad,Toronto,Canada,2026-01-13,IA
+E0144,Salma,Sow,Casablanca,Maroc,2024-09-22,Développement web
+E0145,Youssef,Mansour,Paris,France,2025-11-27,DevOps
+E0146,Nour,Chen,Casablanca,Maroc,2025-10-28,DevOps
+E0147,Sofia,Fortin,Gatineau,Canada,2023-05-19,Développement web
+E0148,Lucas,Bélanger,Toronto,Canada,2023-05-17,Développement web
+E0149,Karim,Côté,Lyon,France,2024-12-17,IA
+E0150,Malik,Simard,Lyon,France,2023-11-15,DevOps
+E0151,Thomas,Bélanger,Tunis,Tunisie,2023-07-29,DevOps
+E0152,Samir,Nguyen,Bruxelles,Belgique,2025-07-16,Sécurité
+E0153,Youssef,Lavoie,Gatineau,Canada,2024-12-06,Données
+E0154,Malik,Traoré,Toronto,Canada,2025-03-28,IA
+E0155,Sarah,Diallo,Casablanca,Maroc,2024-12-06,Données
+E0156,Manon,Ouellet,Québec,Canada,2023-12-24,Développement web
+E0157,Louise,Bouchard,Laval,Canada,2023-11-05,Données
+E0158,Karim,Tremblay,Bruxelles,Belgique,2025-05-13,DevOps
+E0159,Louise,Bouchard,Alger,Algérie,2025-08-26,Données
+E0160,Omar,Lévesque,Lyon,France,2024-11-21,Cloud
+E0161,Zoé,Bouchard,Bruxelles,Belgique,2024-07-28,Développement web
+E0162,Bilal,Diallo,Gatineau,Canada,2026-01-30,Développement web
+E0163,Adam,Lévesque,Casablanca,Maroc,2024-04-07,Cloud
+E0164,Chloé,Traoré,Dakar,Sénégal,2024-09-12,Développement web
+E0165,Amina,Nadeau,Abidjan,Côte d’Ivoire,2024-06-18,DevOps
+E0166,Élias,Simard,Abidjan,Côte d’Ivoire,2025-11-25,Développement web
+E0167,Lina,Boucher,Paris,France,2026-04-14,Sécurité
+E0168,Élias,Bergeron,Genève,Suisse,2026-02-15,Données
+E0169,Nathan,Bouchard,Dakar,Sénégal,2025-09-14,Cloud
+E0170,Chloé,Mansour,Casablanca,Maroc,2024-04-16,IA
+E0171,Ali,Bergeron,Casablanca,Maroc,2025-06-02,Données
+E0172,Sarah,Traoré,Dakar,Sénégal,2023-05-15,Cloud
+E0173,Élias,Haddad,Dakar,Sénégal,2024-05-07,Sécurité
+E0174,Rania,Gagnon,Genève,Suisse,2024-05-13,Cloud
+E0175,Manon,Rehouma,Abidjan,Côte d’Ivoire,2023-04-20,DevOps
+E0176,Gabriel,Lévesque,Gatineau,Canada,2024-09-12,Cloud
+E0177,Bilal,Bergeron,Toronto,Canada,2026-02-26,DevOps
+E0178,Élias,Traoré,Sherbrooke,Canada,2023-04-11,Sécurité
+E0179,Zoé,Roy,Casablanca,Maroc,2023-10-05,DevOps
+E0180,Mehdi,Tremblay,Montréal,Canada,2024-07-18,Données
+E0181,Salma,Diallo,Laval,Canada,2024-11-10,Cloud
+E0182,Élias,Rahmani,Sherbrooke,Canada,2023-04-19,Sécurité
+E0183,Léa,Chen,Bruxelles,Belgique,2024-06-17,IA
+E0184,Youssef,Bélanger,Sherbrooke,Canada,2024-05-16,Sécurité
+E0185,Thomas,Gagnon,Alger,Algérie,2023-10-18,Sécurité
+E0186,Idris,Girard,Gatineau,Canada,2026-04-25,DevOps
+E0187,Sarah,Ben Ali,Casablanca,Maroc,2025-10-20,Sécurité
+E0188,Nathan,Roy,Gatineau,Canada,2025-04-28,Données
+E0189,Karim,Ben Ali,Casablanca,Maroc,2024-12-06,IA
+E0190,Zoé,Girard,Montréal,Canada,2023-05-20,Cloud
+E0191,Samir,Traoré,Bruxelles,Belgique,2025-12-31,Cloud
+E0192,Karim,Kaci,Lyon,France,2025-08-10,Données
+E0193,Gabriel,Bouchard,Gatineau,Canada,2024-06-25,Développement web
+E0194,Julie,Girard,Paris,France,2025-05-21,IA
+E0195,Adam,Rahmani,Lyon,France,2026-03-31,Sécurité
+E0196,Idris,Tremblay,Abidjan,Côte d’Ivoire,2025-05-19,Données
+E0197,Rayan,Nguyen,Alger,Algérie,2025-01-02,Développement web
+E0198,Élias,Mansour,Laval,Canada,2026-03-13,Données
+E0199,Amina,Caron,Laval,Canada,2025-10-30,DevOps
+E0200,Maya,Traoré,Laval,Canada,2023-02-28,Sécurité
+E0201,Rania,Gagnon,Toronto,Canada,2024-03-15,Cloud
+E0202,Nour,Haddad,Dakar,Sénégal,2025-10-04,Données
+E0203,Malik,Kaci,Bruxelles,Belgique,2026-06-10,Données
+E0204,Maya,Bélanger,Montréal,Canada,2025-04-03,Cloud
+E0205,Gabriel,Nguyen,Laval,Canada,2025-10-14,IA
+E0206,Malik,Rehouma,Alger,Algérie,2023-02-12,Données
+E0207,Sofia,Simard,Toronto,Canada,2024-05-22,IA
+E0208,Bilal,Haddad,Paris,France,2025-05-08,DevOps
+E0209,Inès,Tremblay,Bruxelles,Belgique,2026-04-19,DevOps
+E0210,Karim,Morin,Bruxelles,Belgique,2024-04-07,IA
+E0211,Alice,Tremblay,Paris,France,2023-04-08,Développement web
+E0212,Karim,Haddad,Québec,Canada,2024-04-25,Cloud
+E0213,Zoé,Pelletier,Sherbrooke,Canada,2024-06-16,DevOps
+E0214,Karim,Mansour,Laval,Canada,2024-05-18,Cloud
+E0215,Thomas,Fortin,Casablanca,Maroc,2025-11-30,Développement web
+E0216,Manon,Girard,Tunis,Tunisie,2024-08-20,IA
+E0217,Hugo,Girard,Genève,Suisse,2023-03-17,Cloud
+E0218,Amina,Lavoie,Tunis,Tunisie,2024-01-21,DevOps
+E0219,Salma,Traoré,Marseille,France,2023-09-21,IA
+E0220,Zoé,Haddad,Bruxelles,Belgique,2024-12-05,Cloud
+E0221,Nathan,Lévesque,Gatineau,Canada,2023-11-23,DevOps
+E0222,Omar,Gauthier,Bruxelles,Belgique,2025-03-01,Cloud
+E0223,Rayan,Caron,Genève,Suisse,2025-03-05,Développement web
+E0224,Alice,Tremblay,Abidjan,Côte d’Ivoire,2024-02-18,Développement web
+E0225,Inès,Chen,Montréal,Canada,2023-10-05,Données
+E0226,Rayan,Fortin,Gatineau,Canada,2023-09-09,Cloud
+E0227,Omar,Nadeau,Alger,Algérie,2025-04-19,IA
+E0228,Louise,Kaci,Dakar,Sénégal,2024-12-24,Développement web
+E0229,Sarah,Haddad,Paris,France,2023-10-31,Développement web
+E0230,Malik,Rehouma,Alger,Algérie,2024-09-10,Développement web
+E0231,Yasmine,Caron,Casablanca,Maroc,2024-02-01,Sécurité
+E0232,Rania,Kaci,Montréal,Canada,2025-11-13,Développement web
+E0233,Rayan,Bouchard,Genève,Suisse,2023-01-21,IA
+E0234,Yasmine,Bergeron,Genève,Suisse,2023-02-20,Cloud
+E0235,Adam,Nadeau,Toronto,Canada,2025-02-14,Développement web
+E0236,Karim,Bouchard,Sherbrooke,Canada,2023-12-25,DevOps
+E0237,Bilal,Haddad,Lyon,France,2023-05-03,DevOps
+E0238,Karim,Simard,Alger,Algérie,2024-04-15,Sécurité
+E0239,Gabriel,Rehouma,Montréal,Canada,2024-02-04,Données
+E0240,Lucas,Côté,Lyon,France,2025-02-18,Données
+E0241,Rayan,Diallo,Toronto,Canada,2025-06-03,Cloud
+E0242,Clara,Ouellet,Paris,France,2023-04-13,Données
+E0243,Ismaël,Lévesque,Genève,Suisse,2025-09-06,DevOps
+E0244,Louise,Tremblay,Montréal,Canada,2023-12-06,Cloud
+E0245,Malik,Haddad,Alger,Algérie,2025-09-19,Cloud
+E0246,Bilal,Lévesque,Bruxelles,Belgique,2025-06-09,Données
+E0247,Salma,Ouellet,Casablanca,Maroc,2024-11-24,IA
+E0248,Nathan,Morin,Lyon,France,2023-01-21,DevOps
+E0249,Manon,Morin,Montréal,Canada,2024-09-08,DevOps
+E0250,Inès,Chen,Bruxelles,Belgique,2023-09-04,Cloud
+E0251,Amina,Mansour,Bruxelles,Belgique,2025-04-11,IA
+E0252,Youssef,Rehouma,Dakar,Sénégal,2023-07-09,Cloud
+E0253,Rania,Gauthier,Casablanca,Maroc,2024-01-24,Développement web
+E0254,Julie,Diallo,Casablanca,Maroc,2024-09-20,IA
+E0255,Jade,Chen,Marseille,France,2024-11-01,Cloud
+E0256,Hugo,Lévesque,Gatineau,Canada,2023-12-29,DevOps
+E0257,Louise,Mansour,Dakar,Sénégal,2026-01-26,IA
+E0258,Léa,Pelletier,Tunis,Tunisie,2023-02-26,Développement web
+E0259,Julie,Lévesque,Casablanca,Maroc,2023-03-09,Cloud
+E0260,Malik,Kaci,Laval,Canada,2025-05-11,Données
+E0261,Karim,Pelletier,Sherbrooke,Canada,2024-12-26,Sécurité
+E0262,Jade,Rahmani,Bruxelles,Belgique,2026-02-21,IA
+E0263,Alice,Bergeron,Genève,Suisse,2025-05-22,IA
+E0264,Samir,Bouchard,Gatineau,Canada,2023-02-03,IA
+E0265,Rayan,Girard,Toronto,Canada,2024-05-16,Développement web
+E0266,Salma,Ouellet,Québec,Canada,2025-09-26,Développement web
+E0267,Gabriel,Kaci,Dakar,Sénégal,2025-10-13,DevOps
+E0268,Karim,Mansour,Alger,Algérie,2025-06-11,Données
+E0269,Karim,Lavoie,Gatineau,Canada,2023-06-18,Développement web
+E0270,Sofia,Simard,Casablanca,Maroc,2024-04-05,Cloud
+E0271,Yasmine,Bergeron,Québec,Canada,2024-05-22,Cloud
+E0272,Lina,Bélanger,Gatineau,Canada,2024-05-06,Cloud
+E0273,Gabriel,Traoré,Bruxelles,Belgique,2024-04-06,Sécurité
+E0274,Camille,Caron,Bruxelles,Belgique,2025-06-28,IA
+E0275,Emma,Gagnon,Laval,Canada,2024-05-21,Sécurité
+E0276,Rania,Bergeron,Sherbrooke,Canada,2026-06-12,Cloud
+E0277,Sofia,Girard,Paris,France,2025-01-31,Sécurité
+E0278,Samir,Rehouma,Genève,Suisse,2025-07-07,Données
+E0279,Alice,Bergeron,Toronto,Canada,2025-09-06,DevOps
+E0280,Hugo,Rahmani,Bruxelles,Belgique,2024-12-27,Sécurité
+E0281,Sarah,Diallo,Gatineau,Canada,2026-03-19,Cloud
+E0282,Nathan,Simard,Marseille,France,2025-01-21,Sécurité
+E0283,Ismaël,Bouchard,Montréal,Canada,2023-06-21,DevOps
+E0284,Léa,Mansour,Toronto,Canada,2026-01-07,Cloud
+E0285,Lina,Traoré,Lyon,France,2024-07-07,DevOps
+E0286,Louise,Bouchard,Lyon,France,2025-11-07,Données
+E0287,Omar,Girard,Bruxelles,Belgique,2026-07-14,Cloud
+E0288,Adam,Bouchard,Québec,Canada,2024-08-01,DevOps
+E0289,Idris,Bouchard,Bruxelles,Belgique,2026-04-26,Cloud
+E0290,Bilal,Bergeron,Dakar,Sénégal,2025-01-05,Développement web
+E0291,Amina,Nguyen,Abidjan,Côte d’Ivoire,2023-08-27,DevOps
+E0292,Sarah,Chen,Abidjan,Côte d’Ivoire,2024-12-07,Données
+E0293,Hugo,Nguyen,Dakar,Sénégal,2024-03-30,IA
+E0294,Salma,Rahmani,Montréal,Canada,2024-01-14,Développement web
+E0295,Chloé,Boucher,Alger,Algérie,2024-04-24,Données
+E0296,Noah,Côté,Montréal,Canada,2026-02-27,Développement web
+E0297,Mehdi,Tremblay,Toronto,Canada,2025-10-04,IA
+E0298,Manon,Diallo,Dakar,Sénégal,2024-01-15,IA
+E0299,Louise,Pelletier,Laval,Canada,2024-01-05,Sécurité
+E0300,Adam,Mansour,Bruxelles,Belgique,2023-01-12,Cloud

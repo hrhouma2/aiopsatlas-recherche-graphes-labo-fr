@@ -1,0 +1,194 @@
+# Module 3 — Leçon 01 : match, multi_match, term et la requête bool
+# Toutes les requêtes sont en lecture seule sur l'index `cours`.
+# Rejouer : node outils/tester-requetes.mjs elasticsearch/requetes/03-01-match-multi-match-term-et-bool.txt
+
+# 1. Anatomie d'une réponse _search : match sur le titre
+GET cours/_search
+{
+  "query": { "match": { "titre": "kubernetes" } },
+  "size": 3,
+  "_source": ["id", "titre", "niveau"]
+}
+
+# 2. match multi-mots : OR par défaut (un mot suffit)
+GET cours/_search
+{
+  "query": { "match": { "titre": "déployer conteneurs" } },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 3. match avec operator: and (tous les mots obligatoires)
+GET cours/_search
+{
+  "query": {
+    "match": {
+      "titre": { "query": "déployer conteneurs", "operator": "and" }
+    }
+  },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 4. multi_match : titre pèse 3 fois plus que description
+GET cours/_search
+{
+  "query": {
+    "multi_match": {
+      "query": "kubernetes production",
+      "fields": ["titre^3", "description"]
+    }
+  },
+  "size": 4,
+  "_source": ["titre", "sujet"]
+}
+
+# 5. term sur un keyword : niveau
+GET cours/_search
+{
+  "query": { "term": { "niveau": "debutant" } },
+  "size": 2,
+  "_source": ["titre", "niveau"]
+}
+
+# 6. term sur un keyword : categorie (avec accent, valeur exacte)
+GET cours/_count
+{
+  "query": { "term": { "categorie": "Données" } }
+}
+
+# 7. term sur un champ text : ne trouve rien
+GET cours/_search
+{
+  "query": { "term": { "titre": "Les bases de Kubernetes" } }
+}
+
+# 8. term sur le sous-champ keyword titre.brut : trouve
+GET cours/_search
+{
+  "query": { "term": { "titre.brut": "Les bases de Kubernetes" } },
+  "_source": ["id", "titre", "niveau", "prix"]
+}
+
+# 9. Pourquoi : voir ce que l'analyseur fait du titre
+GET cours/_analyze
+{
+  "field": "titre",
+  "text": "Les bases de Kubernetes"
+}
+
+# 10. bool complet : Kubernetes, debutant, (gratuit OU prix < 50), pas en anglais
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "titre": "kubernetes" } }
+      ],
+      "filter": [
+        { "term": { "niveau": "debutant" } }
+      ],
+      "should": [
+        { "term": { "gratuit": true } },
+        { "range": { "prix": { "lt": 50 } } }
+      ],
+      "minimum_should_match": 1,
+      "must_not": [
+        { "term": { "langue": "en" } }
+      ]
+    }
+  },
+  "_source": ["id", "titre", "niveau", "langue", "prix", "gratuit"]
+}
+
+# 10 bis. Sans minimum_should_match : should devient un simple bonus de score
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "titre": "kubernetes" } }
+      ],
+      "filter": [
+        { "term": { "niveau": "debutant" } }
+      ],
+      "should": [
+        { "term": { "gratuit": true } },
+        { "range": { "prix": { "lt": 50 } } }
+      ],
+      "must_not": [
+        { "term": { "langue": "en" } }
+      ]
+    }
+  },
+  "_source": ["id", "titre", "prix", "gratuit"]
+}
+
+# 11. Contexte filter seul : pas de score (tous à 0)
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "filter": [
+        { "term": { "categorie": "DevOps" } },
+        { "term": { "niveau": "avance" } },
+        { "term": { "langue": "fr" } }
+      ]
+    }
+  },
+  "size": 3,
+  "_source": ["titre", "niveau"]
+}
+
+# 12. Même critères en must : un score apparaît (mais il ne veut rien dire)
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "categorie": "DevOps" } },
+        { "term": { "niveau": "avance" } },
+        { "term": { "langue": "fr" } }
+      ]
+    }
+  },
+  "size": 3,
+  "_source": ["titre", "niveau"]
+}
+
+# 13. _source filtering avancé : includes / excludes
+GET cours/_search
+{
+  "query": { "match": { "titre": "elasticsearch" } },
+  "size": 2,
+  "_source": {
+    "includes": ["titre", "professeur.*", "prix"],
+    "excludes": ["professeur.id"]
+  }
+}
+
+# 14. Pas de _source du tout, juste les identifiants
+GET cours/_search
+{
+  "query": { "match": { "titre": "neo4j" } },
+  "size": 10,
+  "_source": false
+}
+
+# 15. Erreur classique (« Si ça coince ») : match ne prend qu'un seul champ
+# attendu: 400
+GET cours/_search
+{
+  "query": { "match": { "titre": "kubernetes", "description": "kubernetes" } }
+}
+
+# 16. Piège silencieux : minimum_should_match sans aucun should → 0 résultat
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [ { "match": { "titre": "kubernetes" } } ],
+      "minimum_should_match": 1
+    }
+  }
+}

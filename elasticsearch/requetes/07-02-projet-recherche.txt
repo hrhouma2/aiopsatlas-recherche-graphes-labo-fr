@@ -1,0 +1,315 @@
+# Module 7 — Leçon 02 : Corrigé du projet final, partie Elasticsearch (E1 à E5 et E8)
+# Lecture seule sur les index cours et acces : rien n'est créé ni modifié.
+# À coller dans Kibana Dev Tools (ou à rejouer : node outils/tester-requetes.mjs elasticsearch/requetes/07-02-projet-recherche.txt)
+
+# 0. Vérification : les trois index sont bien là (504 / 609 / 12000)
+GET _cat/indices/cours,avis,acces?v&h=index,docs.count&s=index
+
+# ============================================================================
+# E1 — Recherche plein texte tolérante aux fautes, titre boosté
+# ============================================================================
+
+# 1. Le mot mal orthographié « kuberntes » SANS tolérance : aucun résultat
+GET cours/_count
+{
+  "query": {
+    "multi_match": {
+      "query": "kuberntes",
+      "fields": ["titre^3", "description"]
+    }
+  }
+}
+
+# 2. La même recherche AVEC fuzziness AUTO : 17 cours, les titres d'abord (boost x3)
+GET cours/_search
+{
+  "size": 5,
+  "_source": ["id", "titre", "sujet", "niveau"],
+  "query": {
+    "multi_match": {
+      "query": "kuberntes",
+      "fields": ["titre^3", "description"],
+      "fuzziness": "AUTO"
+    }
+  }
+}
+
+# ============================================================================
+# E2 — Filtres à facettes avec compteurs (agrégations dans la même requête)
+# ============================================================================
+
+# 3. Recherche « docker » + filtres (niveau débutant, prix <= 50) + 4 facettes.
+#    Les filtres sont dans bool.filter : les compteurs des facettes portent sur
+#    le résultat FILTRÉ (ce que l'utilisateur voit à l'écran).
+GET cours/_search
+{
+  "size": 5,
+  "_source": ["id", "titre", "categorie", "niveau", "prix", "gratuit"],
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "multi_match": {
+            "query": "docker",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+          }
+        }
+      ],
+      "filter": [
+        { "term": { "niveau": "debutant" } },
+        { "range": { "prix": { "lte": 50 } } }
+      ]
+    }
+  },
+  "aggs": {
+    "categories": { "terms": { "field": "categorie" } },
+    "niveaux": { "terms": { "field": "niveau" } },
+    "gratuit": { "terms": { "field": "gratuit" } },
+    "tranches_de_prix": {
+      "range": {
+        "field": "prix",
+        "ranges": [
+          { "key": "gratuit", "to": 0.01 },
+          { "key": "moins de 50", "from": 0.01, "to": 50 },
+          { "key": "de 50 à 100", "from": 50, "to": 100 },
+          { "key": "100 et plus", "from": 100 }
+        ]
+      }
+    }
+  }
+}
+
+# 4. Variante « vraies facettes » : les filtres passent dans post_filter.
+#    Les hits sont filtrés, mais les compteurs restent ceux de la recherche
+#    complète « docker » (39 cours) : l'utilisateur voit les autres options.
+GET cours/_search
+{
+  "size": 5,
+  "_source": ["id", "titre", "categorie", "niveau", "prix", "gratuit"],
+  "query": {
+    "multi_match": {
+      "query": "docker",
+      "fields": ["titre^3", "description"],
+      "fuzziness": "AUTO"
+    }
+  },
+  "post_filter": {
+    "bool": {
+      "filter": [
+        { "term": { "niveau": "debutant" } },
+        { "range": { "prix": { "lte": 50 } } }
+      ]
+    }
+  },
+  "aggs": {
+    "categories": { "terms": { "field": "categorie" } },
+    "niveaux": { "terms": { "field": "niveau" } },
+    "gratuit": { "terms": { "field": "gratuit" } },
+    "tranches_de_prix": {
+      "range": {
+        "field": "prix",
+        "ranges": [
+          { "key": "gratuit", "to": 0.01 },
+          { "key": "moins de 50", "from": 0.01, "to": 50 },
+          { "key": "de 50 à 100", "from": 50, "to": 100 },
+          { "key": "100 et plus", "from": 100 }
+        ]
+      }
+    }
+  }
+}
+
+# ============================================================================
+# E3 — Tri « pertinence » vs « mieux notés » (note pondérée par nb_avis)
+# ============================================================================
+
+# 5. Tri par pertinence : rien à ajouter, c'est l'ordre par défaut (_score)
+GET cours/_search
+{
+  "size": 5,
+  "_source": ["id", "titre", "note_moyenne", "nb_avis"],
+  "query": {
+    "multi_match": {
+      "query": "docker",
+      "fields": ["titre^3", "description"],
+      "fuzziness": "AUTO"
+    }
+  }
+}
+
+# 6. Le tri NAÏF par note_moyenne : un cours avec 27 avis passe devant un cours
+#    avec 260 avis. C'est le piège à éviter.
+GET cours/_search
+{
+  "size": 5,
+  "_source": ["id", "titre", "note_moyenne", "nb_avis"],
+  "query": {
+    "multi_match": {
+      "query": "docker",
+      "fields": ["titre^3", "description"],
+      "fuzziness": "AUTO"
+    }
+  },
+  "sort": [ { "note_moyenne": "desc" } ]
+}
+
+# 7. Tri « mieux notés » : note pondérée (moyenne bayésienne).
+#    score = (note * nb_avis + C * m) / (nb_avis + m)
+#    C = 4.1 (note moyenne du catalogue), m = 50 (nombre d'avis « de confiance »).
+#    Un cours sans note (note_moyenne absente) compte comme 0.
+GET cours/_search
+{
+  "size": 5,
+  "_source": ["id", "titre", "note_moyenne", "nb_avis"],
+  "query": {
+    "multi_match": {
+      "query": "docker",
+      "fields": ["titre^3", "description"],
+      "fuzziness": "AUTO"
+    }
+  },
+  "sort": [
+    {
+      "_script": {
+        "type": "number",
+        "order": "desc",
+        "script": {
+          "lang": "painless",
+          "source": "double n = doc['nb_avis'].value; double note = doc['note_moyenne'].size() == 0 ? 0 : doc['note_moyenne'].value; return (note * n + params.C * params.m) / (n + params.m);",
+          "params": { "C": 4.1, "m": 50 }
+        }
+      }
+    }
+  ]
+}
+
+# ============================================================================
+# E4 — Autocomplétion dès 3 lettres
+# ============================================================================
+
+# 8. « kub » : match_phrase_prefix travaille sur les mots analysés (minuscules,
+#    sans accents, racinisés) : « Kubernetes », « kubernetes », « KUBERNETES » sont trouvés
+GET cours/_search
+{
+  "size": 5,
+  "_source": ["titre"],
+  "query": {
+    "match_phrase_prefix": { "titre": "kub" }
+  }
+}
+
+# 9. Plusieurs mots, le dernier incomplet : match_bool_prefix
+GET cours/_search
+{
+  "size": 5,
+  "_source": ["titre"],
+  "query": {
+    "match_bool_prefix": { "titre": "les bases de kub" }
+  }
+}
+
+# 10. Le piège : prefix sur le keyword titre.brut est sensible à la casse et
+#     ne regarde que le DÉBUT du titre → « Les bases de Kubernetes » est raté
+GET cours/_search
+{
+  "size": 5,
+  "_source": ["titre"],
+  "query": {
+    "prefix": { "titre.brut": "Kub" }
+  }
+}
+
+# ============================================================================
+# E5 — Mise en évidence des termes trouvés
+# ============================================================================
+
+# 11. highlight sur titre (entier) et description (un fragment de 120 caractères)
+GET cours/_search
+{
+  "size": 3,
+  "_source": ["id", "titre"],
+  "query": {
+    "multi_match": {
+      "query": "kubernetes production",
+      "fields": ["titre^3", "description"],
+      "fuzziness": "AUTO"
+    }
+  },
+  "highlight": {
+    "pre_tags": ["<mark>"],
+    "post_tags": ["</mark>"],
+    "fields": {
+      "titre": { "number_of_fragments": 0 },
+      "description": { "fragment_size": 120, "number_of_fragments": 1 }
+    }
+  }
+}
+
+# ============================================================================
+# E8 — Tableau de bord « Suivi du catalogue » : les requêtes derrière les graphiques
+# ============================================================================
+
+# 12. Top 10 des cours consultés (index acces) : terms sur cours_id.
+#     top_hits ramène un exemple de chemin et la catégorie pour chaque cours.
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "top_cours": {
+      "terms": { "field": "cours_id", "size": 10 },
+      "aggs": {
+        "exemple": {
+          "top_hits": { "size": 1, "_source": ["chemin", "categorie"] }
+        }
+      }
+    }
+  }
+}
+
+# 13. Le titre n'est pas dans acces : on le récupère dans cours avec les 10 identifiants
+#     (la « jointure » se fait côté application, en deux requêtes)
+GET cours/_search
+{
+  "size": 10,
+  "_source": ["id", "titre", "categorie"],
+  "query": {
+    "ids": {
+      "values": ["C0069", "C0390", "C0274", "C0155", "C0066", "C0084", "C0122", "C0238", "C0352", "C0489"]
+    }
+  }
+}
+
+# 14. Taux d'erreur 5xx par jour : date_histogram + filter statut >= 500
+#     + bucket_script pour calculer le pourcentage dans chaque jour
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "par_jour": {
+      "date_histogram": { "field": "@timestamp", "calendar_interval": "day" },
+      "aggs": {
+        "erreurs_5xx": {
+          "filter": { "range": { "statut": { "gte": 500 } } }
+        },
+        "taux_5xx": {
+          "bucket_script": {
+            "buckets_path": { "err": "erreurs_5xx._count", "total": "_count" },
+            "script": "100.0 * params.err / params.total"
+          }
+        }
+      }
+    }
+  }
+}
+
+# 15. Bonus : les mêmes chiffres en ES|QL (vu au module 3, leçon 5)
+POST _query?format=txt
+{
+  "query": "FROM acces | WHERE cours_id IS NOT NULL | STATS consultations = COUNT(*) BY cours_id | SORT consultations DESC, cours_id | LIMIT 10"
+}
+
+POST _query?format=txt
+{
+  "query": "FROM acces | EVAL jour = DATE_TRUNC(1 day, @timestamp), erreur = CASE(statut >= 500, 1, 0) | STATS total = COUNT(*), erreurs_5xx = SUM(erreur) BY jour | EVAL taux_5xx = ROUND(100.0 * erreurs_5xx / total, 2) | SORT jour | LIMIT 40"
+}

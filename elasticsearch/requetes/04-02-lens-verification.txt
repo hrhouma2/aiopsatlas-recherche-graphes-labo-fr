@@ -1,0 +1,72 @@
+# Module 4 — Leçon 02 : vérifier les chiffres des cinq visualisations Lens avec des agrégations
+# Lecture seule sur `acces`. Chaque requête reproduit ce que Lens calcule en coulisses
+# (plage de temps « Derniers 90 jours », qui couvre tout le jeu : 2026-08-10 → 2026-09-08).
+# Rejouer : node outils/tester-requetes.mjs elasticsearch/requetes/04-02-lens-verification.txt
+
+# 1. Barres verticales « Labo — Requêtes par statut » : terms sur statut (axe horizontal) + Count (axe vertical)
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "par_statut": { "terms": { "field": "statut", "size": 10, "order": { "_count": "desc" } } }
+  }
+}
+
+# 2. Courbe « Labo — Trafic par jour et appareil » : date_histogram d'un jour sur @timestamp,
+#    ventilé par appareil (on ne montre ici que le total par appareil sur 30 jours et 3 jours d'exemple)
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "par_appareil": { "terms": { "field": "appareil", "size": 3 } },
+    "par_jour": {
+      "date_histogram": { "field": "@timestamp", "calendar_interval": "1d", "min_doc_count": 1 },
+      "aggs": {
+        "appareil": { "terms": { "field": "appareil", "size": 3 } }
+      }
+    }
+  }
+}
+
+# 3. Barres horizontales « Labo — Top pays » : terms sur pays, 5 valeurs, classées par Count décroissant
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "top_pays": { "terms": { "field": "pays", "size": 5, "order": { "_count": "desc" } } }
+  }
+}
+
+# 4. Métrique « Labo — Durée moyenne » : avg puis médiane (percentiles 50) de duree_ms
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "duree_moyenne": { "avg": { "field": "duree_ms" } },
+    "duree_mediane": { "percentiles": { "field": "duree_ms", "percents": [50] } }
+  }
+}
+
+# 5. Tableau « Labo — Top chemins » : terms sur chemin (10 valeurs) avec, pour chaque ligne,
+#    Count et Average de duree_ms
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "top_chemins": {
+      "terms": { "field": "chemin", "size": 10, "order": { "_count": "desc" } },
+      "aggs": {
+        "duree_moyenne": { "avg": { "field": "duree_ms" } }
+      }
+    }
+  }
+}
+
+# 6. Bonus : pourquoi le tableau des chemins ne montre pas /cours/C0123 : cardinalité du champ chemin
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "chemins_distincts": { "cardinality": { "field": "chemin" } }
+  }
+}

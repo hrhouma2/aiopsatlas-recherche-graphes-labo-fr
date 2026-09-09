@@ -1,0 +1,180 @@
+# Module 3 — Leçon 05 : KQL et ES|QL
+# KQL se tape dans Kibana → Discover (pas d'API à rejouer ici) : la section A
+# contient les requêtes DSL équivalentes, dont le `count` doit être égal au
+# « Documents (N) » affiché par Discover sur la vue de données `cours*`.
+# ES|QL : dans la leçon on montre `POST _query?format=txt` (lisible) ; ici on
+# utilise `format=json` pour que tester-requetes.mjs puisse compter les lignes.
+# Lecture seule sur `cours`, `acces`.
+# Rejouer : node outils/tester-requetes.mjs elasticsearch/requetes/03-05-kql-et-esql.txt
+
+# ============================================================
+# A. Vérification des exemples KQL (Discover, vue de données cours*)
+# ============================================================
+
+# A1. KQL : categorie : "DevOps" and niveau : "debutant"   → Documents (48)
+GET cours/_count
+{
+  "query": {
+    "bool": {
+      "filter": [
+        { "term": { "categorie": "DevOps" } },
+        { "term": { "niveau": "debutant" } }
+      ]
+    }
+  }
+}
+
+# A2. KQL : titre : kubernetes   → Documents (7)  (champ text → match)
+GET cours/_count
+{
+  "query": { "match": { "titre": "kubernetes" } }
+}
+
+# A3. KQL : titre : "conteneurs en production"   → Documents (7)  (guillemets → match_phrase)
+GET cours/_count
+{
+  "query": { "match_phrase": { "titre": "conteneurs en production" } }
+}
+
+# A4. KQL : prix >= 100 and prix < 150   → Documents (91)
+GET cours/_count
+{
+  "query": { "range": { "prix": { "gte": 100, "lt": 150 } } }
+}
+
+# A5. KQL : sujet : (Docker or Kubernetes) and not langue : en   → Documents (10)
+GET cours/_count
+{
+  "query": {
+    "bool": {
+      "filter":   [ { "terms": { "sujet": ["Docker", "Kubernetes"] } } ],
+      "must_not": [ { "term": { "langue": "en" } } ]
+    }
+  }
+}
+
+# A6. KQL : professeur.ville : "Montréal"   → Documents (51)  (champ imbriqué = notation pointée)
+GET cours/_count
+{
+  "query": { "term": { "professeur.ville": "Montréal" } }
+}
+
+# A7. KQL : sujet : Kub*   → Documents (7)  (joker hors guillemets sur un keyword)
+GET cours/_count
+{
+  "query": { "wildcard": { "sujet": { "value": "Kub*" } } }
+}
+
+# A8. Pièges KQL vus dans la leçon : titre : "conteneurs production" → 0 (phrase stricte)
+GET cours/_count
+{
+  "query": { "match_phrase": { "titre": "conteneurs production" } }
+}
+
+# A9. … et categorie : "devops" → 0 (keyword sensible à la casse)
+GET cours/_count
+{
+  "query": { "term": { "categorie": "devops" } }
+}
+
+# ============================================================
+# B. ES|QL dans Dev Tools (POST _query)
+# ============================================================
+
+# B1. Premier ES|QL : filtrer, compter, moyenner, trier
+POST _query?format=json
+{
+  "query": "FROM cours | WHERE categorie == \"DevOps\" | STATS n = COUNT(*), prix_moyen = AVG(prix) BY niveau | SORT n DESC"
+}
+
+# B2. Erreurs 5xx par pays, top 5
+POST _query?format=json
+{
+  "query": "FROM acces | WHERE statut >= 500 | STATS erreurs = COUNT(*) BY pays | SORT erreurs DESC | LIMIT 5"
+}
+
+# B3. KEEP + SORT + LIMIT : l'équivalent de _source + sort + size
+POST _query?format=json
+{
+  "query": "FROM cours | WHERE sujet == \"Kubernetes\" | KEEP id, titre, niveau, prix, note_moyenne | SORT note_moyenne DESC | LIMIT 3"
+}
+
+# B4. EVAL : créer une colonne calculée
+POST _query?format=json
+{
+  "query": "FROM cours | WHERE sujet == \"Kubernetes\" AND prix > 0 | EVAL prix_par_heure = ROUND(prix / duree_heures, 2) | KEEP titre, prix, duree_heures, prix_par_heure | SORT prix_par_heure ASC | LIMIT 3"
+}
+
+# B5. Recherche plein texte en ES|QL : la fonction MATCH (57 cours, comme un match DSL en OR)
+POST _query?format=json
+{
+  "query": "FROM cours | WHERE MATCH(titre, \"kubernetes production\") | KEEP titre | LIMIT 5"
+}
+
+# B5 bis. Vérification : le même match en DSL renvoie aussi 57
+GET cours/_count
+{
+  "query": { "match": { "titre": "kubernetes production" } }
+}
+
+# B6. La fonction KQL() : réutiliser la syntaxe de Discover dans ES|QL (48, comme A1)
+POST _query?format=json
+{
+  "query": "FROM cours | WHERE KQL(\"categorie : DevOps and niveau : debutant\") | STATS n = COUNT(*)"
+}
+
+# B7. DISSECT : extraire cours_id depuis chemin (/cours/C0123/lecon/3)
+POST _query?format=json
+{
+  "query": "FROM acces | WHERE chemin LIKE \"/cours/C*\" | DISSECT chemin \"/cours/%{id_extrait}\" | EVAL id_extrait = SUBSTRING(id_extrait, 1, 5) | STATS acces = COUNT(*) BY id_extrait | SORT acces DESC | LIMIT 5"
+}
+
+# B8. GROK : même extraction avec une expression régulière nommée
+POST _query?format=json
+{
+  "query": "FROM acces | GROK chemin \"/cours/%{WORD:id_extrait}\" | WHERE id_extrait IS NOT NULL | STATS acces = COUNT(*), erreurs = COUNT(*) WHERE statut >= 500 BY id_extrait | SORT erreurs DESC, acces DESC | LIMIT 5"
+}
+
+# B9. Vérification : le champ cours_id du jeu de données donne le même classement
+POST _query?format=json
+{
+  "query": "FROM acces | WHERE cours_id IS NOT NULL | STATS acces = COUNT(*) BY cours_id | SORT acces DESC | LIMIT 5"
+}
+
+# B10. Dates : accès par jour avec BUCKET
+POST _query?format=json
+{
+  "query": "FROM acces | WHERE @timestamp >= \"2026-09-06\" | STATS acces = COUNT(*), latence_p95 = PERCENTILE(duree_ms, 95) BY jour = BUCKET(@timestamp, 1 day) | SORT jour"
+}
+
+# ============================================================
+# C. Erreurs classiques (« Si ça coince »)
+# ============================================================
+
+# C1. Guillemets simples au lieu de doubles → token recognition error
+# attendu: 400
+POST _query?format=json
+{
+  "query": "FROM cours | WHERE categorie == 'DevOps' | LIMIT 1"
+}
+
+# C2. Faute de frappe dans un nom de colonne → Unknown column [categori], did you mean [categorie]?
+# attendu: 400
+POST _query?format=json
+{
+  "query": "FROM cours | WHERE categori == \"DevOps\" | LIMIT 1"
+}
+
+# C3. Valeur sans guillemets → prise pour une colonne : Unknown column [DevOps]
+# attendu: 400
+POST _query?format=json
+{
+  "query": "FROM cours | WHERE categorie == DevOps | LIMIT 1"
+}
+
+# C4. Comparer un nombre à une chaîne → second argument must also be [numeric] but was [keyword]
+# attendu: 400
+POST _query?format=json
+{
+  "query": "FROM cours | WHERE prix > \"50\" | LIMIT 1"
+}

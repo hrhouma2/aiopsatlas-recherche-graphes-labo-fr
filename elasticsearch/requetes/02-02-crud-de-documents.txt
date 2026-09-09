@@ -1,0 +1,142 @@
+# Module 2 — Leçon 02 : CRUD de documents dans Dev Tools
+# Rejouable : crée l'index bac-a-sable et le supprime à la fin. Ne touche pas à cours/avis/acces.
+
+# 0. Nettoyage au cas où un essai précédent aurait laissé l'index (404 si absent, c'est normal)
+DELETE bac-a-sable?ignore_unavailable=true
+
+# 1. Créer l'index. refresh_interval à 30s pour rendre visible le mécanisme de refresh
+#    (par défaut 1s : trop rapide pour le voir à l'œil nu)
+PUT bac-a-sable
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "refresh_interval": "30s"
+  }
+}
+
+# 2. Créer un document avec l'identifiant que l'on choisit
+PUT bac-a-sable/_doc/1
+{
+  "titre": "Docker pour les nuls",
+  "categorie": "DevOps",
+  "prix": 49,
+  "gratuit": false
+}
+
+# 3. Créer un document sans identifiant : Elasticsearch en génère un
+POST bac-a-sable/_doc
+{
+  "titre": "Kubernetes en 3 jours",
+  "categorie": "DevOps",
+  "prix": 99,
+  "gratuit": false
+}
+
+# 4. Lire le document 1
+GET bac-a-sable/_doc/1
+
+# 5. Existe-t-il ? (HEAD ne renvoie pas de corps, juste 200 ou 404)
+HEAD bac-a-sable/_doc/1
+
+# attendu: 404
+HEAD bac-a-sable/_doc/42
+
+# 6. Le document n'est pas encore visible par _search (pas encore de refresh)
+GET bac-a-sable/_search
+{
+  "query": { "match_all": {} }
+}
+
+# 7. Forcer le refresh, puis rechercher à nouveau
+POST bac-a-sable/_refresh
+
+GET bac-a-sable/_search
+{
+  "query": { "match_all": {} }
+}
+
+# 8. Créer en forçant le refresh : visible immédiatement dans _search
+#    (refresh=wait_for existe aussi : il attend le prochain refresh périodique, ici 30 s)
+PUT bac-a-sable/_doc/2?refresh=true
+{
+  "titre": "Elasticsearch de zéro",
+  "categorie": "Données",
+  "prix": 79,
+  "gratuit": false
+}
+
+GET bac-a-sable/_count
+
+# 9. PUT sur un id existant : remplacement complet, _version passe à 2
+PUT bac-a-sable/_doc/1
+{
+  "titre": "Docker pour les nuls (2e édition)",
+  "categorie": "DevOps",
+  "prix": 59,
+  "gratuit": false
+}
+
+GET bac-a-sable/_doc/1
+
+# 10. _create refuse d'écraser un document existant : 409
+# attendu: 409
+PUT bac-a-sable/_create/1
+{
+  "titre": "Je tente d'écraser le 1"
+}
+
+# 11. Mise à jour partielle : seul le champ fourni change (_version 3)
+POST bac-a-sable/_update/1
+{
+  "doc": { "niveau": "debutant" }
+}
+
+# 12. Mise à jour par script Painless : prix += 10 (_version 4)
+POST bac-a-sable/_update/1
+{
+  "script": {
+    "source": "ctx._source.prix += params.hausse",
+    "params": { "hausse": 10 }
+  }
+}
+
+GET bac-a-sable/_doc/1
+
+# 13. Contrôle de concurrence optimiste : on relit _seq_no / _primary_term
+#     puis on exige qu'ils n'aient pas bougé. Ici on donne volontairement un vieux _seq_no → 409
+# attendu: 409
+PUT bac-a-sable/_doc/1?if_seq_no=0&if_primary_term=1
+{
+  "titre": "Écriture basée sur une version périmée"
+}
+
+# 14. Lire plusieurs documents d'un coup
+GET bac-a-sable/_mget
+{
+  "ids": ["1", "2", "inexistant"]
+}
+
+# 15. Supprimer le document 1
+DELETE bac-a-sable/_doc/1
+
+# 16. Relire après suppression : 404 attendu
+# attendu: 404
+GET bac-a-sable/_doc/1
+
+# 17. Supprimer un document déjà supprimé : 404 aussi
+# attendu: 404
+DELETE bac-a-sable/_doc/1
+
+# 18. Mettre à jour un document qui n'existe pas : 404
+# attendu: 404
+POST bac-a-sable/_update/1
+{
+  "doc": { "prix": 1 }
+}
+
+# 19. Nettoyage : suppression de l'index
+DELETE bac-a-sable
+
+# attendu: 404
+GET bac-a-sable/_count

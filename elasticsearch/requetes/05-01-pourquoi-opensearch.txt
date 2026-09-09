@@ -1,0 +1,21 @@
+# Module 5 — Leçon 01 : faire connaissance avec OpenSearch (port 9201)
+#   node outils/tester-requetes.mjs elasticsearch/requetes/05-01-pourquoi-opensearch.txt --url http://localhost:9201
+# Le même fichier passe aussi sur Elasticsearch (sans --url) : ce sont des API communes.
+
+# 1. Qui répond ? version, distribution, tagline
+GET /
+
+# 2. Santé du cluster (un seul nœud, zéro réplique → yellow ou green selon les index)
+GET _cluster/health?filter_path=cluster_name,status,number_of_nodes
+
+# 3. Les trois index du labo sont bien là avec les bons comptes
+GET _cat/indices/cours,avis,acces?v&h=index,docs.count,store.size&s=index
+
+# 4. Le mapping importé est identique : même analyseur « francais », même type keyword pour categorie
+GET cours/_mapping/field/titre,categorie
+
+# 5. Le nœud : nom, version, distribution (OpenSearch) ou build_flavor (Elasticsearch)
+GET _nodes?filter_path=nodes.*.name,nodes.*.version
+
+# 6. Les plugins installés : long chez OpenSearch, vide chez Elasticsearch
+GET _cat/plugins?v&h=component,version&s=component

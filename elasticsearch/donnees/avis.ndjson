@@ -1,0 +1,1218 @@
+{"index":{"_index":"avis","_id":"A00001"}}
+{"id":"A00001","cours_id":"C0028","etudiant":"Nathan","ville":"Sherbrooke","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2024-06-21","utile":33}
+{"index":{"_index":"avis","_id":"A00002"}}
+{"id":"A00002","cours_id":"C0036","etudiant":"Nathan","ville":"Sherbrooke","pays":"Canada","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-08-01","utile":23}
+{"index":{"_index":"avis","_id":"A00003"}}
+{"id":"A00003","cours_id":"C0035","etudiant":"Nathan","ville":"Sherbrooke","pays":"Canada","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2024-07-25","utile":27}
+{"index":{"_index":"avis","_id":"A00004"}}
+{"id":"A00004","cours_id":"C0067","etudiant":"Nathan","ville":"Sherbrooke","pays":"Canada","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2023-07-22","utile":7}
+{"index":{"_index":"avis","_id":"A00005"}}
+{"id":"A00005","cours_id":"C0229","etudiant":"Léa","ville":"Lyon","pays":"France","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2026-11-04","utile":34}
+{"index":{"_index":"avis","_id":"A00006"}}
+{"id":"A00006","cours_id":"C0269","etudiant":"Clara","ville":"Montréal","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2025-06-29","utile":15}
+{"index":{"_index":"avis","_id":"A00007"}}
+{"id":"A00007","cours_id":"C0413","etudiant":"Clara","ville":"Montréal","pays":"Canada","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2025-12-21","utile":18}
+{"index":{"_index":"avis","_id":"A00008"}}
+{"id":"A00008","cours_id":"C0497","etudiant":"Maya","ville":"Tunis","pays":"Tunisie","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2024-12-09","utile":3}
+{"index":{"_index":"avis","_id":"A00009"}}
+{"id":"A00009","cours_id":"C0261","etudiant":"Maya","ville":"Tunis","pays":"Tunisie","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2024-06-02","utile":11}
+{"index":{"_index":"avis","_id":"A00010"}}
+{"id":"A00010","cours_id":"C0238","etudiant":"Youssef","ville":"Montréal","pays":"Canada","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2027-01-17","utile":15}
+{"index":{"_index":"avis","_id":"A00011"}}
+{"id":"A00011","cours_id":"C0456","etudiant":"Youssef","ville":"Montréal","pays":"Canada","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2026-11-21","utile":14}
+{"index":{"_index":"avis","_id":"A00012"}}
+{"id":"A00012","cours_id":"C0242","etudiant":"Sofia","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-06-07","utile":37}
+{"index":{"_index":"avis","_id":"A00013"}}
+{"id":"A00013","cours_id":"C0239","etudiant":"Noah","ville":"Montréal","pays":"Canada","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-08-05","utile":9}
+{"index":{"_index":"avis","_id":"A00014"}}
+{"id":"A00014","cours_id":"C0180","etudiant":"Noah","ville":"Montréal","pays":"Canada","note":5,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2025-05-10","utile":13}
+{"index":{"_index":"avis","_id":"A00015"}}
+{"id":"A00015","cours_id":"C0386","etudiant":"Noah","ville":"Montréal","pays":"Canada","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-04-08","utile":38}
+{"index":{"_index":"avis","_id":"A00016"}}
+{"id":"A00016","cours_id":"C0279","etudiant":"Bilal","ville":"Genève","pays":"Suisse","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2026-08-07","utile":18}
+{"index":{"_index":"avis","_id":"A00017"}}
+{"id":"A00017","cours_id":"C0265","etudiant":"Bilal","ville":"Genève","pays":"Suisse","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2026-11-30","utile":0}
+{"index":{"_index":"avis","_id":"A00018"}}
+{"id":"A00018","cours_id":"C0108","etudiant":"Hugo","ville":"Laval","pays":"Canada","note":5,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2024-03-23","utile":19}
+{"index":{"_index":"avis","_id":"A00019"}}
+{"id":"A00019","cours_id":"C0096","etudiant":"Hugo","ville":"Laval","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2024-09-28","utile":7}
+{"index":{"_index":"avis","_id":"A00020"}}
+{"id":"A00020","cours_id":"C0063","etudiant":"Rayan","ville":"Gatineau","pays":"Canada","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2024-07-17","utile":35}
+{"index":{"_index":"avis","_id":"A00021"}}
+{"id":"A00021","cours_id":"C0060","etudiant":"Rayan","ville":"Gatineau","pays":"Canada","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-12-14","utile":17}
+{"index":{"_index":"avis","_id":"A00022"}}
+{"id":"A00022","cours_id":"C0069","etudiant":"Rayan","ville":"Gatineau","pays":"Canada","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2024-07-15","utile":28}
+{"index":{"_index":"avis","_id":"A00023"}}
+{"id":"A00023","cours_id":"C0027","etudiant":"Rayan","ville":"Gatineau","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-03-27","utile":29}
+{"index":{"_index":"avis","_id":"A00024"}}
+{"id":"A00024","cours_id":"C0042","etudiant":"Rayan","ville":"Gatineau","pays":"Canada","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2024-09-09","utile":38}
+{"index":{"_index":"avis","_id":"A00025"}}
+{"id":"A00025","cours_id":"C0257","etudiant":"Hugo","ville":"Paris","pays":"France","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2023-05-14","utile":9}
+{"index":{"_index":"avis","_id":"A00026"}}
+{"id":"A00026","cours_id":"C0284","etudiant":"Hugo","ville":"Paris","pays":"France","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2023-09-07","utile":38}
+{"index":{"_index":"avis","_id":"A00027"}}
+{"id":"A00027","cours_id":"C0323","etudiant":"Hugo","ville":"Paris","pays":"France","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2023-06-28","utile":36}
+{"index":{"_index":"avis","_id":"A00028"}}
+{"id":"A00028","cours_id":"C0329","etudiant":"Hugo","ville":"Paris","pays":"France","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2023-12-17","utile":15}
+{"index":{"_index":"avis","_id":"A00029"}}
+{"id":"A00029","cours_id":"C0211","etudiant":"Hugo","ville":"Paris","pays":"France","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2023-06-23","utile":17}
+{"index":{"_index":"avis","_id":"A00030"}}
+{"id":"A00030","cours_id":"C0472","etudiant":"Lucas","ville":"Gatineau","pays":"Canada","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-05-14","utile":19}
+{"index":{"_index":"avis","_id":"A00031"}}
+{"id":"A00031","cours_id":"C0455","etudiant":"Lucas","ville":"Gatineau","pays":"Canada","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-05-23","utile":33}
+{"index":{"_index":"avis","_id":"A00032"}}
+{"id":"A00032","cours_id":"C0057","etudiant":"Gabriel","ville":"Québec","pays":"Canada","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2025-05-19","utile":5}
+{"index":{"_index":"avis","_id":"A00033"}}
+{"id":"A00033","cours_id":"C0443","etudiant":"Gabriel","ville":"Québec","pays":"Canada","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2024-10-02","utile":1}
+{"index":{"_index":"avis","_id":"A00034"}}
+{"id":"A00034","cours_id":"C0311","etudiant":"Lina","ville":"Québec","pays":"Canada","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-11-13","utile":39}
+{"index":{"_index":"avis","_id":"A00035"}}
+{"id":"A00035","cours_id":"C0331","etudiant":"Lina","ville":"Québec","pays":"Canada","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2025-04-02","utile":16}
+{"index":{"_index":"avis","_id":"A00036"}}
+{"id":"A00036","cours_id":"C0288","etudiant":"Lina","ville":"Québec","pays":"Canada","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-02-27","utile":24}
+{"index":{"_index":"avis","_id":"A00037"}}
+{"id":"A00037","cours_id":"C0286","etudiant":"Lina","ville":"Québec","pays":"Canada","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2025-09-12","utile":13}
+{"index":{"_index":"avis","_id":"A00038"}}
+{"id":"A00038","cours_id":"C0181","etudiant":"Samir","ville":"Marseille","pays":"France","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-07-03","utile":19}
+{"index":{"_index":"avis","_id":"A00039"}}
+{"id":"A00039","cours_id":"C0180","etudiant":"Samir","ville":"Marseille","pays":"France","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2026-08-10","utile":0}
+{"index":{"_index":"avis","_id":"A00040"}}
+{"id":"A00040","cours_id":"C0474","etudiant":"Malik","ville":"Montréal","pays":"Canada","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2027-03-05","utile":13}
+{"index":{"_index":"avis","_id":"A00041"}}
+{"id":"A00041","cours_id":"C0364","etudiant":"Amina","ville":"Gatineau","pays":"Canada","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-01-19","utile":26}
+{"index":{"_index":"avis","_id":"A00042"}}
+{"id":"A00042","cours_id":"C0397","etudiant":"Amina","ville":"Gatineau","pays":"Canada","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2024-11-20","utile":19}
+{"index":{"_index":"avis","_id":"A00043"}}
+{"id":"A00043","cours_id":"C0106","etudiant":"Yasmine","ville":"Québec","pays":"Canada","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2027-05-05","utile":31}
+{"index":{"_index":"avis","_id":"A00044"}}
+{"id":"A00044","cours_id":"C0235","etudiant":"Lucas","ville":"Montréal","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-01-10","utile":1}
+{"index":{"_index":"avis","_id":"A00045"}}
+{"id":"A00045","cours_id":"C0502","etudiant":"Lucas","ville":"Montréal","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2025-07-24","utile":31}
+{"index":{"_index":"avis","_id":"A00046"}}
+{"id":"A00046","cours_id":"C0212","etudiant":"Bilal","ville":"Québec","pays":"Canada","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-11-21","utile":19}
+{"index":{"_index":"avis","_id":"A00047"}}
+{"id":"A00047","cours_id":"C0341","etudiant":"Bilal","ville":"Québec","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2026-10-18","utile":14}
+{"index":{"_index":"avis","_id":"A00048"}}
+{"id":"A00048","cours_id":"C0044","etudiant":"Manon","ville":"Montréal","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2025-08-07","utile":26}
+{"index":{"_index":"avis","_id":"A00049"}}
+{"id":"A00049","cours_id":"C0039","etudiant":"Manon","ville":"Montréal","pays":"Canada","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-09-13","utile":6}
+{"index":{"_index":"avis","_id":"A00050"}}
+{"id":"A00050","cours_id":"C0467","etudiant":"Jade","ville":"Paris","pays":"France","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2024-10-13","utile":21}
+{"index":{"_index":"avis","_id":"A00051"}}
+{"id":"A00051","cours_id":"C0498","etudiant":"Jade","ville":"Paris","pays":"France","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2024-11-07","utile":28}
+{"index":{"_index":"avis","_id":"A00052"}}
+{"id":"A00052","cours_id":"C0480","etudiant":"Jade","ville":"Paris","pays":"France","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2025-03-23","utile":19}
+{"index":{"_index":"avis","_id":"A00053"}}
+{"id":"A00053","cours_id":"C0244","etudiant":"Gabriel","ville":"Montréal","pays":"Canada","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-06-06","utile":35}
+{"index":{"_index":"avis","_id":"A00054"}}
+{"id":"A00054","cours_id":"C0144","etudiant":"Emma","ville":"Abidjan","pays":"Côte d’Ivoire","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2025-11-19","utile":28}
+{"index":{"_index":"avis","_id":"A00055"}}
+{"id":"A00055","cours_id":"C0115","etudiant":"Malik","ville":"Alger","pays":"Algérie","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-05-13","utile":8}
+{"index":{"_index":"avis","_id":"A00056"}}
+{"id":"A00056","cours_id":"C0464","etudiant":"Idris","ville":"Abidjan","pays":"Côte d’Ivoire","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-06-03","utile":36}
+{"index":{"_index":"avis","_id":"A00057"}}
+{"id":"A00057","cours_id":"C0441","etudiant":"Idris","ville":"Abidjan","pays":"Côte d’Ivoire","note":2,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-01-20","utile":19}
+{"index":{"_index":"avis","_id":"A00058"}}
+{"id":"A00058","cours_id":"C0050","etudiant":"Youssef","ville":"Abidjan","pays":"Côte d’Ivoire","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2024-12-31","utile":29}
+{"index":{"_index":"avis","_id":"A00059"}}
+{"id":"A00059","cours_id":"C0017","etudiant":"Karim","ville":"Casablanca","pays":"Maroc","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2026-08-22","utile":2}
+{"index":{"_index":"avis","_id":"A00060"}}
+{"id":"A00060","cours_id":"C0301","etudiant":"Karim","ville":"Casablanca","pays":"Maroc","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2026-10-25","utile":31}
+{"index":{"_index":"avis","_id":"A00061"}}
+{"id":"A00061","cours_id":"C0293","etudiant":"Gabriel","ville":"Laval","pays":"Canada","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-08-05","utile":3}
+{"index":{"_index":"avis","_id":"A00062"}}
+{"id":"A00062","cours_id":"C0344","etudiant":"Gabriel","ville":"Laval","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-03-30","utile":18}
+{"index":{"_index":"avis","_id":"A00063"}}
+{"id":"A00063","cours_id":"C0443","etudiant":"Adam","ville":"Abidjan","pays":"Côte d’Ivoire","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-02-12","utile":10}
+{"index":{"_index":"avis","_id":"A00064"}}
+{"id":"A00064","cours_id":"C0439","etudiant":"Adam","ville":"Abidjan","pays":"Côte d’Ivoire","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-12-19","utile":20}
+{"index":{"_index":"avis","_id":"A00065"}}
+{"id":"A00065","cours_id":"C0450","etudiant":"Sarah","ville":"Lyon","pays":"France","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-04-08","utile":20}
+{"index":{"_index":"avis","_id":"A00066"}}
+{"id":"A00066","cours_id":"C0458","etudiant":"Sarah","ville":"Lyon","pays":"France","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2025-08-21","utile":39}
+{"index":{"_index":"avis","_id":"A00067"}}
+{"id":"A00067","cours_id":"C0069","etudiant":"Gabriel","ville":"Toronto","pays":"Canada","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-09-30","utile":22}
+{"index":{"_index":"avis","_id":"A00068"}}
+{"id":"A00068","cours_id":"C0030","etudiant":"Gabriel","ville":"Toronto","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2026-08-09","utile":32}
+{"index":{"_index":"avis","_id":"A00069"}}
+{"id":"A00069","cours_id":"C0388","etudiant":"Alice","ville":"Marseille","pays":"France","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2025-09-20","utile":7}
+{"index":{"_index":"avis","_id":"A00070"}}
+{"id":"A00070","cours_id":"C0237","etudiant":"Rania","ville":"Gatineau","pays":"Canada","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-12-27","utile":38}
+{"index":{"_index":"avis","_id":"A00071"}}
+{"id":"A00071","cours_id":"C0225","etudiant":"Rania","ville":"Gatineau","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-02-19","utile":16}
+{"index":{"_index":"avis","_id":"A00072"}}
+{"id":"A00072","cours_id":"C0213","etudiant":"Rania","ville":"Gatineau","pays":"Canada","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2025-12-14","utile":19}
+{"index":{"_index":"avis","_id":"A00073"}}
+{"id":"A00073","cours_id":"C0020","etudiant":"Zoé","ville":"Genève","pays":"Suisse","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-10-26","utile":21}
+{"index":{"_index":"avis","_id":"A00074"}}
+{"id":"A00074","cours_id":"C0012","etudiant":"Zoé","ville":"Genève","pays":"Suisse","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2027-04-20","utile":5}
+{"index":{"_index":"avis","_id":"A00075"}}
+{"id":"A00075","cours_id":"C0380","etudiant":"Sofia","ville":"Toronto","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2026-11-22","utile":28}
+{"index":{"_index":"avis","_id":"A00076"}}
+{"id":"A00076","cours_id":"C0355","etudiant":"Sofia","ville":"Toronto","pays":"Canada","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-02-12","utile":26}
+{"index":{"_index":"avis","_id":"A00077"}}
+{"id":"A00077","cours_id":"C0186","etudiant":"Sofia","ville":"Toronto","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2026-03-28","utile":22}
+{"index":{"_index":"avis","_id":"A00078"}}
+{"id":"A00078","cours_id":"C0236","etudiant":"Gabriel","ville":"Lyon","pays":"France","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2023-09-27","utile":1}
+{"index":{"_index":"avis","_id":"A00079"}}
+{"id":"A00079","cours_id":"C0183","etudiant":"Gabriel","ville":"Lyon","pays":"France","note":5,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2024-07-04","utile":5}
+{"index":{"_index":"avis","_id":"A00080"}}
+{"id":"A00080","cours_id":"C0454","etudiant":"Jade","ville":"Toronto","pays":"Canada","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-08-14","utile":40}
+{"index":{"_index":"avis","_id":"A00081"}}
+{"id":"A00081","cours_id":"C0425","etudiant":"Jade","ville":"Toronto","pays":"Canada","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2025-06-23","utile":29}
+{"index":{"_index":"avis","_id":"A00082"}}
+{"id":"A00082","cours_id":"C0480","etudiant":"Jade","ville":"Toronto","pays":"Canada","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2025-02-16","utile":9}
+{"index":{"_index":"avis","_id":"A00083"}}
+{"id":"A00083","cours_id":"C0491","etudiant":"Jade","ville":"Toronto","pays":"Canada","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2025-11-26","utile":28}
+{"index":{"_index":"avis","_id":"A00084"}}
+{"id":"A00084","cours_id":"C0036","etudiant":"Nour","ville":"Québec","pays":"Canada","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2023-08-03","utile":31}
+{"index":{"_index":"avis","_id":"A00085"}}
+{"id":"A00085","cours_id":"C0023","etudiant":"Nour","ville":"Québec","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2023-12-03","utile":27}
+{"index":{"_index":"avis","_id":"A00086"}}
+{"id":"A00086","cours_id":"C0048","etudiant":"Nour","ville":"Québec","pays":"Canada","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2024-05-23","utile":6}
+{"index":{"_index":"avis","_id":"A00087"}}
+{"id":"A00087","cours_id":"C0062","etudiant":"Nour","ville":"Québec","pays":"Canada","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2023-11-25","utile":2}
+{"index":{"_index":"avis","_id":"A00088"}}
+{"id":"A00088","cours_id":"C0086","etudiant":"Nour","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-02-02","utile":5}
+{"index":{"_index":"avis","_id":"A00089"}}
+{"id":"A00089","cours_id":"C0116","etudiant":"Nour","ville":"Tunis","pays":"Tunisie","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2024-08-05","utile":7}
+{"index":{"_index":"avis","_id":"A00090"}}
+{"id":"A00090","cours_id":"C0252","etudiant":"Manon","ville":"Genève","pays":"Suisse","note":5,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2026-03-12","utile":14}
+{"index":{"_index":"avis","_id":"A00091"}}
+{"id":"A00091","cours_id":"C0185","etudiant":"Manon","ville":"Genève","pays":"Suisse","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2026-10-08","utile":11}
+{"index":{"_index":"avis","_id":"A00092"}}
+{"id":"A00092","cours_id":"C0227","etudiant":"Manon","ville":"Genève","pays":"Suisse","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2026-11-24","utile":36}
+{"index":{"_index":"avis","_id":"A00093"}}
+{"id":"A00093","cours_id":"C0206","etudiant":"Manon","ville":"Genève","pays":"Suisse","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-07-13","utile":15}
+{"index":{"_index":"avis","_id":"A00094"}}
+{"id":"A00094","cours_id":"C0195","etudiant":"Manon","ville":"Genève","pays":"Suisse","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2026-05-07","utile":16}
+{"index":{"_index":"avis","_id":"A00095"}}
+{"id":"A00095","cours_id":"C0228","etudiant":"Manon","ville":"Genève","pays":"Suisse","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2026-04-28","utile":36}
+{"index":{"_index":"avis","_id":"A00096"}}
+{"id":"A00096","cours_id":"C0174","etudiant":"Omar","ville":"Québec","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2027-09-28","utile":8}
+{"index":{"_index":"avis","_id":"A00097"}}
+{"id":"A00097","cours_id":"C0202","etudiant":"Omar","ville":"Québec","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2027-02-23","utile":12}
+{"index":{"_index":"avis","_id":"A00098"}}
+{"id":"A00098","cours_id":"C0490","etudiant":"Omar","ville":"Québec","pays":"Canada","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2027-02-02","utile":18}
+{"index":{"_index":"avis","_id":"A00099"}}
+{"id":"A00099","cours_id":"C0026","etudiant":"Léa","ville":"Alger","pays":"Algérie","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2023-08-06","utile":29}
+{"index":{"_index":"avis","_id":"A00100"}}
+{"id":"A00100","cours_id":"C0045","etudiant":"Léa","ville":"Alger","pays":"Algérie","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2023-08-30","utile":14}
+{"index":{"_index":"avis","_id":"A00101"}}
+{"id":"A00101","cours_id":"C0015","etudiant":"Léa","ville":"Alger","pays":"Algérie","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2023-11-23","utile":36}
+{"index":{"_index":"avis","_id":"A00102"}}
+{"id":"A00102","cours_id":"C0051","etudiant":"Léa","ville":"Alger","pays":"Algérie","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2024-01-08","utile":38}
+{"index":{"_index":"avis","_id":"A00103"}}
+{"id":"A00103","cours_id":"C0259","etudiant":"Sofia","ville":"Marseille","pays":"France","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2024-01-08","utile":15}
+{"index":{"_index":"avis","_id":"A00104"}}
+{"id":"A00104","cours_id":"C0314","etudiant":"Sofia","ville":"Marseille","pays":"France","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-07-14","utile":23}
+{"index":{"_index":"avis","_id":"A00105"}}
+{"id":"A00105","cours_id":"C0096","etudiant":"Ismaël","ville":"Genève","pays":"Suisse","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-07-22","utile":38}
+{"index":{"_index":"avis","_id":"A00106"}}
+{"id":"A00106","cours_id":"C0125","etudiant":"Ismaël","ville":"Genève","pays":"Suisse","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2025-06-25","utile":34}
+{"index":{"_index":"avis","_id":"A00107"}}
+{"id":"A00107","cours_id":"C0199","etudiant":"Ismaël","ville":"Casablanca","pays":"Maroc","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2024-04-29","utile":9}
+{"index":{"_index":"avis","_id":"A00108"}}
+{"id":"A00108","cours_id":"C0227","etudiant":"Ismaël","ville":"Casablanca","pays":"Maroc","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2023-10-27","utile":32}
+{"index":{"_index":"avis","_id":"A00109"}}
+{"id":"A00109","cours_id":"C0259","etudiant":"Ismaël","ville":"Casablanca","pays":"Maroc","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2024-02-26","utile":3}
+{"index":{"_index":"avis","_id":"A00110"}}
+{"id":"A00110","cours_id":"C0392","etudiant":"Clara","ville":"Montréal","pays":"Canada","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2024-01-25","utile":6}
+{"index":{"_index":"avis","_id":"A00111"}}
+{"id":"A00111","cours_id":"C0357","etudiant":"Clara","ville":"Montréal","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2024-09-03","utile":5}
+{"index":{"_index":"avis","_id":"A00112"}}
+{"id":"A00112","cours_id":"C0394","etudiant":"Clara","ville":"Montréal","pays":"Canada","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2024-01-16","utile":4}
+{"index":{"_index":"avis","_id":"A00113"}}
+{"id":"A00113","cours_id":"C0380","etudiant":"Clara","ville":"Montréal","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-06-25","utile":1}
+{"index":{"_index":"avis","_id":"A00114"}}
+{"id":"A00114","cours_id":"C0183","etudiant":"Emma","ville":"Gatineau","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-03-26","utile":8}
+{"index":{"_index":"avis","_id":"A00115"}}
+{"id":"A00115","cours_id":"C0383","etudiant":"Emma","ville":"Gatineau","pays":"Canada","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2023-09-01","utile":19}
+{"index":{"_index":"avis","_id":"A00116"}}
+{"id":"A00116","cours_id":"C0114","etudiant":"Louise","ville":"Toronto","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2026-07-07","utile":0}
+{"index":{"_index":"avis","_id":"A00117"}}
+{"id":"A00117","cours_id":"C0152","etudiant":"Louise","ville":"Toronto","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2026-03-14","utile":4}
+{"index":{"_index":"avis","_id":"A00118"}}
+{"id":"A00118","cours_id":"C0090","etudiant":"Louise","ville":"Toronto","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2026-07-02","utile":25}
+{"index":{"_index":"avis","_id":"A00119"}}
+{"id":"A00119","cours_id":"C0355","etudiant":"Julie","ville":"Québec","pays":"Canada","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2024-08-12","utile":13}
+{"index":{"_index":"avis","_id":"A00120"}}
+{"id":"A00120","cours_id":"C0438","etudiant":"Julie","ville":"Québec","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-05-06","utile":10}
+{"index":{"_index":"avis","_id":"A00121"}}
+{"id":"A00121","cours_id":"C0327","etudiant":"Ismaël","ville":"Genève","pays":"Suisse","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2025-04-04","utile":20}
+{"index":{"_index":"avis","_id":"A00122"}}
+{"id":"A00122","cours_id":"C0371","etudiant":"Clara","ville":"Paris","pays":"France","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-10-30","utile":3}
+{"index":{"_index":"avis","_id":"A00123"}}
+{"id":"A00123","cours_id":"C0372","etudiant":"Clara","ville":"Paris","pays":"France","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2026-07-06","utile":36}
+{"index":{"_index":"avis","_id":"A00124"}}
+{"id":"A00124","cours_id":"C0375","etudiant":"Clara","ville":"Paris","pays":"France","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2025-10-14","utile":39}
+{"index":{"_index":"avis","_id":"A00125"}}
+{"id":"A00125","cours_id":"C0380","etudiant":"Clara","ville":"Paris","pays":"France","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-02-14","utile":5}
+{"index":{"_index":"avis","_id":"A00126"}}
+{"id":"A00126","cours_id":"C0278","etudiant":"Ismaël","ville":"Paris","pays":"France","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-03-05","utile":14}
+{"index":{"_index":"avis","_id":"A00127"}}
+{"id":"A00127","cours_id":"C0264","etudiant":"Ismaël","ville":"Paris","pays":"France","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2026-03-19","utile":4}
+{"index":{"_index":"avis","_id":"A00128"}}
+{"id":"A00128","cours_id":"C0255","etudiant":"Ismaël","ville":"Paris","pays":"France","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-06-10","utile":11}
+{"index":{"_index":"avis","_id":"A00129"}}
+{"id":"A00129","cours_id":"C0324","etudiant":"Ismaël","ville":"Paris","pays":"France","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2026-03-09","utile":18}
+{"index":{"_index":"avis","_id":"A00130"}}
+{"id":"A00130","cours_id":"C0296","etudiant":"Élias","ville":"Marseille","pays":"France","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2027-03-12","utile":18}
+{"index":{"_index":"avis","_id":"A00131"}}
+{"id":"A00131","cours_id":"C0267","etudiant":"Élias","ville":"Marseille","pays":"France","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2026-04-10","utile":34}
+{"index":{"_index":"avis","_id":"A00132"}}
+{"id":"A00132","cours_id":"C0300","etudiant":"Élias","ville":"Marseille","pays":"France","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-08-26","utile":2}
+{"index":{"_index":"avis","_id":"A00133"}}
+{"id":"A00133","cours_id":"C0500","etudiant":"Élias","ville":"Marseille","pays":"France","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2026-08-20","utile":14}
+{"index":{"_index":"avis","_id":"A00134"}}
+{"id":"A00134","cours_id":"C0013","etudiant":"Amina","ville":"Casablanca","pays":"Maroc","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-05-19","utile":8}
+{"index":{"_index":"avis","_id":"A00135"}}
+{"id":"A00135","cours_id":"C0019","etudiant":"Amina","ville":"Casablanca","pays":"Maroc","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2025-10-18","utile":37}
+{"index":{"_index":"avis","_id":"A00136"}}
+{"id":"A00136","cours_id":"C0051","etudiant":"Amina","ville":"Casablanca","pays":"Maroc","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-04-18","utile":38}
+{"index":{"_index":"avis","_id":"A00137"}}
+{"id":"A00137","cours_id":"C0065","etudiant":"Salma","ville":"Casablanca","pays":"Maroc","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2023-04-12","utile":33}
+{"index":{"_index":"avis","_id":"A00138"}}
+{"id":"A00138","cours_id":"C0152","etudiant":"Salma","ville":"Casablanca","pays":"Maroc","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2023-04-22","utile":8}
+{"index":{"_index":"avis","_id":"A00139"}}
+{"id":"A00139","cours_id":"C0093","etudiant":"Ismaël","ville":"Tunis","pays":"Tunisie","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2023-11-30","utile":37}
+{"index":{"_index":"avis","_id":"A00140"}}
+{"id":"A00140","cours_id":"C0162","etudiant":"Ismaël","ville":"Tunis","pays":"Tunisie","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-01-11","utile":22}
+{"index":{"_index":"avis","_id":"A00141"}}
+{"id":"A00141","cours_id":"C0168","etudiant":"Ismaël","ville":"Tunis","pays":"Tunisie","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2023-04-10","utile":31}
+{"index":{"_index":"avis","_id":"A00142"}}
+{"id":"A00142","cours_id":"C0124","etudiant":"Ismaël","ville":"Tunis","pays":"Tunisie","note":5,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2024-01-17","utile":36}
+{"index":{"_index":"avis","_id":"A00143"}}
+{"id":"A00143","cours_id":"C0160","etudiant":"Ismaël","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2023-09-09","utile":12}
+{"index":{"_index":"avis","_id":"A00144"}}
+{"id":"A00144","cours_id":"C0083","etudiant":"Ismaël","ville":"Tunis","pays":"Tunisie","note":5,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2023-04-03","utile":25}
+{"index":{"_index":"avis","_id":"A00145"}}
+{"id":"A00145","cours_id":"C0367","etudiant":"Chloé","ville":"Sherbrooke","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2023-06-06","utile":28}
+{"index":{"_index":"avis","_id":"A00146"}}
+{"id":"A00146","cours_id":"C0386","etudiant":"Chloé","ville":"Sherbrooke","pays":"Canada","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2023-07-19","utile":4}
+{"index":{"_index":"avis","_id":"A00147"}}
+{"id":"A00147","cours_id":"C0479","etudiant":"Chloé","ville":"Sherbrooke","pays":"Canada","note":2,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2024-01-23","utile":7}
+{"index":{"_index":"avis","_id":"A00148"}}
+{"id":"A00148","cours_id":"C0405","etudiant":"Yasmine","ville":"Alger","pays":"Algérie","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2025-09-17","utile":32}
+{"index":{"_index":"avis","_id":"A00149"}}
+{"id":"A00149","cours_id":"C0356","etudiant":"Yasmine","ville":"Alger","pays":"Algérie","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2026-06-07","utile":11}
+{"index":{"_index":"avis","_id":"A00150"}}
+{"id":"A00150","cours_id":"C0351","etudiant":"Thomas","ville":"Paris","pays":"France","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-10-21","utile":20}
+{"index":{"_index":"avis","_id":"A00151"}}
+{"id":"A00151","cours_id":"C0372","etudiant":"Thomas","ville":"Paris","pays":"France","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-10-19","utile":28}
+{"index":{"_index":"avis","_id":"A00152"}}
+{"id":"A00152","cours_id":"C0351","etudiant":"Clara","ville":"Gatineau","pays":"Canada","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-11-24","utile":1}
+{"index":{"_index":"avis","_id":"A00153"}}
+{"id":"A00153","cours_id":"C0471","etudiant":"Clara","ville":"Gatineau","pays":"Canada","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2026-02-04","utile":9}
+{"index":{"_index":"avis","_id":"A00154"}}
+{"id":"A00154","cours_id":"C0184","etudiant":"Alice","ville":"Toronto","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2027-04-04","utile":8}
+{"index":{"_index":"avis","_id":"A00155"}}
+{"id":"A00155","cours_id":"C0248","etudiant":"Thomas","ville":"Paris","pays":"France","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-08-14","utile":12}
+{"index":{"_index":"avis","_id":"A00156"}}
+{"id":"A00156","cours_id":"C0497","etudiant":"Lina","ville":"Sherbrooke","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-03-05","utile":14}
+{"index":{"_index":"avis","_id":"A00157"}}
+{"id":"A00157","cours_id":"C0503","etudiant":"Lina","ville":"Sherbrooke","pays":"Canada","note":5,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2025-01-17","utile":40}
+{"index":{"_index":"avis","_id":"A00158"}}
+{"id":"A00158","cours_id":"C0457","etudiant":"Lina","ville":"Sherbrooke","pays":"Canada","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2024-08-04","utile":4}
+{"index":{"_index":"avis","_id":"A00159"}}
+{"id":"A00159","cours_id":"C0489","etudiant":"Lina","ville":"Sherbrooke","pays":"Canada","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-04-12","utile":18}
+{"index":{"_index":"avis","_id":"A00160"}}
+{"id":"A00160","cours_id":"C0044","etudiant":"Sofia","ville":"Toronto","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-02-18","utile":34}
+{"index":{"_index":"avis","_id":"A00161"}}
+{"id":"A00161","cours_id":"C0300","etudiant":"Adam","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2027-03-21","utile":33}
+{"index":{"_index":"avis","_id":"A00162"}}
+{"id":"A00162","cours_id":"C0291","etudiant":"Adam","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-10-18","utile":14}
+{"index":{"_index":"avis","_id":"A00163"}}
+{"id":"A00163","cours_id":"C0281","etudiant":"Adam","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-06-26","utile":16}
+{"index":{"_index":"avis","_id":"A00164"}}
+{"id":"A00164","cours_id":"C0255","etudiant":"Adam","ville":"Tunis","pays":"Tunisie","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2026-07-23","utile":36}
+{"index":{"_index":"avis","_id":"A00165"}}
+{"id":"A00165","cours_id":"C0458","etudiant":"Karim","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-08-14","utile":10}
+{"index":{"_index":"avis","_id":"A00166"}}
+{"id":"A00166","cours_id":"C0498","etudiant":"Karim","ville":"Bruxelles","pays":"Belgique","note":5,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2024-05-03","utile":1}
+{"index":{"_index":"avis","_id":"A00167"}}
+{"id":"A00167","cours_id":"C0504","etudiant":"Karim","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2024-01-26","utile":0}
+{"index":{"_index":"avis","_id":"A00168"}}
+{"id":"A00168","cours_id":"C0110","etudiant":"Jade","ville":"Dakar","pays":"Sénégal","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2023-11-30","utile":18}
+{"index":{"_index":"avis","_id":"A00169"}}
+{"id":"A00169","cours_id":"C0423","etudiant":"Jade","ville":"Dakar","pays":"Sénégal","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2023-07-04","utile":34}
+{"index":{"_index":"avis","_id":"A00170"}}
+{"id":"A00170","cours_id":"C0394","etudiant":"Louise","ville":"Montréal","pays":"Canada","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-07-30","utile":14}
+{"index":{"_index":"avis","_id":"A00171"}}
+{"id":"A00171","cours_id":"C0351","etudiant":"Louise","ville":"Montréal","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2026-08-09","utile":31}
+{"index":{"_index":"avis","_id":"A00172"}}
+{"id":"A00172","cours_id":"C0345","etudiant":"Louise","ville":"Montréal","pays":"Canada","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-09-29","utile":34}
+{"index":{"_index":"avis","_id":"A00173"}}
+{"id":"A00173","cours_id":"C0401","etudiant":"Louise","ville":"Montréal","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-12-15","utile":9}
+{"index":{"_index":"avis","_id":"A00174"}}
+{"id":"A00174","cours_id":"C0195","etudiant":"Louise","ville":"Montréal","pays":"Canada","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-09-13","utile":11}
+{"index":{"_index":"avis","_id":"A00175"}}
+{"id":"A00175","cours_id":"C0252","etudiant":"Maya","ville":"Québec","pays":"Canada","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2025-05-18","utile":27}
+{"index":{"_index":"avis","_id":"A00176"}}
+{"id":"A00176","cours_id":"C0224","etudiant":"Maya","ville":"Québec","pays":"Canada","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2024-12-23","utile":34}
+{"index":{"_index":"avis","_id":"A00177"}}
+{"id":"A00177","cours_id":"C0070","etudiant":"Maya","ville":"Québec","pays":"Canada","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-10-19","utile":8}
+{"index":{"_index":"avis","_id":"A00178"}}
+{"id":"A00178","cours_id":"C0468","etudiant":"Lucas","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-06-07","utile":5}
+{"index":{"_index":"avis","_id":"A00179"}}
+{"id":"A00179","cours_id":"C0434","etudiant":"Lucas","ville":"Tunis","pays":"Tunisie","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2025-05-13","utile":28}
+{"index":{"_index":"avis","_id":"A00180"}}
+{"id":"A00180","cours_id":"C0439","etudiant":"Lucas","ville":"Tunis","pays":"Tunisie","note":5,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2024-12-31","utile":34}
+{"index":{"_index":"avis","_id":"A00181"}}
+{"id":"A00181","cours_id":"C0081","etudiant":"Rania","ville":"Lyon","pays":"France","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-03-17","utile":10}
+{"index":{"_index":"avis","_id":"A00182"}}
+{"id":"A00182","cours_id":"C0309","etudiant":"Rania","ville":"Lyon","pays":"France","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2025-07-21","utile":29}
+{"index":{"_index":"avis","_id":"A00183"}}
+{"id":"A00183","cours_id":"C0142","etudiant":"Samir","ville":"Québec","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2026-03-10","utile":7}
+{"index":{"_index":"avis","_id":"A00184"}}
+{"id":"A00184","cours_id":"C0152","etudiant":"Samir","ville":"Québec","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2026-09-27","utile":17}
+{"index":{"_index":"avis","_id":"A00185"}}
+{"id":"A00185","cours_id":"C0213","etudiant":"Samir","ville":"Québec","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2026-08-24","utile":21}
+{"index":{"_index":"avis","_id":"A00186"}}
+{"id":"A00186","cours_id":"C0498","etudiant":"Alice","ville":"Toronto","pays":"Canada","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2026-05-11","utile":26}
+{"index":{"_index":"avis","_id":"A00187"}}
+{"id":"A00187","cours_id":"C0454","etudiant":"Alice","ville":"Toronto","pays":"Canada","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2026-04-07","utile":38}
+{"index":{"_index":"avis","_id":"A00188"}}
+{"id":"A00188","cours_id":"C0450","etudiant":"Alice","ville":"Toronto","pays":"Canada","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2026-01-10","utile":12}
+{"index":{"_index":"avis","_id":"A00189"}}
+{"id":"A00189","cours_id":"C0373","etudiant":"Léa","ville":"Laval","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2026-10-09","utile":20}
+{"index":{"_index":"avis","_id":"A00190"}}
+{"id":"A00190","cours_id":"C0389","etudiant":"Léa","ville":"Laval","pays":"Canada","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2025-12-22","utile":4}
+{"index":{"_index":"avis","_id":"A00191"}}
+{"id":"A00191","cours_id":"C0315","etudiant":"Léa","ville":"Laval","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2025-11-28","utile":33}
+{"index":{"_index":"avis","_id":"A00192"}}
+{"id":"A00192","cours_id":"C0156","etudiant":"Camille","ville":"Sherbrooke","pays":"Canada","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2024-10-15","utile":3}
+{"index":{"_index":"avis","_id":"A00193"}}
+{"id":"A00193","cours_id":"C0130","etudiant":"Camille","ville":"Sherbrooke","pays":"Canada","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2024-11-02","utile":0}
+{"index":{"_index":"avis","_id":"A00194"}}
+{"id":"A00194","cours_id":"C0488","etudiant":"Camille","ville":"Sherbrooke","pays":"Canada","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-12-01","utile":3}
+{"index":{"_index":"avis","_id":"A00195"}}
+{"id":"A00195","cours_id":"C0222","etudiant":"Malik","ville":"Marseille","pays":"France","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-03-03","utile":21}
+{"index":{"_index":"avis","_id":"A00196"}}
+{"id":"A00196","cours_id":"C0335","etudiant":"Thomas","ville":"Gatineau","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2026-08-29","utile":36}
+{"index":{"_index":"avis","_id":"A00197"}}
+{"id":"A00197","cours_id":"C0442","etudiant":"Emma","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-03-10","utile":3}
+{"index":{"_index":"avis","_id":"A00198"}}
+{"id":"A00198","cours_id":"C0465","etudiant":"Emma","ville":"Tunis","pays":"Tunisie","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2025-11-24","utile":27}
+{"index":{"_index":"avis","_id":"A00199"}}
+{"id":"A00199","cours_id":"C0459","etudiant":"Emma","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2025-09-04","utile":32}
+{"index":{"_index":"avis","_id":"A00200"}}
+{"id":"A00200","cours_id":"C0457","etudiant":"Emma","ville":"Tunis","pays":"Tunisie","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-10-27","utile":21}
+{"index":{"_index":"avis","_id":"A00201"}}
+{"id":"A00201","cours_id":"C0128","etudiant":"Samir","ville":"Marseille","pays":"France","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2024-01-27","utile":21}
+{"index":{"_index":"avis","_id":"A00202"}}
+{"id":"A00202","cours_id":"C0114","etudiant":"Samir","ville":"Marseille","pays":"France","note":2,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2023-08-23","utile":38}
+{"index":{"_index":"avis","_id":"A00203"}}
+{"id":"A00203","cours_id":"C0141","etudiant":"Samir","ville":"Marseille","pays":"France","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-04-23","utile":24}
+{"index":{"_index":"avis","_id":"A00204"}}
+{"id":"A00204","cours_id":"C0138","etudiant":"Samir","ville":"Marseille","pays":"France","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2023-09-09","utile":26}
+{"index":{"_index":"avis","_id":"A00205"}}
+{"id":"A00205","cours_id":"C0114","etudiant":"Alice","ville":"Genève","pays":"Suisse","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-11-28","utile":1}
+{"index":{"_index":"avis","_id":"A00206"}}
+{"id":"A00206","cours_id":"C0242","etudiant":"Bilal","ville":"Sherbrooke","pays":"Canada","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-10-07","utile":32}
+{"index":{"_index":"avis","_id":"A00207"}}
+{"id":"A00207","cours_id":"C0226","etudiant":"Bilal","ville":"Sherbrooke","pays":"Canada","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2025-12-19","utile":10}
+{"index":{"_index":"avis","_id":"A00208"}}
+{"id":"A00208","cours_id":"C0180","etudiant":"Bilal","ville":"Sherbrooke","pays":"Canada","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-02-12","utile":10}
+{"index":{"_index":"avis","_id":"A00209"}}
+{"id":"A00209","cours_id":"C0250","etudiant":"Bilal","ville":"Sherbrooke","pays":"Canada","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-06-11","utile":18}
+{"index":{"_index":"avis","_id":"A00210"}}
+{"id":"A00210","cours_id":"C0214","etudiant":"Ismaël","ville":"Toronto","pays":"Canada","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2024-03-10","utile":13}
+{"index":{"_index":"avis","_id":"A00211"}}
+{"id":"A00211","cours_id":"C0212","etudiant":"Ismaël","ville":"Toronto","pays":"Canada","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2024-01-13","utile":39}
+{"index":{"_index":"avis","_id":"A00212"}}
+{"id":"A00212","cours_id":"C0240","etudiant":"Ismaël","ville":"Toronto","pays":"Canada","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2024-04-26","utile":37}
+{"index":{"_index":"avis","_id":"A00213"}}
+{"id":"A00213","cours_id":"C0284","etudiant":"Nathan","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2027-01-21","utile":29}
+{"index":{"_index":"avis","_id":"A00214"}}
+{"id":"A00214","cours_id":"C0304","etudiant":"Nathan","ville":"Tunis","pays":"Tunisie","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-06-27","utile":40}
+{"index":{"_index":"avis","_id":"A00215"}}
+{"id":"A00215","cours_id":"C0022","etudiant":"Noah","ville":"Abidjan","pays":"Côte d’Ivoire","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2024-04-08","utile":31}
+{"index":{"_index":"avis","_id":"A00216"}}
+{"id":"A00216","cours_id":"C0391","etudiant":"Ali","ville":"Laval","pays":"Canada","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-08-31","utile":29}
+{"index":{"_index":"avis","_id":"A00217"}}
+{"id":"A00217","cours_id":"C0069","etudiant":"Karim","ville":"Abidjan","pays":"Côte d’Ivoire","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2026-05-03","utile":4}
+{"index":{"_index":"avis","_id":"A00218"}}
+{"id":"A00218","cours_id":"C0059","etudiant":"Karim","ville":"Abidjan","pays":"Côte d’Ivoire","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2025-10-11","utile":39}
+{"index":{"_index":"avis","_id":"A00219"}}
+{"id":"A00219","cours_id":"C0421","etudiant":"Samir","ville":"Marseille","pays":"France","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-04-02","utile":22}
+{"index":{"_index":"avis","_id":"A00220"}}
+{"id":"A00220","cours_id":"C0483","etudiant":"Samir","ville":"Marseille","pays":"France","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-07-07","utile":15}
+{"index":{"_index":"avis","_id":"A00221"}}
+{"id":"A00221","cours_id":"C0473","etudiant":"Samir","ville":"Marseille","pays":"France","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-04-19","utile":5}
+{"index":{"_index":"avis","_id":"A00222"}}
+{"id":"A00222","cours_id":"C0099","etudiant":"Hugo","ville":"Dakar","pays":"Sénégal","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2025-07-15","utile":29}
+{"index":{"_index":"avis","_id":"A00223"}}
+{"id":"A00223","cours_id":"C0419","etudiant":"Maya","ville":"Dakar","pays":"Sénégal","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-06-27","utile":15}
+{"index":{"_index":"avis","_id":"A00224"}}
+{"id":"A00224","cours_id":"C0397","etudiant":"Maya","ville":"Dakar","pays":"Sénégal","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-10-22","utile":3}
+{"index":{"_index":"avis","_id":"A00225"}}
+{"id":"A00225","cours_id":"C0038","etudiant":"Hugo","ville":"Alger","pays":"Algérie","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-07-06","utile":24}
+{"index":{"_index":"avis","_id":"A00226"}}
+{"id":"A00226","cours_id":"C0001","etudiant":"Hugo","ville":"Alger","pays":"Algérie","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2025-05-28","utile":7}
+{"index":{"_index":"avis","_id":"A00227"}}
+{"id":"A00227","cours_id":"C0498","etudiant":"Hugo","ville":"Alger","pays":"Algérie","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2025-04-12","utile":23}
+{"index":{"_index":"avis","_id":"A00228"}}
+{"id":"A00228","cours_id":"C0322","etudiant":"Julie","ville":"Casablanca","pays":"Maroc","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2024-10-31","utile":12}
+{"index":{"_index":"avis","_id":"A00229"}}
+{"id":"A00229","cours_id":"C0055","etudiant":"Adam","ville":"Paris","pays":"France","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2026-06-15","utile":3}
+{"index":{"_index":"avis","_id":"A00230"}}
+{"id":"A00230","cours_id":"C0002","etudiant":"Adam","ville":"Paris","pays":"France","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-07-02","utile":39}
+{"index":{"_index":"avis","_id":"A00231"}}
+{"id":"A00231","cours_id":"C0009","etudiant":"Adam","ville":"Paris","pays":"France","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2027-01-12","utile":27}
+{"index":{"_index":"avis","_id":"A00232"}}
+{"id":"A00232","cours_id":"C0092","etudiant":"Adam","ville":"Paris","pays":"France","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2026-04-16","utile":35}
+{"index":{"_index":"avis","_id":"A00233"}}
+{"id":"A00233","cours_id":"C0425","etudiant":"Zoé","ville":"Alger","pays":"Algérie","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2025-08-26","utile":36}
+{"index":{"_index":"avis","_id":"A00234"}}
+{"id":"A00234","cours_id":"C0485","etudiant":"Zoé","ville":"Alger","pays":"Algérie","note":2,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-03-14","utile":18}
+{"index":{"_index":"avis","_id":"A00235"}}
+{"id":"A00235","cours_id":"C0219","etudiant":"Zoé","ville":"Alger","pays":"Algérie","note":5,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2025-06-06","utile":3}
+{"index":{"_index":"avis","_id":"A00236"}}
+{"id":"A00236","cours_id":"C0313","etudiant":"Inès","ville":"Québec","pays":"Canada","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2023-11-26","utile":8}
+{"index":{"_index":"avis","_id":"A00237"}}
+{"id":"A00237","cours_id":"C0016","etudiant":"Emma","ville":"Bruxelles","pays":"Belgique","note":5,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2024-08-17","utile":12}
+{"index":{"_index":"avis","_id":"A00238"}}
+{"id":"A00238","cours_id":"C0017","etudiant":"Emma","ville":"Bruxelles","pays":"Belgique","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2025-06-13","utile":32}
+{"index":{"_index":"avis","_id":"A00239"}}
+{"id":"A00239","cours_id":"C0071","etudiant":"Emma","ville":"Bruxelles","pays":"Belgique","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2024-10-23","utile":39}
+{"index":{"_index":"avis","_id":"A00240"}}
+{"id":"A00240","cours_id":"C0399","etudiant":"Louise","ville":"Paris","pays":"France","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-09-25","utile":9}
+{"index":{"_index":"avis","_id":"A00241"}}
+{"id":"A00241","cours_id":"C0354","etudiant":"Louise","ville":"Paris","pays":"France","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-10-23","utile":24}
+{"index":{"_index":"avis","_id":"A00242"}}
+{"id":"A00242","cours_id":"C0429","etudiant":"Louise","ville":"Paris","pays":"France","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-11-15","utile":34}
+{"index":{"_index":"avis","_id":"A00243"}}
+{"id":"A00243","cours_id":"C0074","etudiant":"Adam","ville":"Gatineau","pays":"Canada","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-06-17","utile":7}
+{"index":{"_index":"avis","_id":"A00244"}}
+{"id":"A00244","cours_id":"C0040","etudiant":"Adam","ville":"Gatineau","pays":"Canada","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-07-02","utile":16}
+{"index":{"_index":"avis","_id":"A00245"}}
+{"id":"A00245","cours_id":"C0024","etudiant":"Adam","ville":"Gatineau","pays":"Canada","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2027-01-09","utile":23}
+{"index":{"_index":"avis","_id":"A00246"}}
+{"id":"A00246","cours_id":"C0041","etudiant":"Adam","ville":"Gatineau","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2026-08-09","utile":12}
+{"index":{"_index":"avis","_id":"A00247"}}
+{"id":"A00247","cours_id":"C0059","etudiant":"Hugo","ville":"Lyon","pays":"France","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2024-03-29","utile":25}
+{"index":{"_index":"avis","_id":"A00248"}}
+{"id":"A00248","cours_id":"C0499","etudiant":"Hugo","ville":"Lyon","pays":"France","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2024-05-07","utile":17}
+{"index":{"_index":"avis","_id":"A00249"}}
+{"id":"A00249","cours_id":"C0122","etudiant":"Lucas","ville":"Québec","pays":"Canada","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2024-11-12","utile":24}
+{"index":{"_index":"avis","_id":"A00250"}}
+{"id":"A00250","cours_id":"C0106","etudiant":"Lucas","ville":"Québec","pays":"Canada","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-03-18","utile":12}
+{"index":{"_index":"avis","_id":"A00251"}}
+{"id":"A00251","cours_id":"C0468","etudiant":"Lucas","ville":"Québec","pays":"Canada","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2024-11-25","utile":23}
+{"index":{"_index":"avis","_id":"A00252"}}
+{"id":"A00252","cours_id":"C0022","etudiant":"Mehdi","ville":"Sherbrooke","pays":"Canada","note":5,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2026-07-29","utile":2}
+{"index":{"_index":"avis","_id":"A00253"}}
+{"id":"A00253","cours_id":"C0045","etudiant":"Mehdi","ville":"Sherbrooke","pays":"Canada","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2026-04-12","utile":15}
+{"index":{"_index":"avis","_id":"A00254"}}
+{"id":"A00254","cours_id":"C0275","etudiant":"Mehdi","ville":"Sherbrooke","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2026-08-02","utile":17}
+{"index":{"_index":"avis","_id":"A00255"}}
+{"id":"A00255","cours_id":"C0444","etudiant":"Jade","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2024-11-27","utile":10}
+{"index":{"_index":"avis","_id":"A00256"}}
+{"id":"A00256","cours_id":"C0182","etudiant":"Maya","ville":"Montréal","pays":"Canada","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2026-03-04","utile":39}
+{"index":{"_index":"avis","_id":"A00257"}}
+{"id":"A00257","cours_id":"C0235","etudiant":"Maya","ville":"Montréal","pays":"Canada","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-05-12","utile":22}
+{"index":{"_index":"avis","_id":"A00258"}}
+{"id":"A00258","cours_id":"C0223","etudiant":"Maya","ville":"Montréal","pays":"Canada","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-08-20","utile":19}
+{"index":{"_index":"avis","_id":"A00259"}}
+{"id":"A00259","cours_id":"C0291","etudiant":"Maya","ville":"Montréal","pays":"Canada","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-02-02","utile":34}
+{"index":{"_index":"avis","_id":"A00260"}}
+{"id":"A00260","cours_id":"C0366","etudiant":"Adam","ville":"Québec","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2023-10-09","utile":6}
+{"index":{"_index":"avis","_id":"A00261"}}
+{"id":"A00261","cours_id":"C0101","etudiant":"Rania","ville":"Toronto","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2027-07-25","utile":28}
+{"index":{"_index":"avis","_id":"A00262"}}
+{"id":"A00262","cours_id":"C0154","etudiant":"Rania","ville":"Toronto","pays":"Canada","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2027-06-10","utile":33}
+{"index":{"_index":"avis","_id":"A00263"}}
+{"id":"A00263","cours_id":"C0165","etudiant":"Rania","ville":"Toronto","pays":"Canada","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2027-03-27","utile":26}
+{"index":{"_index":"avis","_id":"A00264"}}
+{"id":"A00264","cours_id":"C0160","etudiant":"Rania","ville":"Toronto","pays":"Canada","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2027-08-19","utile":25}
+{"index":{"_index":"avis","_id":"A00265"}}
+{"id":"A00265","cours_id":"C0197","etudiant":"Jade","ville":"Genève","pays":"Suisse","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-09-30","utile":32}
+{"index":{"_index":"avis","_id":"A00266"}}
+{"id":"A00266","cours_id":"C0423","etudiant":"Jade","ville":"Genève","pays":"Suisse","note":2,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-06-19","utile":36}
+{"index":{"_index":"avis","_id":"A00267"}}
+{"id":"A00267","cours_id":"C0311","etudiant":"Adam","ville":"Lyon","pays":"France","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-08-28","utile":37}
+{"index":{"_index":"avis","_id":"A00268"}}
+{"id":"A00268","cours_id":"C0314","etudiant":"Adam","ville":"Lyon","pays":"France","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2026-08-15","utile":25}
+{"index":{"_index":"avis","_id":"A00269"}}
+{"id":"A00269","cours_id":"C0248","etudiant":"Adam","ville":"Lyon","pays":"France","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2026-09-18","utile":33}
+{"index":{"_index":"avis","_id":"A00270"}}
+{"id":"A00270","cours_id":"C0464","etudiant":"Idris","ville":"Sherbrooke","pays":"Canada","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-10-07","utile":31}
+{"index":{"_index":"avis","_id":"A00271"}}
+{"id":"A00271","cours_id":"C0468","etudiant":"Idris","ville":"Sherbrooke","pays":"Canada","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-09-25","utile":27}
+{"index":{"_index":"avis","_id":"A00272"}}
+{"id":"A00272","cours_id":"C0085","etudiant":"Idris","ville":"Sherbrooke","pays":"Canada","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-10-15","utile":18}
+{"index":{"_index":"avis","_id":"A00273"}}
+{"id":"A00273","cours_id":"C0498","etudiant":"Yasmine","ville":"Genève","pays":"Suisse","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2024-01-27","utile":22}
+{"index":{"_index":"avis","_id":"A00274"}}
+{"id":"A00274","cours_id":"C0498","etudiant":"Hugo","ville":"Lyon","pays":"France","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2026-06-03","utile":35}
+{"index":{"_index":"avis","_id":"A00275"}}
+{"id":"A00275","cours_id":"C0124","etudiant":"Sarah","ville":"Abidjan","pays":"Côte d’Ivoire","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2024-09-22","utile":26}
+{"index":{"_index":"avis","_id":"A00276"}}
+{"id":"A00276","cours_id":"C0165","etudiant":"Sarah","ville":"Abidjan","pays":"Côte d’Ivoire","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-10-20","utile":19}
+{"index":{"_index":"avis","_id":"A00277"}}
+{"id":"A00277","cours_id":"C0092","etudiant":"Sarah","ville":"Abidjan","pays":"Côte d’Ivoire","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2023-11-14","utile":24}
+{"index":{"_index":"avis","_id":"A00278"}}
+{"id":"A00278","cours_id":"C0117","etudiant":"Sarah","ville":"Abidjan","pays":"Côte d’Ivoire","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-10-19","utile":35}
+{"index":{"_index":"avis","_id":"A00279"}}
+{"id":"A00279","cours_id":"C0421","etudiant":"Sarah","ville":"Abidjan","pays":"Côte d’Ivoire","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2024-02-03","utile":23}
+{"index":{"_index":"avis","_id":"A00280"}}
+{"id":"A00280","cours_id":"C0050","etudiant":"Maya","ville":"Québec","pays":"Canada","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-09-11","utile":36}
+{"index":{"_index":"avis","_id":"A00281"}}
+{"id":"A00281","cours_id":"C0054","etudiant":"Maya","ville":"Québec","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-05-24","utile":40}
+{"index":{"_index":"avis","_id":"A00282"}}
+{"id":"A00282","cours_id":"C0065","etudiant":"Maya","ville":"Québec","pays":"Canada","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2025-04-24","utile":27}
+{"index":{"_index":"avis","_id":"A00283"}}
+{"id":"A00283","cours_id":"C0029","etudiant":"Maya","ville":"Québec","pays":"Canada","note":5,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2025-06-23","utile":34}
+{"index":{"_index":"avis","_id":"A00284"}}
+{"id":"A00284","cours_id":"C0126","etudiant":"Clara","ville":"Alger","pays":"Algérie","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2027-04-15","utile":20}
+{"index":{"_index":"avis","_id":"A00285"}}
+{"id":"A00285","cours_id":"C0101","etudiant":"Clara","ville":"Alger","pays":"Algérie","note":5,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2027-01-06","utile":16}
+{"index":{"_index":"avis","_id":"A00286"}}
+{"id":"A00286","cours_id":"C0133","etudiant":"Clara","ville":"Alger","pays":"Algérie","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2027-08-13","utile":23}
+{"index":{"_index":"avis","_id":"A00287"}}
+{"id":"A00287","cours_id":"C0106","etudiant":"Clara","ville":"Alger","pays":"Algérie","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2026-12-10","utile":27}
+{"index":{"_index":"avis","_id":"A00288"}}
+{"id":"A00288","cours_id":"C0213","etudiant":"Noah","ville":"Toronto","pays":"Canada","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-11-17","utile":20}
+{"index":{"_index":"avis","_id":"A00289"}}
+{"id":"A00289","cours_id":"C0237","etudiant":"Noah","ville":"Toronto","pays":"Canada","note":5,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2026-05-06","utile":27}
+{"index":{"_index":"avis","_id":"A00290"}}
+{"id":"A00290","cours_id":"C0170","etudiant":"Noah","ville":"Toronto","pays":"Canada","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-07-18","utile":28}
+{"index":{"_index":"avis","_id":"A00291"}}
+{"id":"A00291","cours_id":"C0200","etudiant":"Noah","ville":"Toronto","pays":"Canada","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-11-23","utile":17}
+{"index":{"_index":"avis","_id":"A00292"}}
+{"id":"A00292","cours_id":"C0377","etudiant":"Noah","ville":"Toronto","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2026-11-02","utile":37}
+{"index":{"_index":"avis","_id":"A00293"}}
+{"id":"A00293","cours_id":"C0325","etudiant":"Salma","ville":"Casablanca","pays":"Maroc","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2025-08-09","utile":12}
+{"index":{"_index":"avis","_id":"A00294"}}
+{"id":"A00294","cours_id":"C0005","etudiant":"Youssef","ville":"Paris","pays":"France","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-08-24","utile":30}
+{"index":{"_index":"avis","_id":"A00295"}}
+{"id":"A00295","cours_id":"C0024","etudiant":"Youssef","ville":"Paris","pays":"France","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-07-10","utile":4}
+{"index":{"_index":"avis","_id":"A00296"}}
+{"id":"A00296","cours_id":"C0016","etudiant":"Youssef","ville":"Paris","pays":"France","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-03-21","utile":13}
+{"index":{"_index":"avis","_id":"A00297"}}
+{"id":"A00297","cours_id":"C0095","etudiant":"Nour","ville":"Casablanca","pays":"Maroc","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-12-06","utile":11}
+{"index":{"_index":"avis","_id":"A00298"}}
+{"id":"A00298","cours_id":"C0315","etudiant":"Sofia","ville":"Gatineau","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2023-11-10","utile":2}
+{"index":{"_index":"avis","_id":"A00299"}}
+{"id":"A00299","cours_id":"C0259","etudiant":"Sofia","ville":"Gatineau","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2023-12-16","utile":26}
+{"index":{"_index":"avis","_id":"A00300"}}
+{"id":"A00300","cours_id":"C0332","etudiant":"Lucas","ville":"Toronto","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-07-21","utile":18}
+{"index":{"_index":"avis","_id":"A00301"}}
+{"id":"A00301","cours_id":"C0295","etudiant":"Lucas","ville":"Toronto","pays":"Canada","note":5,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2024-03-08","utile":35}
+{"index":{"_index":"avis","_id":"A00302"}}
+{"id":"A00302","cours_id":"C0257","etudiant":"Lucas","ville":"Toronto","pays":"Canada","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2024-03-24","utile":27}
+{"index":{"_index":"avis","_id":"A00303"}}
+{"id":"A00303","cours_id":"C0258","etudiant":"Lucas","ville":"Toronto","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2023-08-14","utile":25}
+{"index":{"_index":"avis","_id":"A00304"}}
+{"id":"A00304","cours_id":"C0159","etudiant":"Lucas","ville":"Toronto","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2024-07-12","utile":25}
+{"index":{"_index":"avis","_id":"A00305"}}
+{"id":"A00305","cours_id":"C0226","etudiant":"Karim","ville":"Lyon","pays":"France","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-04-10","utile":0}
+{"index":{"_index":"avis","_id":"A00306"}}
+{"id":"A00306","cours_id":"C0071","etudiant":"Malik","ville":"Lyon","pays":"France","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2024-12-21","utile":29}
+{"index":{"_index":"avis","_id":"A00307"}}
+{"id":"A00307","cours_id":"C0075","etudiant":"Malik","ville":"Lyon","pays":"France","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2024-12-29","utile":5}
+{"index":{"_index":"avis","_id":"A00308"}}
+{"id":"A00308","cours_id":"C0066","etudiant":"Malik","ville":"Lyon","pays":"France","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2024-09-26","utile":6}
+{"index":{"_index":"avis","_id":"A00309"}}
+{"id":"A00309","cours_id":"C0051","etudiant":"Thomas","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2024-03-31","utile":33}
+{"index":{"_index":"avis","_id":"A00310"}}
+{"id":"A00310","cours_id":"C0370","etudiant":"Samir","ville":"Bruxelles","pays":"Belgique","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-07-10","utile":13}
+{"index":{"_index":"avis","_id":"A00311"}}
+{"id":"A00311","cours_id":"C0146","etudiant":"Youssef","ville":"Gatineau","pays":"Canada","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2025-03-12","utile":7}
+{"index":{"_index":"avis","_id":"A00312"}}
+{"id":"A00312","cours_id":"C0089","etudiant":"Youssef","ville":"Gatineau","pays":"Canada","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-01-10","utile":19}
+{"index":{"_index":"avis","_id":"A00313"}}
+{"id":"A00313","cours_id":"C0431","etudiant":"Youssef","ville":"Gatineau","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2025-11-07","utile":3}
+{"index":{"_index":"avis","_id":"A00314"}}
+{"id":"A00314","cours_id":"C0504","etudiant":"Malik","ville":"Toronto","pays":"Canada","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-08-10","utile":23}
+{"index":{"_index":"avis","_id":"A00315"}}
+{"id":"A00315","cours_id":"C0160","etudiant":"Sarah","ville":"Casablanca","pays":"Maroc","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2025-06-21","utile":21}
+{"index":{"_index":"avis","_id":"A00316"}}
+{"id":"A00316","cours_id":"C0108","etudiant":"Sarah","ville":"Casablanca","pays":"Maroc","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-04-21","utile":5}
+{"index":{"_index":"avis","_id":"A00317"}}
+{"id":"A00317","cours_id":"C0161","etudiant":"Sarah","ville":"Casablanca","pays":"Maroc","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-08-04","utile":12}
+{"index":{"_index":"avis","_id":"A00318"}}
+{"id":"A00318","cours_id":"C0155","etudiant":"Louise","ville":"Laval","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2024-10-11","utile":23}
+{"index":{"_index":"avis","_id":"A00319"}}
+{"id":"A00319","cours_id":"C0092","etudiant":"Louise","ville":"Laval","pays":"Canada","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2024-04-08","utile":31}
+{"index":{"_index":"avis","_id":"A00320"}}
+{"id":"A00320","cours_id":"C0165","etudiant":"Louise","ville":"Laval","pays":"Canada","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2024-04-07","utile":11}
+{"index":{"_index":"avis","_id":"A00321"}}
+{"id":"A00321","cours_id":"C0341","etudiant":"Louise","ville":"Laval","pays":"Canada","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2024-05-12","utile":17}
+{"index":{"_index":"avis","_id":"A00322"}}
+{"id":"A00322","cours_id":"C0047","etudiant":"Karim","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-06-07","utile":32}
+{"index":{"_index":"avis","_id":"A00323"}}
+{"id":"A00323","cours_id":"C0110","etudiant":"Louise","ville":"Alger","pays":"Algérie","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-10-24","utile":37}
+{"index":{"_index":"avis","_id":"A00324"}}
+{"id":"A00324","cours_id":"C0162","etudiant":"Louise","ville":"Alger","pays":"Algérie","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-09-01","utile":30}
+{"index":{"_index":"avis","_id":"A00325"}}
+{"id":"A00325","cours_id":"C0454","etudiant":"Omar","ville":"Lyon","pays":"France","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-08-14","utile":16}
+{"index":{"_index":"avis","_id":"A00326"}}
+{"id":"A00326","cours_id":"C0498","etudiant":"Omar","ville":"Lyon","pays":"France","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-09-22","utile":22}
+{"index":{"_index":"avis","_id":"A00327"}}
+{"id":"A00327","cours_id":"C0416","etudiant":"Omar","ville":"Lyon","pays":"France","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2025-04-01","utile":7}
+{"index":{"_index":"avis","_id":"A00328"}}
+{"id":"A00328","cours_id":"C0329","etudiant":"Zoé","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2025-08-05","utile":28}
+{"index":{"_index":"avis","_id":"A00329"}}
+{"id":"A00329","cours_id":"C0326","etudiant":"Zoé","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2025-09-30","utile":32}
+{"index":{"_index":"avis","_id":"A00330"}}
+{"id":"A00330","cours_id":"C0262","etudiant":"Zoé","ville":"Bruxelles","pays":"Belgique","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2025-02-19","utile":18}
+{"index":{"_index":"avis","_id":"A00331"}}
+{"id":"A00331","cours_id":"C0281","etudiant":"Bilal","ville":"Gatineau","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-08-08","utile":32}
+{"index":{"_index":"avis","_id":"A00332"}}
+{"id":"A00332","cours_id":"C0293","etudiant":"Bilal","ville":"Gatineau","pays":"Canada","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-11-16","utile":33}
+{"index":{"_index":"avis","_id":"A00333"}}
+{"id":"A00333","cours_id":"C0291","etudiant":"Bilal","ville":"Gatineau","pays":"Canada","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2026-03-16","utile":4}
+{"index":{"_index":"avis","_id":"A00334"}}
+{"id":"A00334","cours_id":"C0149","etudiant":"Bilal","ville":"Gatineau","pays":"Canada","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-07-16","utile":16}
+{"index":{"_index":"avis","_id":"A00335"}}
+{"id":"A00335","cours_id":"C0496","etudiant":"Adam","ville":"Casablanca","pays":"Maroc","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2024-05-27","utile":40}
+{"index":{"_index":"avis","_id":"A00336"}}
+{"id":"A00336","cours_id":"C0465","etudiant":"Adam","ville":"Casablanca","pays":"Maroc","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-04-04","utile":36}
+{"index":{"_index":"avis","_id":"A00337"}}
+{"id":"A00337","cours_id":"C0374","etudiant":"Adam","ville":"Casablanca","pays":"Maroc","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2024-06-05","utile":3}
+{"index":{"_index":"avis","_id":"A00338"}}
+{"id":"A00338","cours_id":"C0325","etudiant":"Chloé","ville":"Dakar","pays":"Sénégal","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2024-11-10","utile":35}
+{"index":{"_index":"avis","_id":"A00339"}}
+{"id":"A00339","cours_id":"C0300","etudiant":"Chloé","ville":"Dakar","pays":"Sénégal","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-01-31","utile":16}
+{"index":{"_index":"avis","_id":"A00340"}}
+{"id":"A00340","cours_id":"C0176","etudiant":"Élias","ville":"Abidjan","pays":"Côte d’Ivoire","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-03-06","utile":25}
+{"index":{"_index":"avis","_id":"A00341"}}
+{"id":"A00341","cours_id":"C0383","etudiant":"Lina","ville":"Paris","pays":"France","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2026-12-07","utile":25}
+{"index":{"_index":"avis","_id":"A00342"}}
+{"id":"A00342","cours_id":"C0149","etudiant":"Élias","ville":"Genève","pays":"Suisse","note":5,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2026-05-13","utile":31}
+{"index":{"_index":"avis","_id":"A00343"}}
+{"id":"A00343","cours_id":"C0102","etudiant":"Élias","ville":"Genève","pays":"Suisse","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2026-11-11","utile":29}
+{"index":{"_index":"avis","_id":"A00344"}}
+{"id":"A00344","cours_id":"C0496","etudiant":"Nathan","ville":"Dakar","pays":"Sénégal","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2026-07-14","utile":0}
+{"index":{"_index":"avis","_id":"A00345"}}
+{"id":"A00345","cours_id":"C0452","etudiant":"Nathan","ville":"Dakar","pays":"Sénégal","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-11-14","utile":0}
+{"index":{"_index":"avis","_id":"A00346"}}
+{"id":"A00346","cours_id":"C0444","etudiant":"Nathan","ville":"Dakar","pays":"Sénégal","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-04-04","utile":0}
+{"index":{"_index":"avis","_id":"A00347"}}
+{"id":"A00347","cours_id":"C0422","etudiant":"Nathan","ville":"Dakar","pays":"Sénégal","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2026-08-10","utile":35}
+{"index":{"_index":"avis","_id":"A00348"}}
+{"id":"A00348","cours_id":"C0222","etudiant":"Chloé","ville":"Casablanca","pays":"Maroc","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2024-08-25","utile":20}
+{"index":{"_index":"avis","_id":"A00349"}}
+{"id":"A00349","cours_id":"C0003","etudiant":"Chloé","ville":"Casablanca","pays":"Maroc","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2024-11-13","utile":29}
+{"index":{"_index":"avis","_id":"A00350"}}
+{"id":"A00350","cours_id":"C0088","etudiant":"Ali","ville":"Casablanca","pays":"Maroc","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-05-27","utile":28}
+{"index":{"_index":"avis","_id":"A00351"}}
+{"id":"A00351","cours_id":"C0104","etudiant":"Ali","ville":"Casablanca","pays":"Maroc","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2025-12-31","utile":36}
+{"index":{"_index":"avis","_id":"A00352"}}
+{"id":"A00352","cours_id":"C0499","etudiant":"Sarah","ville":"Dakar","pays":"Sénégal","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2024-06-06","utile":20}
+{"index":{"_index":"avis","_id":"A00353"}}
+{"id":"A00353","cours_id":"C0470","etudiant":"Sarah","ville":"Dakar","pays":"Sénégal","note":5,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2023-07-15","utile":7}
+{"index":{"_index":"avis","_id":"A00354"}}
+{"id":"A00354","cours_id":"C0434","etudiant":"Rania","ville":"Genève","pays":"Suisse","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2024-10-24","utile":19}
+{"index":{"_index":"avis","_id":"A00355"}}
+{"id":"A00355","cours_id":"C0474","etudiant":"Rania","ville":"Genève","pays":"Suisse","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-12-05","utile":14}
+{"index":{"_index":"avis","_id":"A00356"}}
+{"id":"A00356","cours_id":"C0441","etudiant":"Rania","ville":"Genève","pays":"Suisse","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-06-14","utile":4}
+{"index":{"_index":"avis","_id":"A00357"}}
+{"id":"A00357","cours_id":"C0453","etudiant":"Rania","ville":"Genève","pays":"Suisse","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-06-15","utile":36}
+{"index":{"_index":"avis","_id":"A00358"}}
+{"id":"A00358","cours_id":"C0469","etudiant":"Gabriel","ville":"Gatineau","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-03-16","utile":9}
+{"index":{"_index":"avis","_id":"A00359"}}
+{"id":"A00359","cours_id":"C0030","etudiant":"Bilal","ville":"Toronto","pays":"Canada","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2026-08-30","utile":39}
+{"index":{"_index":"avis","_id":"A00360"}}
+{"id":"A00360","cours_id":"C0069","etudiant":"Bilal","ville":"Toronto","pays":"Canada","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2026-10-19","utile":23}
+{"index":{"_index":"avis","_id":"A00361"}}
+{"id":"A00361","cours_id":"C0421","etudiant":"Bilal","ville":"Toronto","pays":"Canada","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-12-11","utile":19}
+{"index":{"_index":"avis","_id":"A00362"}}
+{"id":"A00362","cours_id":"C0018","etudiant":"Zoé","ville":"Casablanca","pays":"Maroc","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2024-09-16","utile":4}
+{"index":{"_index":"avis","_id":"A00363"}}
+{"id":"A00363","cours_id":"C0164","etudiant":"Mehdi","ville":"Montréal","pays":"Canada","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-02-15","utile":40}
+{"index":{"_index":"avis","_id":"A00364"}}
+{"id":"A00364","cours_id":"C0123","etudiant":"Mehdi","ville":"Montréal","pays":"Canada","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2025-03-27","utile":13}
+{"index":{"_index":"avis","_id":"A00365"}}
+{"id":"A00365","cours_id":"C0449","etudiant":"Salma","ville":"Laval","pays":"Canada","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2025-10-14","utile":36}
+{"index":{"_index":"avis","_id":"A00366"}}
+{"id":"A00366","cours_id":"C0447","etudiant":"Salma","ville":"Laval","pays":"Canada","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2026-01-04","utile":3}
+{"index":{"_index":"avis","_id":"A00367"}}
+{"id":"A00367","cours_id":"C0408","etudiant":"Élias","ville":"Sherbrooke","pays":"Canada","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2023-12-14","utile":14}
+{"index":{"_index":"avis","_id":"A00368"}}
+{"id":"A00368","cours_id":"C0355","etudiant":"Élias","ville":"Sherbrooke","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2024-04-10","utile":40}
+{"index":{"_index":"avis","_id":"A00369"}}
+{"id":"A00369","cours_id":"C0242","etudiant":"Léa","ville":"Bruxelles","pays":"Belgique","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-10-30","utile":33}
+{"index":{"_index":"avis","_id":"A00370"}}
+{"id":"A00370","cours_id":"C0219","etudiant":"Léa","ville":"Bruxelles","pays":"Belgique","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2024-12-12","utile":5}
+{"index":{"_index":"avis","_id":"A00371"}}
+{"id":"A00371","cours_id":"C0455","etudiant":"Léa","ville":"Bruxelles","pays":"Belgique","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2025-06-05","utile":7}
+{"index":{"_index":"avis","_id":"A00372"}}
+{"id":"A00372","cours_id":"C0073","etudiant":"Youssef","ville":"Sherbrooke","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2025-03-06","utile":25}
+{"index":{"_index":"avis","_id":"A00373"}}
+{"id":"A00373","cours_id":"C0370","etudiant":"Thomas","ville":"Alger","pays":"Algérie","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2024-04-12","utile":14}
+{"index":{"_index":"avis","_id":"A00374"}}
+{"id":"A00374","cours_id":"C0414","etudiant":"Thomas","ville":"Alger","pays":"Algérie","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2024-10-20","utile":11}
+{"index":{"_index":"avis","_id":"A00375"}}
+{"id":"A00375","cours_id":"C0339","etudiant":"Thomas","ville":"Alger","pays":"Algérie","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2024-01-27","utile":8}
+{"index":{"_index":"avis","_id":"A00376"}}
+{"id":"A00376","cours_id":"C0033","etudiant":"Idris","ville":"Gatineau","pays":"Canada","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-11-12","utile":9}
+{"index":{"_index":"avis","_id":"A00377"}}
+{"id":"A00377","cours_id":"C0047","etudiant":"Idris","ville":"Gatineau","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-12-03","utile":38}
+{"index":{"_index":"avis","_id":"A00378"}}
+{"id":"A00378","cours_id":"C0352","etudiant":"Sarah","ville":"Casablanca","pays":"Maroc","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2026-02-09","utile":0}
+{"index":{"_index":"avis","_id":"A00379"}}
+{"id":"A00379","cours_id":"C0359","etudiant":"Sarah","ville":"Casablanca","pays":"Maroc","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-03-18","utile":38}
+{"index":{"_index":"avis","_id":"A00380"}}
+{"id":"A00380","cours_id":"C0219","etudiant":"Karim","ville":"Casablanca","pays":"Maroc","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2025-10-27","utile":33}
+{"index":{"_index":"avis","_id":"A00381"}}
+{"id":"A00381","cours_id":"C0170","etudiant":"Karim","ville":"Casablanca","pays":"Maroc","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-03-17","utile":28}
+{"index":{"_index":"avis","_id":"A00382"}}
+{"id":"A00382","cours_id":"C0481","etudiant":"Zoé","ville":"Montréal","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2024-04-12","utile":38}
+{"index":{"_index":"avis","_id":"A00383"}}
+{"id":"A00383","cours_id":"C0427","etudiant":"Zoé","ville":"Montréal","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2024-01-16","utile":3}
+{"index":{"_index":"avis","_id":"A00384"}}
+{"id":"A00384","cours_id":"C0442","etudiant":"Zoé","ville":"Montréal","pays":"Canada","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-05-27","utile":31}
+{"index":{"_index":"avis","_id":"A00385"}}
+{"id":"A00385","cours_id":"C0474","etudiant":"Samir","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2027-01-04","utile":34}
+{"index":{"_index":"avis","_id":"A00386"}}
+{"id":"A00386","cours_id":"C0476","etudiant":"Samir","ville":"Bruxelles","pays":"Belgique","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-03-19","utile":26}
+{"index":{"_index":"avis","_id":"A00387"}}
+{"id":"A00387","cours_id":"C0271","etudiant":"Samir","ville":"Bruxelles","pays":"Belgique","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-10-22","utile":11}
+{"index":{"_index":"avis","_id":"A00388"}}
+{"id":"A00388","cours_id":"C0324","etudiant":"Gabriel","ville":"Gatineau","pays":"Canada","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-02-24","utile":20}
+{"index":{"_index":"avis","_id":"A00389"}}
+{"id":"A00389","cours_id":"C0297","etudiant":"Gabriel","ville":"Gatineau","pays":"Canada","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2025-04-20","utile":23}
+{"index":{"_index":"avis","_id":"A00390"}}
+{"id":"A00390","cours_id":"C0172","etudiant":"Julie","ville":"Paris","pays":"France","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2026-05-07","utile":28}
+{"index":{"_index":"avis","_id":"A00391"}}
+{"id":"A00391","cours_id":"C0218","etudiant":"Julie","ville":"Paris","pays":"France","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2025-12-12","utile":12}
+{"index":{"_index":"avis","_id":"A00392"}}
+{"id":"A00392","cours_id":"C0414","etudiant":"Adam","ville":"Lyon","pays":"France","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-11-22","utile":9}
+{"index":{"_index":"avis","_id":"A00393"}}
+{"id":"A00393","cours_id":"C0362","etudiant":"Adam","ville":"Lyon","pays":"France","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2027-04-20","utile":3}
+{"index":{"_index":"avis","_id":"A00394"}}
+{"id":"A00394","cours_id":"C0267","etudiant":"Adam","ville":"Lyon","pays":"France","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2027-02-26","utile":25}
+{"index":{"_index":"avis","_id":"A00395"}}
+{"id":"A00395","cours_id":"C0115","etudiant":"Idris","ville":"Abidjan","pays":"Côte d’Ivoire","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-07-29","utile":15}
+{"index":{"_index":"avis","_id":"A00396"}}
+{"id":"A00396","cours_id":"C0120","etudiant":"Idris","ville":"Abidjan","pays":"Côte d’Ivoire","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-01-21","utile":16}
+{"index":{"_index":"avis","_id":"A00397"}}
+{"id":"A00397","cours_id":"C0408","etudiant":"Rayan","ville":"Alger","pays":"Algérie","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2025-12-29","utile":3}
+{"index":{"_index":"avis","_id":"A00398"}}
+{"id":"A00398","cours_id":"C0105","etudiant":"Élias","ville":"Laval","pays":"Canada","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2026-06-18","utile":29}
+{"index":{"_index":"avis","_id":"A00399"}}
+{"id":"A00399","cours_id":"C0111","etudiant":"Élias","ville":"Laval","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2027-02-26","utile":25}
+{"index":{"_index":"avis","_id":"A00400"}}
+{"id":"A00400","cours_id":"C0094","etudiant":"Élias","ville":"Laval","pays":"Canada","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2027-01-26","utile":39}
+{"index":{"_index":"avis","_id":"A00401"}}
+{"id":"A00401","cours_id":"C0269","etudiant":"Élias","ville":"Laval","pays":"Canada","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2027-02-28","utile":23}
+{"index":{"_index":"avis","_id":"A00402"}}
+{"id":"A00402","cours_id":"C0071","etudiant":"Amina","ville":"Laval","pays":"Canada","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2026-08-19","utile":27}
+{"index":{"_index":"avis","_id":"A00403"}}
+{"id":"A00403","cours_id":"C0044","etudiant":"Amina","ville":"Laval","pays":"Canada","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-06-21","utile":32}
+{"index":{"_index":"avis","_id":"A00404"}}
+{"id":"A00404","cours_id":"C0032","etudiant":"Amina","ville":"Laval","pays":"Canada","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2026-03-29","utile":35}
+{"index":{"_index":"avis","_id":"A00405"}}
+{"id":"A00405","cours_id":"C0353","etudiant":"Maya","ville":"Laval","pays":"Canada","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2023-07-29","utile":16}
+{"index":{"_index":"avis","_id":"A00406"}}
+{"id":"A00406","cours_id":"C0444","etudiant":"Rania","ville":"Toronto","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2024-07-08","utile":7}
+{"index":{"_index":"avis","_id":"A00407"}}
+{"id":"A00407","cours_id":"C0479","etudiant":"Rania","ville":"Toronto","pays":"Canada","note":5,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2024-10-26","utile":25}
+{"index":{"_index":"avis","_id":"A00408"}}
+{"id":"A00408","cours_id":"C0489","etudiant":"Rania","ville":"Toronto","pays":"Canada","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-04-14","utile":37}
+{"index":{"_index":"avis","_id":"A00409"}}
+{"id":"A00409","cours_id":"C0431","etudiant":"Rania","ville":"Toronto","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-02-24","utile":20}
+{"index":{"_index":"avis","_id":"A00410"}}
+{"id":"A00410","cours_id":"C0457","etudiant":"Rania","ville":"Toronto","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2024-12-23","utile":1}
+{"index":{"_index":"avis","_id":"A00411"}}
+{"id":"A00411","cours_id":"C0154","etudiant":"Nour","ville":"Dakar","pays":"Sénégal","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-09-22","utile":29}
+{"index":{"_index":"avis","_id":"A00412"}}
+{"id":"A00412","cours_id":"C0122","etudiant":"Nour","ville":"Dakar","pays":"Sénégal","note":2,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2026-09-06","utile":17}
+{"index":{"_index":"avis","_id":"A00413"}}
+{"id":"A00413","cours_id":"C0351","etudiant":"Nour","ville":"Dakar","pays":"Sénégal","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-09-10","utile":26}
+{"index":{"_index":"avis","_id":"A00414"}}
+{"id":"A00414","cours_id":"C0094","etudiant":"Malik","ville":"Bruxelles","pays":"Belgique","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2027-08-06","utile":39}
+{"index":{"_index":"avis","_id":"A00415"}}
+{"id":"A00415","cours_id":"C0453","etudiant":"Maya","ville":"Montréal","pays":"Canada","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2026-05-13","utile":30}
+{"index":{"_index":"avis","_id":"A00416"}}
+{"id":"A00416","cours_id":"C0325","etudiant":"Maya","ville":"Montréal","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-10-07","utile":21}
+{"index":{"_index":"avis","_id":"A00417"}}
+{"id":"A00417","cours_id":"C0220","etudiant":"Gabriel","ville":"Laval","pays":"Canada","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-10-17","utile":32}
+{"index":{"_index":"avis","_id":"A00418"}}
+{"id":"A00418","cours_id":"C0258","etudiant":"Gabriel","ville":"Laval","pays":"Canada","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-04-05","utile":23}
+{"index":{"_index":"avis","_id":"A00419"}}
+{"id":"A00419","cours_id":"C0106","etudiant":"Malik","ville":"Alger","pays":"Algérie","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-01-27","utile":8}
+{"index":{"_index":"avis","_id":"A00420"}}
+{"id":"A00420","cours_id":"C0132","etudiant":"Malik","ville":"Alger","pays":"Algérie","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2023-08-15","utile":33}
+{"index":{"_index":"avis","_id":"A00421"}}
+{"id":"A00421","cours_id":"C0126","etudiant":"Malik","ville":"Alger","pays":"Algérie","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2024-03-22","utile":31}
+{"index":{"_index":"avis","_id":"A00422"}}
+{"id":"A00422","cours_id":"C0496","etudiant":"Malik","ville":"Alger","pays":"Algérie","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2023-06-25","utile":23}
+{"index":{"_index":"avis","_id":"A00423"}}
+{"id":"A00423","cours_id":"C0239","etudiant":"Sofia","ville":"Toronto","pays":"Canada","note":5,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2024-12-27","utile":17}
+{"index":{"_index":"avis","_id":"A00424"}}
+{"id":"A00424","cours_id":"C0198","etudiant":"Sofia","ville":"Toronto","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-03-11","utile":10}
+{"index":{"_index":"avis","_id":"A00425"}}
+{"id":"A00425","cours_id":"C0177","etudiant":"Sofia","ville":"Toronto","pays":"Canada","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2025-03-19","utile":35}
+{"index":{"_index":"avis","_id":"A00426"}}
+{"id":"A00426","cours_id":"C0050","etudiant":"Inès","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2027-03-18","utile":0}
+{"index":{"_index":"avis","_id":"A00427"}}
+{"id":"A00427","cours_id":"C0064","etudiant":"Inès","ville":"Bruxelles","pays":"Belgique","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2027-06-13","utile":4}
+{"index":{"_index":"avis","_id":"A00428"}}
+{"id":"A00428","cours_id":"C0208","etudiant":"Karim","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2024-07-01","utile":31}
+{"index":{"_index":"avis","_id":"A00429"}}
+{"id":"A00429","cours_id":"C0271","etudiant":"Alice","ville":"Paris","pays":"France","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2024-02-15","utile":25}
+{"index":{"_index":"avis","_id":"A00430"}}
+{"id":"A00430","cours_id":"C0499","etudiant":"Karim","ville":"Québec","pays":"Canada","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2024-12-26","utile":8}
+{"index":{"_index":"avis","_id":"A00431"}}
+{"id":"A00431","cours_id":"C0444","etudiant":"Karim","ville":"Québec","pays":"Canada","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-11-25","utile":27}
+{"index":{"_index":"avis","_id":"A00432"}}
+{"id":"A00432","cours_id":"C0443","etudiant":"Karim","ville":"Québec","pays":"Canada","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-01-25","utile":32}
+{"index":{"_index":"avis","_id":"A00433"}}
+{"id":"A00433","cours_id":"C0432","etudiant":"Karim","ville":"Québec","pays":"Canada","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2024-08-04","utile":6}
+{"index":{"_index":"avis","_id":"A00434"}}
+{"id":"A00434","cours_id":"C0460","etudiant":"Karim","ville":"Québec","pays":"Canada","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2024-07-08","utile":35}
+{"index":{"_index":"avis","_id":"A00435"}}
+{"id":"A00435","cours_id":"C0071","etudiant":"Zoé","ville":"Sherbrooke","pays":"Canada","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2024-09-22","utile":27}
+{"index":{"_index":"avis","_id":"A00436"}}
+{"id":"A00436","cours_id":"C0079","etudiant":"Zoé","ville":"Sherbrooke","pays":"Canada","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-03-29","utile":10}
+{"index":{"_index":"avis","_id":"A00437"}}
+{"id":"A00437","cours_id":"C0178","etudiant":"Karim","ville":"Laval","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2024-12-15","utile":31}
+{"index":{"_index":"avis","_id":"A00438"}}
+{"id":"A00438","cours_id":"C0272","etudiant":"Thomas","ville":"Casablanca","pays":"Maroc","note":5,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2026-03-26","utile":2}
+{"index":{"_index":"avis","_id":"A00439"}}
+{"id":"A00439","cours_id":"C0179","etudiant":"Manon","ville":"Tunis","pays":"Tunisie","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2024-12-30","utile":23}
+{"index":{"_index":"avis","_id":"A00440"}}
+{"id":"A00440","cours_id":"C0190","etudiant":"Manon","ville":"Tunis","pays":"Tunisie","note":2,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-01-10","utile":37}
+{"index":{"_index":"avis","_id":"A00441"}}
+{"id":"A00441","cours_id":"C0185","etudiant":"Manon","ville":"Tunis","pays":"Tunisie","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-09-02","utile":16}
+{"index":{"_index":"avis","_id":"A00442"}}
+{"id":"A00442","cours_id":"C0467","etudiant":"Hugo","ville":"Genève","pays":"Suisse","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2023-10-12","utile":37}
+{"index":{"_index":"avis","_id":"A00443"}}
+{"id":"A00443","cours_id":"C0453","etudiant":"Hugo","ville":"Genève","pays":"Suisse","note":5,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2024-02-23","utile":36}
+{"index":{"_index":"avis","_id":"A00444"}}
+{"id":"A00444","cours_id":"C0183","etudiant":"Hugo","ville":"Genève","pays":"Suisse","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2023-05-29","utile":31}
+{"index":{"_index":"avis","_id":"A00445"}}
+{"id":"A00445","cours_id":"C0008","etudiant":"Amina","ville":"Tunis","pays":"Tunisie","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2024-06-28","utile":6}
+{"index":{"_index":"avis","_id":"A00446"}}
+{"id":"A00446","cours_id":"C0030","etudiant":"Amina","ville":"Tunis","pays":"Tunisie","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2024-07-10","utile":35}
+{"index":{"_index":"avis","_id":"A00447"}}
+{"id":"A00447","cours_id":"C0209","etudiant":"Salma","ville":"Marseille","pays":"France","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2024-08-05","utile":31}
+{"index":{"_index":"avis","_id":"A00448"}}
+{"id":"A00448","cours_id":"C0173","etudiant":"Salma","ville":"Marseille","pays":"France","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2024-05-03","utile":22}
+{"index":{"_index":"avis","_id":"A00449"}}
+{"id":"A00449","cours_id":"C0323","etudiant":"Zoé","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2025-09-14","utile":29}
+{"index":{"_index":"avis","_id":"A00450"}}
+{"id":"A00450","cours_id":"C0406","etudiant":"Nathan","ville":"Gatineau","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2024-10-22","utile":36}
+{"index":{"_index":"avis","_id":"A00451"}}
+{"id":"A00451","cours_id":"C0467","etudiant":"Omar","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2025-10-07","utile":27}
+{"index":{"_index":"avis","_id":"A00452"}}
+{"id":"A00452","cours_id":"C0260","etudiant":"Rayan","ville":"Genève","pays":"Suisse","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2026-02-07","utile":40}
+{"index":{"_index":"avis","_id":"A00453"}}
+{"id":"A00453","cours_id":"C0287","etudiant":"Rayan","ville":"Genève","pays":"Suisse","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2025-10-27","utile":38}
+{"index":{"_index":"avis","_id":"A00454"}}
+{"id":"A00454","cours_id":"C0280","etudiant":"Rayan","ville":"Genève","pays":"Suisse","note":2,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-09-28","utile":9}
+{"index":{"_index":"avis","_id":"A00455"}}
+{"id":"A00455","cours_id":"C0314","etudiant":"Rayan","ville":"Genève","pays":"Suisse","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-03-07","utile":27}
+{"index":{"_index":"avis","_id":"A00456"}}
+{"id":"A00456","cours_id":"C0265","etudiant":"Alice","ville":"Abidjan","pays":"Côte d’Ivoire","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2024-08-02","utile":3}
+{"index":{"_index":"avis","_id":"A00457"}}
+{"id":"A00457","cours_id":"C0198","etudiant":"Alice","ville":"Abidjan","pays":"Côte d’Ivoire","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-03-19","utile":1}
+{"index":{"_index":"avis","_id":"A00458"}}
+{"id":"A00458","cours_id":"C0108","etudiant":"Inès","ville":"Montréal","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-05-23","utile":4}
+{"index":{"_index":"avis","_id":"A00459"}}
+{"id":"A00459","cours_id":"C0468","etudiant":"Rayan","ville":"Gatineau","pays":"Canada","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2024-06-29","utile":22}
+{"index":{"_index":"avis","_id":"A00460"}}
+{"id":"A00460","cours_id":"C0304","etudiant":"Louise","ville":"Dakar","pays":"Sénégal","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-05-11","utile":17}
+{"index":{"_index":"avis","_id":"A00461"}}
+{"id":"A00461","cours_id":"C0224","etudiant":"Louise","ville":"Dakar","pays":"Sénégal","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-08-01","utile":23}
+{"index":{"_index":"avis","_id":"A00462"}}
+{"id":"A00462","cours_id":"C0274","etudiant":"Sarah","ville":"Paris","pays":"France","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2025-02-18","utile":24}
+{"index":{"_index":"avis","_id":"A00463"}}
+{"id":"A00463","cours_id":"C0314","etudiant":"Sarah","ville":"Paris","pays":"France","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-11-15","utile":27}
+{"index":{"_index":"avis","_id":"A00464"}}
+{"id":"A00464","cours_id":"C0267","etudiant":"Sarah","ville":"Paris","pays":"France","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2024-05-25","utile":38}
+{"index":{"_index":"avis","_id":"A00465"}}
+{"id":"A00465","cours_id":"C0322","etudiant":"Sarah","ville":"Paris","pays":"France","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-01-05","utile":20}
+{"index":{"_index":"avis","_id":"A00466"}}
+{"id":"A00466","cours_id":"C0003","etudiant":"Sarah","ville":"Paris","pays":"France","note":5,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2024-08-13","utile":20}
+{"index":{"_index":"avis","_id":"A00467"}}
+{"id":"A00467","cours_id":"C0331","etudiant":"Malik","ville":"Alger","pays":"Algérie","note":2,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-05-21","utile":0}
+{"index":{"_index":"avis","_id":"A00468"}}
+{"id":"A00468","cours_id":"C0288","etudiant":"Malik","ville":"Alger","pays":"Algérie","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2025-01-26","utile":28}
+{"index":{"_index":"avis","_id":"A00469"}}
+{"id":"A00469","cours_id":"C0366","etudiant":"Yasmine","ville":"Casablanca","pays":"Maroc","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2024-04-06","utile":1}
+{"index":{"_index":"avis","_id":"A00470"}}
+{"id":"A00470","cours_id":"C0480","etudiant":"Yasmine","ville":"Casablanca","pays":"Maroc","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2024-06-05","utile":39}
+{"index":{"_index":"avis","_id":"A00471"}}
+{"id":"A00471","cours_id":"C0202","etudiant":"Rayan","ville":"Genève","pays":"Suisse","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2023-05-06","utile":22}
+{"index":{"_index":"avis","_id":"A00472"}}
+{"id":"A00472","cours_id":"C0249","etudiant":"Rayan","ville":"Genève","pays":"Suisse","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2023-08-29","utile":7}
+{"index":{"_index":"avis","_id":"A00473"}}
+{"id":"A00473","cours_id":"C0423","etudiant":"Yasmine","ville":"Genève","pays":"Suisse","note":5,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2023-07-07","utile":33}
+{"index":{"_index":"avis","_id":"A00474"}}
+{"id":"A00474","cours_id":"C0253","etudiant":"Adam","ville":"Toronto","pays":"Canada","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-11-28","utile":24}
+{"index":{"_index":"avis","_id":"A00475"}}
+{"id":"A00475","cours_id":"C0261","etudiant":"Adam","ville":"Toronto","pays":"Canada","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2025-09-12","utile":11}
+{"index":{"_index":"avis","_id":"A00476"}}
+{"id":"A00476","cours_id":"C0267","etudiant":"Adam","ville":"Toronto","pays":"Canada","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2025-08-18","utile":27}
+{"index":{"_index":"avis","_id":"A00477"}}
+{"id":"A00477","cours_id":"C0418","etudiant":"Adam","ville":"Toronto","pays":"Canada","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-08-19","utile":27}
+{"index":{"_index":"avis","_id":"A00478"}}
+{"id":"A00478","cours_id":"C0014","etudiant":"Karim","ville":"Sherbrooke","pays":"Canada","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2024-12-24","utile":36}
+{"index":{"_index":"avis","_id":"A00479"}}
+{"id":"A00479","cours_id":"C0068","etudiant":"Karim","ville":"Sherbrooke","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2024-09-02","utile":16}
+{"index":{"_index":"avis","_id":"A00480"}}
+{"id":"A00480","cours_id":"C0040","etudiant":"Bilal","ville":"Lyon","pays":"France","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-05-24","utile":22}
+{"index":{"_index":"avis","_id":"A00481"}}
+{"id":"A00481","cours_id":"C0042","etudiant":"Bilal","ville":"Lyon","pays":"France","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-05-01","utile":40}
+{"index":{"_index":"avis","_id":"A00482"}}
+{"id":"A00482","cours_id":"C0058","etudiant":"Bilal","ville":"Lyon","pays":"France","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2024-03-16","utile":0}
+{"index":{"_index":"avis","_id":"A00483"}}
+{"id":"A00483","cours_id":"C0003","etudiant":"Bilal","ville":"Lyon","pays":"France","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2023-09-16","utile":35}
+{"index":{"_index":"avis","_id":"A00484"}}
+{"id":"A00484","cours_id":"C0347","etudiant":"Karim","ville":"Alger","pays":"Algérie","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-04-03","utile":17}
+{"index":{"_index":"avis","_id":"A00485"}}
+{"id":"A00485","cours_id":"C0442","etudiant":"Karim","ville":"Alger","pays":"Algérie","note":4,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2024-12-20","utile":17}
+{"index":{"_index":"avis","_id":"A00486"}}
+{"id":"A00486","cours_id":"C0093","etudiant":"Gabriel","ville":"Montréal","pays":"Canada","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2024-07-10","utile":6}
+{"index":{"_index":"avis","_id":"A00487"}}
+{"id":"A00487","cours_id":"C0119","etudiant":"Gabriel","ville":"Montréal","pays":"Canada","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2024-07-30","utile":24}
+{"index":{"_index":"avis","_id":"A00488"}}
+{"id":"A00488","cours_id":"C0102","etudiant":"Gabriel","ville":"Montréal","pays":"Canada","note":2,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-01-27","utile":27}
+{"index":{"_index":"avis","_id":"A00489"}}
+{"id":"A00489","cours_id":"C0146","etudiant":"Lucas","ville":"Lyon","pays":"France","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-04-21","utile":9}
+{"index":{"_index":"avis","_id":"A00490"}}
+{"id":"A00490","cours_id":"C0115","etudiant":"Lucas","ville":"Lyon","pays":"France","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2026-02-09","utile":9}
+{"index":{"_index":"avis","_id":"A00491"}}
+{"id":"A00491","cours_id":"C0136","etudiant":"Clara","ville":"Paris","pays":"France","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2023-11-15","utile":4}
+{"index":{"_index":"avis","_id":"A00492"}}
+{"id":"A00492","cours_id":"C0020","etudiant":"Ismaël","ville":"Genève","pays":"Suisse","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-04-07","utile":33}
+{"index":{"_index":"avis","_id":"A00493"}}
+{"id":"A00493","cours_id":"C0440","etudiant":"Malik","ville":"Alger","pays":"Algérie","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2026-08-21","utile":39}
+{"index":{"_index":"avis","_id":"A00494"}}
+{"id":"A00494","cours_id":"C0446","etudiant":"Malik","ville":"Alger","pays":"Algérie","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2026-04-28","utile":8}
+{"index":{"_index":"avis","_id":"A00495"}}
+{"id":"A00495","cours_id":"C0212","etudiant":"Salma","ville":"Casablanca","pays":"Maroc","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-04-29","utile":40}
+{"index":{"_index":"avis","_id":"A00496"}}
+{"id":"A00496","cours_id":"C0245","etudiant":"Salma","ville":"Casablanca","pays":"Maroc","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-12-26","utile":18}
+{"index":{"_index":"avis","_id":"A00497"}}
+{"id":"A00497","cours_id":"C0013","etudiant":"Nathan","ville":"Lyon","pays":"France","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2023-07-30","utile":22}
+{"index":{"_index":"avis","_id":"A00498"}}
+{"id":"A00498","cours_id":"C0037","etudiant":"Nathan","ville":"Lyon","pays":"France","note":5,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2023-07-10","utile":27}
+{"index":{"_index":"avis","_id":"A00499"}}
+{"id":"A00499","cours_id":"C0038","etudiant":"Nathan","ville":"Lyon","pays":"France","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2023-06-20","utile":28}
+{"index":{"_index":"avis","_id":"A00500"}}
+{"id":"A00500","cours_id":"C0069","etudiant":"Manon","ville":"Montréal","pays":"Canada","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2025-07-01","utile":6}
+{"index":{"_index":"avis","_id":"A00501"}}
+{"id":"A00501","cours_id":"C0231","etudiant":"Manon","ville":"Montréal","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2025-09-26","utile":35}
+{"index":{"_index":"avis","_id":"A00502"}}
+{"id":"A00502","cours_id":"C0480","etudiant":"Inès","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2024-05-19","utile":9}
+{"index":{"_index":"avis","_id":"A00503"}}
+{"id":"A00503","cours_id":"C0421","etudiant":"Inès","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2024-01-21","utile":26}
+{"index":{"_index":"avis","_id":"A00504"}}
+{"id":"A00504","cours_id":"C0435","etudiant":"Youssef","ville":"Dakar","pays":"Sénégal","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2023-10-27","utile":11}
+{"index":{"_index":"avis","_id":"A00505"}}
+{"id":"A00505","cours_id":"C0320","etudiant":"Rania","ville":"Casablanca","pays":"Maroc","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2024-12-17","utile":13}
+{"index":{"_index":"avis","_id":"A00506"}}
+{"id":"A00506","cours_id":"C0313","etudiant":"Rania","ville":"Casablanca","pays":"Maroc","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2024-09-16","utile":1}
+{"index":{"_index":"avis","_id":"A00507"}}
+{"id":"A00507","cours_id":"C0314","etudiant":"Rania","ville":"Casablanca","pays":"Maroc","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2024-03-17","utile":0}
+{"index":{"_index":"avis","_id":"A00508"}}
+{"id":"A00508","cours_id":"C0093","etudiant":"Julie","ville":"Casablanca","pays":"Maroc","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-02-14","utile":32}
+{"index":{"_index":"avis","_id":"A00509"}}
+{"id":"A00509","cours_id":"C0444","etudiant":"Jade","ville":"Marseille","pays":"France","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2025-08-12","utile":39}
+{"index":{"_index":"avis","_id":"A00510"}}
+{"id":"A00510","cours_id":"C0441","etudiant":"Jade","ville":"Marseille","pays":"France","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2026-02-13","utile":4}
+{"index":{"_index":"avis","_id":"A00511"}}
+{"id":"A00511","cours_id":"C0065","etudiant":"Hugo","ville":"Gatineau","pays":"Canada","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2025-01-07","utile":21}
+{"index":{"_index":"avis","_id":"A00512"}}
+{"id":"A00512","cours_id":"C0010","etudiant":"Hugo","ville":"Gatineau","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-01-16","utile":31}
+{"index":{"_index":"avis","_id":"A00513"}}
+{"id":"A00513","cours_id":"C0251","etudiant":"Louise","ville":"Dakar","pays":"Sénégal","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2027-03-29","utile":15}
+{"index":{"_index":"avis","_id":"A00514"}}
+{"id":"A00514","cours_id":"C0219","etudiant":"Louise","ville":"Dakar","pays":"Sénégal","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2027-02-24","utile":1}
+{"index":{"_index":"avis","_id":"A00515"}}
+{"id":"A00515","cours_id":"C0174","etudiant":"Louise","ville":"Dakar","pays":"Sénégal","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2026-08-29","utile":37}
+{"index":{"_index":"avis","_id":"A00516"}}
+{"id":"A00516","cours_id":"C0285","etudiant":"Léa","ville":"Tunis","pays":"Tunisie","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2023-08-31","utile":0}
+{"index":{"_index":"avis","_id":"A00517"}}
+{"id":"A00517","cours_id":"C0262","etudiant":"Léa","ville":"Tunis","pays":"Tunisie","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2023-05-18","utile":23}
+{"index":{"_index":"avis","_id":"A00518"}}
+{"id":"A00518","cours_id":"C0265","etudiant":"Léa","ville":"Tunis","pays":"Tunisie","note":5,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2023-08-14","utile":29}
+{"index":{"_index":"avis","_id":"A00519"}}
+{"id":"A00519","cours_id":"C0326","etudiant":"Léa","ville":"Tunis","pays":"Tunisie","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2023-10-13","utile":2}
+{"index":{"_index":"avis","_id":"A00520"}}
+{"id":"A00520","cours_id":"C0429","etudiant":"Julie","ville":"Casablanca","pays":"Maroc","note":5,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2023-06-19","utile":30}
+{"index":{"_index":"avis","_id":"A00521"}}
+{"id":"A00521","cours_id":"C0165","etudiant":"Malik","ville":"Laval","pays":"Canada","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-03-06","utile":20}
+{"index":{"_index":"avis","_id":"A00522"}}
+{"id":"A00522","cours_id":"C0087","etudiant":"Malik","ville":"Laval","pays":"Canada","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2025-07-21","utile":36}
+{"index":{"_index":"avis","_id":"A00523"}}
+{"id":"A00523","cours_id":"C0351","etudiant":"Karim","ville":"Sherbrooke","pays":"Canada","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-06-29","utile":29}
+{"index":{"_index":"avis","_id":"A00524"}}
+{"id":"A00524","cours_id":"C0395","etudiant":"Karim","ville":"Sherbrooke","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2025-12-25","utile":8}
+{"index":{"_index":"avis","_id":"A00525"}}
+{"id":"A00525","cours_id":"C0384","etudiant":"Karim","ville":"Sherbrooke","pays":"Canada","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-02-22","utile":14}
+{"index":{"_index":"avis","_id":"A00526"}}
+{"id":"A00526","cours_id":"C0222","etudiant":"Jade","ville":"Bruxelles","pays":"Belgique","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-07-20","utile":15}
+{"index":{"_index":"avis","_id":"A00527"}}
+{"id":"A00527","cours_id":"C0215","etudiant":"Jade","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2026-07-10","utile":14}
+{"index":{"_index":"avis","_id":"A00528"}}
+{"id":"A00528","cours_id":"C0005","etudiant":"Jade","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2026-08-30","utile":34}
+{"index":{"_index":"avis","_id":"A00529"}}
+{"id":"A00529","cours_id":"C0212","etudiant":"Alice","ville":"Genève","pays":"Suisse","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-02-12","utile":9}
+{"index":{"_index":"avis","_id":"A00530"}}
+{"id":"A00530","cours_id":"C0228","etudiant":"Alice","ville":"Genève","pays":"Suisse","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2026-06-17","utile":13}
+{"index":{"_index":"avis","_id":"A00531"}}
+{"id":"A00531","cours_id":"C0202","etudiant":"Samir","ville":"Gatineau","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2023-06-26","utile":37}
+{"index":{"_index":"avis","_id":"A00532"}}
+{"id":"A00532","cours_id":"C0179","etudiant":"Samir","ville":"Gatineau","pays":"Canada","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2023-09-22","utile":22}
+{"index":{"_index":"avis","_id":"A00533"}}
+{"id":"A00533","cours_id":"C0184","etudiant":"Samir","ville":"Gatineau","pays":"Canada","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2023-04-05","utile":4}
+{"index":{"_index":"avis","_id":"A00534"}}
+{"id":"A00534","cours_id":"C0260","etudiant":"Rayan","ville":"Toronto","pays":"Canada","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2024-07-18","utile":19}
+{"index":{"_index":"avis","_id":"A00535"}}
+{"id":"A00535","cours_id":"C0280","etudiant":"Salma","ville":"Québec","pays":"Canada","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2026-08-12","utile":15}
+{"index":{"_index":"avis","_id":"A00536"}}
+{"id":"A00536","cours_id":"C0322","etudiant":"Salma","ville":"Québec","pays":"Canada","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2026-07-16","utile":25}
+{"index":{"_index":"avis","_id":"A00537"}}
+{"id":"A00537","cours_id":"C0296","etudiant":"Salma","ville":"Québec","pays":"Canada","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2026-10-27","utile":38}
+{"index":{"_index":"avis","_id":"A00538"}}
+{"id":"A00538","cours_id":"C0295","etudiant":"Salma","ville":"Québec","pays":"Canada","note":5,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2026-07-22","utile":13}
+{"index":{"_index":"avis","_id":"A00539"}}
+{"id":"A00539","cours_id":"C0315","etudiant":"Salma","ville":"Québec","pays":"Canada","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-08-24","utile":0}
+{"index":{"_index":"avis","_id":"A00540"}}
+{"id":"A00540","cours_id":"C0085","etudiant":"Karim","ville":"Alger","pays":"Algérie","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-07-31","utile":10}
+{"index":{"_index":"avis","_id":"A00541"}}
+{"id":"A00541","cours_id":"C0110","etudiant":"Karim","ville":"Alger","pays":"Algérie","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2026-02-13","utile":32}
+{"index":{"_index":"avis","_id":"A00542"}}
+{"id":"A00542","cours_id":"C0146","etudiant":"Karim","ville":"Alger","pays":"Algérie","note":5,"texte":"Excellent cours, très clair et progressif.","date":"2026-05-31","utile":29}
+{"index":{"_index":"avis","_id":"A00543"}}
+{"id":"A00543","cours_id":"C0298","etudiant":"Karim","ville":"Gatineau","pays":"Canada","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2024-07-12","utile":18}
+{"index":{"_index":"avis","_id":"A00544"}}
+{"id":"A00544","cours_id":"C0265","etudiant":"Karim","ville":"Gatineau","pays":"Canada","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2023-11-16","utile":29}
+{"index":{"_index":"avis","_id":"A00545"}}
+{"id":"A00545","cours_id":"C0035","etudiant":"Sofia","ville":"Casablanca","pays":"Maroc","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2025-04-26","utile":17}
+{"index":{"_index":"avis","_id":"A00546"}}
+{"id":"A00546","cours_id":"C0475","etudiant":"Lina","ville":"Gatineau","pays":"Canada","note":5,"texte":"J’ai pu appliquer le contenu au travail dès la semaine suivante.","date":"2024-12-26","utile":14}
+{"index":{"_index":"avis","_id":"A00547"}}
+{"id":"A00547","cours_id":"C0451","etudiant":"Lina","ville":"Gatineau","pays":"Canada","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-08-08","utile":40}
+{"index":{"_index":"avis","_id":"A00548"}}
+{"id":"A00548","cours_id":"C0403","etudiant":"Gabriel","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2024-04-29","utile":1}
+{"index":{"_index":"avis","_id":"A00549"}}
+{"id":"A00549","cours_id":"C0380","etudiant":"Gabriel","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-07-31","utile":18}
+{"index":{"_index":"avis","_id":"A00550"}}
+{"id":"A00550","cours_id":"C0362","etudiant":"Gabriel","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2024-08-17","utile":22}
+{"index":{"_index":"avis","_id":"A00551"}}
+{"id":"A00551","cours_id":"C0396","etudiant":"Gabriel","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2025-01-29","utile":32}
+{"index":{"_index":"avis","_id":"A00552"}}
+{"id":"A00552","cours_id":"C0148","etudiant":"Gabriel","ville":"Bruxelles","pays":"Belgique","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2025-02-28","utile":20}
+{"index":{"_index":"avis","_id":"A00553"}}
+{"id":"A00553","cours_id":"C0232","etudiant":"Camille","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2026-02-23","utile":17}
+{"index":{"_index":"avis","_id":"A00554"}}
+{"id":"A00554","cours_id":"C0208","etudiant":"Camille","ville":"Bruxelles","pays":"Belgique","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2026-06-11","utile":15}
+{"index":{"_index":"avis","_id":"A00555"}}
+{"id":"A00555","cours_id":"C0176","etudiant":"Camille","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Difficile de suivre sans prérequis solides.","date":"2026-05-26","utile":34}
+{"index":{"_index":"avis","_id":"A00556"}}
+{"id":"A00556","cours_id":"C0225","etudiant":"Camille","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-06-26","utile":25}
+{"index":{"_index":"avis","_id":"A00557"}}
+{"id":"A00557","cours_id":"C0213","etudiant":"Camille","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2026-08-21","utile":26}
+{"index":{"_index":"avis","_id":"A00558"}}
+{"id":"A00558","cours_id":"C0492","etudiant":"Emma","ville":"Laval","pays":"Canada","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-11-07","utile":9}
+{"index":{"_index":"avis","_id":"A00559"}}
+{"id":"A00559","cours_id":"C0431","etudiant":"Rania","ville":"Sherbrooke","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2027-08-02","utile":17}
+{"index":{"_index":"avis","_id":"A00560"}}
+{"id":"A00560","cours_id":"C0387","etudiant":"Sofia","ville":"Paris","pays":"France","note":1,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2025-12-03","utile":12}
+{"index":{"_index":"avis","_id":"A00561"}}
+{"id":"A00561","cours_id":"C0349","etudiant":"Sofia","ville":"Paris","pays":"France","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2026-04-14","utile":21}
+{"index":{"_index":"avis","_id":"A00562"}}
+{"id":"A00562","cours_id":"C0365","etudiant":"Sofia","ville":"Paris","pays":"France","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2025-05-08","utile":12}
+{"index":{"_index":"avis","_id":"A00563"}}
+{"id":"A00563","cours_id":"C0160","etudiant":"Samir","ville":"Genève","pays":"Suisse","note":5,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2026-06-14","utile":20}
+{"index":{"_index":"avis","_id":"A00564"}}
+{"id":"A00564","cours_id":"C0115","etudiant":"Samir","ville":"Genève","pays":"Suisse","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2025-09-23","utile":2}
+{"index":{"_index":"avis","_id":"A00565"}}
+{"id":"A00565","cours_id":"C0124","etudiant":"Samir","ville":"Genève","pays":"Suisse","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2026-02-10","utile":21}
+{"index":{"_index":"avis","_id":"A00566"}}
+{"id":"A00566","cours_id":"C0057","etudiant":"Alice","ville":"Toronto","pays":"Canada","note":4,"texte":"Enfin une formation où tout fonctionne du premier coup grâce à Docker.","date":"2026-05-22","utile":15}
+{"index":{"_index":"avis","_id":"A00567"}}
+{"id":"A00567","cours_id":"C0245","etudiant":"Hugo","ville":"Bruxelles","pays":"Belgique","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-07-23","utile":25}
+{"index":{"_index":"avis","_id":"A00568"}}
+{"id":"A00568","cours_id":"C0501","etudiant":"Sarah","ville":"Gatineau","pays":"Canada","note":2,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-09-18","utile":27}
+{"index":{"_index":"avis","_id":"A00569"}}
+{"id":"A00569","cours_id":"C0504","etudiant":"Sarah","ville":"Gatineau","pays":"Canada","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2027-02-16","utile":31}
+{"index":{"_index":"avis","_id":"A00570"}}
+{"id":"A00570","cours_id":"C0368","etudiant":"Nathan","ville":"Marseille","pays":"France","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2026-03-06","utile":9}
+{"index":{"_index":"avis","_id":"A00571"}}
+{"id":"A00571","cours_id":"C0405","etudiant":"Nathan","ville":"Marseille","pays":"France","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2025-09-21","utile":35}
+{"index":{"_index":"avis","_id":"A00572"}}
+{"id":"A00572","cours_id":"C0371","etudiant":"Nathan","ville":"Marseille","pays":"France","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2025-02-20","utile":39}
+{"index":{"_index":"avis","_id":"A00573"}}
+{"id":"A00573","cours_id":"C0014","etudiant":"Ismaël","ville":"Montréal","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-05-17","utile":23}
+{"index":{"_index":"avis","_id":"A00574"}}
+{"id":"A00574","cours_id":"C0063","etudiant":"Ismaël","ville":"Montréal","pays":"Canada","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2024-08-09","utile":11}
+{"index":{"_index":"avis","_id":"A00575"}}
+{"id":"A00575","cours_id":"C0073","etudiant":"Ismaël","ville":"Montréal","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2023-09-20","utile":34}
+{"index":{"_index":"avis","_id":"A00576"}}
+{"id":"A00576","cours_id":"C0022","etudiant":"Ismaël","ville":"Montréal","pays":"Canada","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2024-09-10","utile":23}
+{"index":{"_index":"avis","_id":"A00577"}}
+{"id":"A00577","cours_id":"C0392","etudiant":"Léa","ville":"Toronto","pays":"Canada","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2026-12-11","utile":13}
+{"index":{"_index":"avis","_id":"A00578"}}
+{"id":"A00578","cours_id":"C0143","etudiant":"Louise","ville":"Lyon","pays":"France","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2025-12-09","utile":32}
+{"index":{"_index":"avis","_id":"A00579"}}
+{"id":"A00579","cours_id":"C0144","etudiant":"Louise","ville":"Lyon","pays":"France","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2026-12-17","utile":24}
+{"index":{"_index":"avis","_id":"A00580"}}
+{"id":"A00580","cours_id":"C0111","etudiant":"Omar","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2027-04-03","utile":7}
+{"index":{"_index":"avis","_id":"A00581"}}
+{"id":"A00581","cours_id":"C0042","etudiant":"Adam","ville":"Québec","pays":"Canada","note":4,"texte":"Le projet final est concret et valorisable dans un portfolio.","date":"2024-09-27","utile":24}
+{"index":{"_index":"avis","_id":"A00582"}}
+{"id":"A00582","cours_id":"C0051","etudiant":"Adam","ville":"Québec","pays":"Canada","note":2,"texte":"Difficile de suivre sans prérequis solides.","date":"2024-10-15","utile":39}
+{"index":{"_index":"avis","_id":"A00583"}}
+{"id":"A00583","cours_id":"C0032","etudiant":"Adam","ville":"Québec","pays":"Canada","note":5,"texte":"Les exercices pratiques font toute la différence, je recommande.","date":"2025-06-14","utile":40}
+{"index":{"_index":"avis","_id":"A00584"}}
+{"id":"A00584","cours_id":"C0469","etudiant":"Idris","ville":"Bruxelles","pays":"Belgique","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2027-07-12","utile":36}
+{"index":{"_index":"avis","_id":"A00585"}}
+{"id":"A00585","cours_id":"C0261","etudiant":"Bilal","ville":"Dakar","pays":"Sénégal","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2025-05-13","utile":26}
+{"index":{"_index":"avis","_id":"A00586"}}
+{"id":"A00586","cours_id":"C0312","etudiant":"Bilal","ville":"Dakar","pays":"Sénégal","note":3,"texte":"Bien pour débuter, insuffisant pour un usage avancé.","date":"2025-04-13","utile":31}
+{"index":{"_index":"avis","_id":"A00587"}}
+{"id":"A00587","cours_id":"C0331","etudiant":"Bilal","ville":"Dakar","pays":"Sénégal","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2025-11-24","utile":26}
+{"index":{"_index":"avis","_id":"A00588"}}
+{"id":"A00588","cours_id":"C0465","etudiant":"Bilal","ville":"Dakar","pays":"Sénégal","note":3,"texte":"Bon cours dans l’ensemble, quelques passages un peu rapides.","date":"2025-09-13","utile":16}
+{"index":{"_index":"avis","_id":"A00589"}}
+{"id":"A00589","cours_id":"C0073","etudiant":"Amina","ville":"Abidjan","pays":"Côte d’Ivoire","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-11-02","utile":10}
+{"index":{"_index":"avis","_id":"A00590"}}
+{"id":"A00590","cours_id":"C0012","etudiant":"Amina","ville":"Abidjan","pays":"Côte d’Ivoire","note":2,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-09-28","utile":6}
+{"index":{"_index":"avis","_id":"A00591"}}
+{"id":"A00591","cours_id":"C0405","etudiant":"Amina","ville":"Abidjan","pays":"Côte d’Ivoire","note":5,"texte":"Le professeur explique simplement des notions difficiles.","date":"2024-07-09","utile":24}
+{"index":{"_index":"avis","_id":"A00592"}}
+{"id":"A00592","cours_id":"C0092","etudiant":"Sarah","ville":"Abidjan","pays":"Côte d’Ivoire","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2026-01-31","utile":11}
+{"index":{"_index":"avis","_id":"A00593"}}
+{"id":"A00593","cours_id":"C0190","etudiant":"Hugo","ville":"Dakar","pays":"Sénégal","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-11-06","utile":24}
+{"index":{"_index":"avis","_id":"A00594"}}
+{"id":"A00594","cours_id":"C0318","etudiant":"Salma","ville":"Montréal","pays":"Canada","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2024-10-17","utile":33}
+{"index":{"_index":"avis","_id":"A00595"}}
+{"id":"A00595","cours_id":"C0273","etudiant":"Salma","ville":"Montréal","pays":"Canada","note":1,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-03-21","utile":11}
+{"index":{"_index":"avis","_id":"A00596"}}
+{"id":"A00596","cours_id":"C0307","etudiant":"Salma","ville":"Montréal","pays":"Canada","note":1,"texte":"Décevant : le contenu ne correspond pas au titre.","date":"2024-09-14","utile":33}
+{"index":{"_index":"avis","_id":"A00597"}}
+{"id":"A00597","cours_id":"C0144","etudiant":"Chloé","ville":"Alger","pays":"Algérie","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2024-06-27","utile":29}
+{"index":{"_index":"avis","_id":"A00598"}}
+{"id":"A00598","cours_id":"C0163","etudiant":"Chloé","ville":"Alger","pays":"Algérie","note":4,"texte":"Le professeur explique simplement des notions difficiles.","date":"2024-10-23","utile":14}
+{"index":{"_index":"avis","_id":"A00599"}}
+{"id":"A00599","cours_id":"C0286","etudiant":"Chloé","ville":"Alger","pays":"Algérie","note":4,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2024-12-31","utile":38}
+{"index":{"_index":"avis","_id":"A00600"}}
+{"id":"A00600","cours_id":"C0316","etudiant":"Noah","ville":"Montréal","pays":"Canada","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2026-11-15","utile":37}
+{"index":{"_index":"avis","_id":"A00601"}}
+{"id":"A00601","cours_id":"C0235","etudiant":"Manon","ville":"Dakar","pays":"Sénégal","note":2,"texte":"Trop théorique à mon goût, pas assez de pratique.","date":"2024-06-29","utile":6}
+{"index":{"_index":"avis","_id":"A00602"}}
+{"id":"A00602","cours_id":"C0244","etudiant":"Manon","ville":"Dakar","pays":"Sénégal","note":3,"texte":"Utile, mais certains chapitres méritent d’être approfondis.","date":"2024-11-24","utile":38}
+{"index":{"_index":"avis","_id":"A00603"}}
+{"id":"A00603","cours_id":"C0250","etudiant":"Manon","ville":"Dakar","pays":"Sénégal","note":2,"texte":"Le rythme est trop lent au début et trop rapide à la fin.","date":"2024-10-19","utile":5}
+{"index":{"_index":"avis","_id":"A00604"}}
+{"id":"A00604","cours_id":"C0391","etudiant":"Louise","ville":"Laval","pays":"Canada","note":3,"texte":"Contenu correct, j’aurais aimé plus d’exercices.","date":"2024-10-23","utile":5}
+{"index":{"_index":"avis","_id":"A00605"}}
+{"id":"A00605","cours_id":"C0389","etudiant":"Louise","ville":"Laval","pays":"Canada","note":4,"texte":"Très bon rythme, les quiz aident à retenir.","date":"2025-01-22","utile":19}
+{"index":{"_index":"avis","_id":"A00606"}}
+{"id":"A00606","cours_id":"C0482","etudiant":"Adam","ville":"Bruxelles","pays":"Belgique","note":3,"texte":"Les vidéos sont bonnes, la partie théorique est dense.","date":"2023-02-16","utile":18}
+{"index":{"_index":"avis","_id":"A00607"}}
+{"id":"A00607","cours_id":"C0499","etudiant":"Adam","ville":"Bruxelles","pays":"Belgique","note":5,"texte":"Contenu à jour, exemples réalistes, rien à redire.","date":"2023-04-20","utile":19}
+{"index":{"_index":"avis","_id":"A00608"}}
+{"id":"A00608","cours_id":"C0483","etudiant":"Adam","ville":"Bruxelles","pays":"Belgique","note":1,"texte":"Plusieurs commandes ne fonctionnaient plus avec la nouvelle version.","date":"2023-09-07","utile":20}
+{"index":{"_index":"avis","_id":"A00609"}}
+{"id":"A00609","cours_id":"C0403","etudiant":"Adam","ville":"Bruxelles","pays":"Belgique","note":4,"texte":"Excellent cours, très clair et progressif.","date":"2023-07-30","utile":29}
