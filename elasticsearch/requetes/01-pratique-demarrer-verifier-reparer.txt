@@ -1,0 +1,31 @@
+# Module 1 — Pratique guidée : démarrer, vérifier, casser et réparer le labo
+# À coller dans Kibana → menu ☰ → Management → Outils de développement, puis ▶ ligne par ligne.
+# Aucune requête ici n'écrit dans le cluster : tout est en lecture seule.
+
+# Étape 5 — Vérifier Elasticsearch depuis Dev Tools
+# 5a. Santé du cluster : "status": "green" attendu
+GET _cluster/health
+
+# 5b. Les trois index du labo, en-têtes (v), triés par nom (s=index) : 12000 / 609 / 504
+GET _cat/indices/cours,avis,acces?v&s=index
+
+# 5c. Le même chiffre, par index, en JSON
+GET cours/_count
+
+GET avis/_count
+
+GET acces/_count
+
+# Étape 7 — Après avoir arrêté puis relancé Kibana : Elasticsearch n'a rien vu
+# (c'est exactement la requête que lance « labo etat »)
+GET _cluster/health?filter_path=status,number_of_nodes
+
+# Étape 8 — À toi de jouer : provoquer une 404 index_not_found_exception
+# attendu: 404
+GET pratique-inexistant/_search
+
+# 8b. Même index absent, mais on demande à Elasticsearch de l'ignorer : 200 et count 0
+GET pratique-inexistant/_count?ignore_unavailable=true
+
+# 8c. La liste des index qui commencent par « pratique- » : vide, donc rien à nettoyer
+GET _cat/indices/pratique-*?v

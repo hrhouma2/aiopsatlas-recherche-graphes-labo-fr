@@ -1,0 +1,91 @@
+# Module 4 — Pratique : le tableau de bord des erreurs du site
+# Vérifie les chiffres attendus à chaque étape (Discover, quatre panneaux Lens,
+# le contrôle « statut » et le filtre épinglé « appareil : mobile »). Lecture
+# seule sur l'index `acces`. Plage 2026-08-09 → 2026-09-09 (couvre tout le jeu).
+# Rejouer : node outils/tester-requetes.mjs elasticsearch/requetes/04-pratique-le-tableau-de-bord-des-erreurs.txt
+
+# 1. Contrôle du jeu : 12 000 documents
+GET acces/_count
+
+# 2. Étape 2 (Discover, KQL `statut >= 400`) : 581 erreurs
+GET acces/_count
+{
+  "query": { "range": { "statut": { "gte": 400 } } }
+}
+
+# 3. Étape 3 (Lens « barres empilées ») : erreurs par jour ventilées par statut,
+#    plus le total par statut (404 → 403, 500 → 122, 503 → 56)
+GET acces/_search
+{
+  "size": 0,
+  "query": { "range": { "statut": { "gte": 400 } } },
+  "aggs": {
+    "par_statut_total": { "terms": { "field": "statut", "size": 10, "order": { "_count": "desc" } } },
+    "par_jour": {
+      "date_histogram": { "field": "@timestamp", "calendar_interval": "1d", "min_doc_count": 1 },
+      "aggs": {
+        "par_statut": { "terms": { "field": "statut", "size": 10 } }
+      }
+    }
+  }
+}
+
+# 4. Étape 4 (Lens « Tableau ») : top 10 des `chemin` en erreur (statut >= 400),
+#    plus la cardinalité du champ chemin dans les erreurs
+GET acces/_search
+{
+  "size": 0,
+  "query": { "range": { "statut": { "gte": 400 } } },
+  "aggs": {
+    "top_chemins_erreurs": { "terms": { "field": "chemin", "size": 10, "order": { "_count": "desc" } } },
+    "chemins_distincts_erreurs": { "cardinality": { "field": "chemin" } }
+  }
+}
+
+# 5. Étape 5 (Lens « Formule ») : `count(kql='statut >= 400') / count()`
+#    → 581 / 12 000 = 4,84 %
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "total": { "value_count": { "field": "statut" } },
+    "erreurs": { "filter": { "range": { "statut": { "gte": 400 } } } }
+  }
+}
+
+# 6. Étape 6 (Lens « barres horizontales ») : erreurs (statut >= 400) par pays
+GET acces/_search
+{
+  "size": 0,
+  "query": { "range": { "statut": { "gte": 400 } } },
+  "aggs": {
+    "par_pays": { "terms": { "field": "pays", "size": 10, "order": { "_count": "desc" } } }
+  }
+}
+
+# 7. Étape 7 (contrôle « statut » sur le tableau de bord) : cardinalité de statut
+#    et compte pour chaque valeur (pour prévoir la liste déroulante du contrôle)
+GET acces/_search
+{
+  "size": 0,
+  "aggs": {
+    "valeurs_statut": { "terms": { "field": "statut", "size": 20, "order": { "_key": "asc" } } },
+    "statuts_distincts": { "cardinality": { "field": "statut" } }
+  }
+}
+
+# 8. Étape 8 (« à toi de jouer », filtre épinglé `appareil : mobile`) :
+#    total mobile, erreurs mobile, taux = erreurs / total
+GET acces/_search
+{
+  "size": 0,
+  "query": { "term": { "appareil": "mobile" } },
+  "aggs": {
+    "total_mobile": { "value_count": { "field": "statut" } },
+    "erreurs_mobile": { "filter": { "range": { "statut": { "gte": 400 } } } },
+    "par_statut_mobile": {
+      "filter": { "range": { "statut": { "gte": 400 } } },
+      "aggs": { "par_statut": { "terms": { "field": "statut", "size": 10 } } }
+    }
+  }
+}

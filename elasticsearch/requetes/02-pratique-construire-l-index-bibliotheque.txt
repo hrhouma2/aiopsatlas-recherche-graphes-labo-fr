@@ -1,0 +1,294 @@
+# Module 2 — Pratique guidée : Construire l'index pratique-bibliotheque de A à Z
+# Rejouable : crée les index pratique-bibliotheque et pratique-bibliotheque-v2, les supprime à la fin.
+# Ne touche pas à cours/avis/acces.
+# Note : DELETE pratique-* est refusé par Elasticsearch (action.destructive_requires_name = true
+# par défaut) → on nomme les index explicitement.
+
+# 0. Nettoyage au cas où un essai précédent aurait laissé les index (404 ignoré)
+DELETE pratique-bibliotheque,pratique-bibliotheque-v2?ignore_unavailable=true
+
+# ---------------------------------------------------------------------------
+# Étape 1 — Créer l'index avec son mapping (et l'alias de lecture)
+# ---------------------------------------------------------------------------
+PUT pratique-bibliotheque
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "analysis": { "analyzer": { "francais": { "type": "french" } } }
+  },
+  "aliases": { "pratique-bibliotheque-lecture": {} },
+  "mappings": {
+    "properties": {
+      "id":       { "type": "keyword" },
+      "titre":    { "type": "text", "analyzer": "francais", "fields": { "brut": { "type": "keyword" } } },
+      "resume":   { "type": "text", "analyzer": "francais" },
+      "prix":     { "type": "float" },
+      "pages":    { "type": "integer" },
+      "parution": { "type": "date" },
+      "themes":   { "type": "keyword" },
+      "auteur": {
+        "properties": {
+          "nom":   { "type": "text", "fields": { "brut": { "type": "keyword" } } },
+          "ville": { "type": "keyword" }
+        }
+      }
+    }
+  }
+}
+
+GET pratique-bibliotheque/_mapping/field/titre,prix,parution,auteur.ville
+
+# ---------------------------------------------------------------------------
+# Étape 2 — Charger les 20 livres avec _bulk
+# ---------------------------------------------------------------------------
+POST pratique-bibliotheque/_bulk?refresh=true
+{ "index": { "_id": "L001" } }
+{ "id": "L001", "titre": "Docker en pratique : conteneuriser ses applications", "resume": "Construire des images légères, écrire des Dockerfile propres et publier ses conteneurs sur un registre.", "auteur": { "nom": "Karim Caron", "ville": "Gatineau" }, "prix": 39.9, "pages": 312, "parution": "2024-03-12", "themes": ["docker", "devops", "linux"] }
+{ "index": { "_id": "L002" } }
+{ "id": "L002", "titre": "Kubernetes : déployer et opérer un cluster en production", "resume": "Des pods aux déploiements, en passant par les services, l'autoscaling et la supervision d'un cluster.", "auteur": { "nom": "Amina Bensalem", "ville": "Montréal" }, "prix": 54.5, "pages": 428, "parution": "2025-01-20", "themes": ["kubernetes", "devops", "cloud"] }
+{ "index": { "_id": "L003" } }
+{ "id": "L003", "titre": "Elasticsearch de A à Z : indexer, chercher, analyser", "resume": "Le mapping, les analyseurs, la Query DSL et les agrégations expliqués avec un vrai jeu de données.", "auteur": { "nom": "Julien Moreau", "ville": "Lyon" }, "prix": 49.0, "pages": 386, "parution": "2024-09-05", "themes": ["elasticsearch", "recherche", "donnees"] }
+{ "index": { "_id": "L004" } }
+{ "id": "L004", "titre": "Neo4j et Cypher : penser en graphe", "resume": "Modéliser des nœuds et des relations, écrire ses premières requêtes Cypher et parcourir des chemins.", "auteur": { "nom": "Sophie Tremblay", "ville": "Québec" }, "prix": 44.9, "pages": 298, "parution": "2023-11-14", "themes": ["neo4j", "graphes", "donnees"] }
+{ "index": { "_id": "L005" } }
+{ "id": "L005", "titre": "Python pour l'analyse de données", "resume": "Charger, nettoyer et explorer des données avec pandas, puis les visualiser avec Matplotlib.", "auteur": { "nom": "Nadia Haddad", "ville": "Tunis" }, "prix": 34.9, "pages": 356, "parution": "2023-05-02", "themes": ["python", "donnees", "pandas"] }
+{ "index": { "_id": "L006" } }
+{ "id": "L006", "titre": "Linux : administration et ligne de commande", "resume": "Utilisateurs, permissions, services systemd, réseau et scripts shell pour administrer un serveur au quotidien.", "auteur": { "nom": "Marc Lefebvre", "ville": "Bruxelles" }, "prix": 42.0, "pages": 512, "parution": "2022-08-30", "themes": ["linux", "administration", "shell"] }
+{ "index": { "_id": "L007" } }
+{ "id": "L007", "titre": "Terraform : l'infrastructure comme code", "resume": "Décrire son infrastructure cloud dans des fichiers versionnés et la reproduire à l'identique.", "auteur": { "nom": "Yassine El Amrani", "ville": "Casablanca" }, "prix": 46.5, "pages": 264, "parution": "2025-04-08", "themes": ["terraform", "cloud", "devops"] }
+{ "index": { "_id": "L008" } }
+{ "id": "L008", "titre": "Kibana : visualiser et explorer ses données", "resume": "Discover, Lens et les tableaux de bord pour transformer des index Elasticsearch en graphiques lisibles.", "auteur": { "nom": "Claire Dubois", "ville": "Paris" }, "prix": 38.0, "pages": 240, "parution": "2024-06-18", "themes": ["kibana", "elasticsearch", "visualisation"] }
+{ "index": { "_id": "L009" } }
+{ "id": "L009", "titre": "Déployer des microservices avec Docker Compose", "resume": "Orchestrer plusieurs conteneurs, gérer les réseaux et les volumes, et publier une application complète.", "auteur": { "nom": "Karim Caron", "ville": "Gatineau" }, "prix": 36.9, "pages": 288, "parution": "2025-02-11", "themes": ["docker", "microservices", "devops"] }
+{ "index": { "_id": "L010" } }
+{ "id": "L010", "titre": "Sécurité des conteneurs : durcir Docker et Kubernetes", "resume": "Images minimales, secrets, politiques réseau et analyse de vulnérabilités pour des conteneurs déployés sans risque.", "auteur": { "nom": "Fatou Diop", "ville": "Dakar" }, "prix": 52.0, "pages": 342, "parution": "2024-11-25", "themes": ["securite", "docker", "kubernetes"] }
+{ "index": { "_id": "L011" } }
+{ "id": "L011", "titre": "OpenSearch : le moteur de recherche open source", "resume": "Installer OpenSearch, migrer depuis Elasticsearch et exploiter Dashboards, SQL et PPL.", "auteur": { "nom": "Julien Moreau", "ville": "Lyon" }, "prix": 41.0, "pages": 310, "parution": "2025-06-30", "themes": ["opensearch", "recherche", "donnees"] }
+{ "index": { "_id": "L012" } }
+{ "id": "L012", "titre": "Apprentissage automatique avec scikit-learn", "resume": "Régression, classification et validation croisée : entraîner ses premiers modèles pas à pas.", "auteur": { "nom": "Nadia Haddad", "ville": "Tunis" }, "prix": 47.9, "pages": 402, "parution": "2024-01-16", "themes": ["python", "ia", "machine-learning"] }
+{ "index": { "_id": "L013" } }
+{ "id": "L013", "titre": "Git et GitHub : travailler en équipe", "resume": "Branches, fusions, revues de code et intégration continue pour collaborer sans conflit.", "auteur": { "nom": "Marc Lefebvre", "ville": "Bruxelles" }, "prix": 29.9, "pages": 224, "parution": "2023-03-21", "themes": ["git", "developpement", "devops"] }
+{ "index": { "_id": "L014" } }
+{ "id": "L014", "titre": "Bases de données relationnelles avec PostgreSQL", "resume": "Modéliser un schéma, écrire des requêtes SQL efficaces et comprendre les index et les transactions.", "auteur": { "nom": "Sophie Tremblay", "ville": "Québec" }, "prix": 45.0, "pages": 468, "parution": "2023-09-07", "themes": ["postgresql", "sql", "donnees"] }
+{ "index": { "_id": "L015" } }
+{ "id": "L015", "titre": "Intégration et déploiement continus avec GitLab CI", "resume": "Construire un pipeline qui teste, empaquette et déploie automatiquement à chaque commit.", "auteur": { "nom": "Amina Bensalem", "ville": "Montréal" }, "prix": 43.5, "pages": 276, "parution": "2025-08-19", "themes": ["ci-cd", "gitlab", "devops"] }
+{ "index": { "_id": "L016" } }
+{ "id": "L016", "titre": "AWS pour les développeurs : services essentiels", "resume": "S3, Lambda, DynamoDB et IAM expliqués par l'exemple pour héberger une application dans le cloud.", "auteur": { "nom": "Yassine El Amrani", "ville": "Casablanca" }, "prix": 55.9, "pages": 436, "parution": "2024-04-23", "themes": ["aws", "cloud", "developpement"] }
+{ "index": { "_id": "L017" } }
+{ "id": "L017", "titre": "Les graphes de connaissances avec Neo4j et l'IA", "resume": "Relier des documents, des entités et des embeddings pour construire un assistant qui raisonne sur un graphe.", "auteur": { "nom": "Sophie Tremblay", "ville": "Québec" }, "prix": 58.0, "pages": 352, "parution": "2026-01-13", "themes": ["neo4j", "ia", "graphes"] }
+{ "index": { "_id": "L018" } }
+{ "id": "L018", "titre": "Observabilité : journaux, métriques et traces", "resume": "Collecter les journaux d'accès, les indexer, les corréler et déclencher des alertes utiles.", "auteur": { "nom": "Claire Dubois", "ville": "Paris" }, "prix": 48.5, "pages": 318, "parution": "2025-10-06", "themes": ["observabilite", "kibana", "devops"] }
+{ "index": { "_id": "L019" } }
+{ "id": "L019", "titre": "Python avancé : tests, typage et paquets", "resume": "pytest, annotations de type, environnements virtuels et publication d'un paquet sur PyPI.", "auteur": { "nom": "Fatou Diop", "ville": "Dakar" }, "prix": 39.5, "pages": 294, "parution": "2024-12-02", "themes": ["python", "developpement", "tests"] }
+{ "index": { "_id": "L020" } }
+{ "id": "L020", "titre": "Ansible : automatiser l'administration des serveurs", "resume": "Inventaires, playbooks et rôles pour configurer des dizaines de machines Linux de façon reproductible.", "auteur": { "nom": "Marc Lefebvre", "ville": "Bruxelles" }, "prix": 40.9, "pages": 302, "parution": "2023-07-25", "themes": ["ansible", "linux", "automatisation"] }
+
+GET pratique-bibliotheque/_count
+
+# ---------------------------------------------------------------------------
+# Étape 3 — Vérifier l'analyseur : « déployés » doit retrouver « déployer »
+# ---------------------------------------------------------------------------
+GET pratique-bibliotheque/_analyze
+{
+  "field": "titre",
+  "text": "Les conteneurs déployés en production"
+}
+
+GET pratique-bibliotheque/_search
+{
+  "query": { "match": { "titre": "déployés" } },
+  "_source": ["titre"]
+}
+
+# term sur le sous-champ keyword : exact ou rien
+GET pratique-bibliotheque/_search
+{
+  "query": { "term": { "titre.brut": "Neo4j et Cypher : penser en graphe" } },
+  "_source": ["id", "titre"]
+}
+
+# ---------------------------------------------------------------------------
+# Étape 4 — Créer un 21e livre avec _create, puis provoquer le conflit
+# ---------------------------------------------------------------------------
+PUT pratique-bibliotheque/_create/L021
+{
+  "id": "L021",
+  "titre": "Helm : empaqueter ses applications Kubernetes",
+  "resume": "Écrire des charts, gérer les valeurs par environnement et publier sur un dépôt Helm.",
+  "auteur": { "nom": "Amina Bensalem", "ville": "Montréal" },
+  "prix": 37.0,
+  "pages": 210,
+  "parution": "2026-05-04",
+  "themes": ["helm", "kubernetes", "devops"]
+}
+
+# Le même _create une deuxième fois : refusé, le livre est intact
+# attendu: 409
+PUT pratique-bibliotheque/_create/L021
+{
+  "id": "L021",
+  "titre": "Doublon de Helm"
+}
+
+GET pratique-bibliotheque/_doc/L021
+
+# ---------------------------------------------------------------------------
+# Étape 5 — Modifier : _update partiel puis mise à jour scriptée du prix
+# ---------------------------------------------------------------------------
+POST pratique-bibliotheque/_update/L021
+{
+  "doc": { "pages": 232, "themes": ["helm", "kubernetes", "devops", "packaging"] }
+}
+
+# Remise de 10 % arrondie au centime
+POST pratique-bibliotheque/_update/L021
+{
+  "script": {
+    "source": "ctx._source.prix = Math.round(ctx._source.prix * (1 - params.remise) * 100) / 100.0",
+    "params": { "remise": 0.10 }
+  }
+}
+
+GET pratique-bibliotheque/_doc/L021
+
+# ---------------------------------------------------------------------------
+# Étape 6 — Supprimer le 21e livre et vérifier
+# ---------------------------------------------------------------------------
+DELETE pratique-bibliotheque/_doc/L021?refresh=true
+
+# attendu: 404
+GET pratique-bibliotheque/_doc/L021
+
+GET pratique-bibliotheque/_count
+
+# ---------------------------------------------------------------------------
+# Étape 7 — Provoquer une erreur de mapping : un champ deviné avec le mauvais type
+# ---------------------------------------------------------------------------
+# Un collègue ajoute une note des lecteurs sur un livre : 4 → Elasticsearch devine long
+POST pratique-bibliotheque/_update/L003?refresh=true
+{
+  "doc": { "note_lecteurs": 4 }
+}
+
+# Puis 4.7 sur un autre livre : accepté, mais indexé comme 4
+POST pratique-bibliotheque/_update/L007?refresh=true
+{
+  "doc": { "note_lecteurs": 4.7 }
+}
+
+GET pratique-bibliotheque/_mapping/field/note_lecteurs
+
+# Les livres notés 4,5 et plus : aucun, alors que L007 a 4,7
+GET pratique-bibliotheque/_search
+{
+  "query": { "range": { "note_lecteurs": { "gte": 4.5 } } },
+  "_source": ["id", "note_lecteurs"]
+}
+
+# Tenter de corriger le type : refusé
+# attendu: 400
+PUT pratique-bibliotheque/_mapping
+{
+  "properties": { "note_lecteurs": { "type": "float" } }
+}
+
+# ---------------------------------------------------------------------------
+# Étape 8 — Créer pratique-bibliotheque-v2 avec le bon mapping et réindexer
+# ---------------------------------------------------------------------------
+PUT pratique-bibliotheque-v2
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "analysis": { "analyzer": { "francais": { "type": "french" } } }
+  },
+  "mappings": {
+    "properties": {
+      "id":       { "type": "keyword" },
+      "titre":    { "type": "text", "analyzer": "francais", "fields": { "brut": { "type": "keyword" } } },
+      "resume":   { "type": "text", "analyzer": "francais" },
+      "prix":     { "type": "float" },
+      "pages":    { "type": "integer" },
+      "parution": { "type": "date" },
+      "themes":   { "type": "keyword" },
+      "note_lecteurs": { "type": "float" },
+      "auteur": {
+        "properties": {
+          "nom":   { "type": "text", "fields": { "brut": { "type": "keyword" } } },
+          "ville": { "type": "keyword" }
+        }
+      }
+    }
+  }
+}
+
+POST _reindex?refresh=true
+{
+  "source": { "index": "pratique-bibliotheque" },
+  "dest":   { "index": "pratique-bibliotheque-v2" }
+}
+
+GET pratique-bibliotheque-v2/_search
+{
+  "query": { "range": { "note_lecteurs": { "gte": 4.5 } } },
+  "_source": ["id", "note_lecteurs"]
+}
+
+# ---------------------------------------------------------------------------
+# Étape 9 — Basculer l'alias de lecture vers la v2 (atomique)
+# ---------------------------------------------------------------------------
+GET _cat/aliases/pratique-*?v&h=alias,index
+
+POST _aliases
+{
+  "actions": [
+    { "remove": { "index": "pratique-bibliotheque",    "alias": "pratique-bibliotheque-lecture" } },
+    { "add":    { "index": "pratique-bibliotheque-v2", "alias": "pratique-bibliotheque-lecture" } }
+  ]
+}
+
+GET _cat/aliases/pratique-*?v&h=alias,index
+
+GET pratique-bibliotheque-lecture/_search
+{
+  "query": { "range": { "note_lecteurs": { "gte": 4.5 } } },
+  "_source": ["id", "titre", "note_lecteurs"]
+}
+
+# ---------------------------------------------------------------------------
+# Étape 10 — À toi de jouer : ajouter un champ isbn (keyword) et réindexer un livre
+# ---------------------------------------------------------------------------
+PUT pratique-bibliotheque-v2/_mapping
+{
+  "properties": { "isbn": { "type": "keyword" } }
+}
+
+GET pratique-bibliotheque-v2/_mapping/field/isbn
+
+# Écrire à travers l'alias : il pointe sur un seul index, c'est permis
+POST pratique-bibliotheque-lecture/_update/L001?refresh=true
+{
+  "doc": { "isbn": "978-2-409-04512-7" }
+}
+
+GET pratique-bibliotheque-lecture/_search
+{
+  "query": { "term": { "isbn": "978-2-409-04512-7" } },
+  "_source": ["id", "titre", "isbn"]
+}
+
+# ---------------------------------------------------------------------------
+# Vérification finale
+# ---------------------------------------------------------------------------
+GET _cat/indices/pratique-*?v&h=health,index,pri,rep,docs.count,docs.deleted&s=index
+
+GET pratique-bibliotheque-lecture/_count
+
+# ---------------------------------------------------------------------------
+# Nettoyage (DELETE pratique-* est refusé : wildcard interdit par défaut)
+# ---------------------------------------------------------------------------
+DELETE pratique-bibliotheque,pratique-bibliotheque-v2
+
+# attendu: 404
+GET pratique-bibliotheque-lecture/_count

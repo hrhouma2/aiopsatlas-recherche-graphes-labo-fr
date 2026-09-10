@@ -1,0 +1,93 @@
+# Module 5 — Pratique guidée : migrer la recherche du catalogue vers OpenSearch (côté ELASTICSEARCH, port 9200)
+#   node outils/tester-requetes.mjs elasticsearch/requetes/05-pratique-migration-elasticsearch.txt
+# Le fichier jumeau 05-pratique-migration-opensearch.txt rejoue la même pratique sur 9201.
+# Rejouable : l'index pratique-migration est (re)créé en tête et supprimé à la fin.
+
+# 0. Repartir propre (ne fait rien si l'index n'existe pas)
+DELETE pratique-migration?ignore_unavailable=true
+
+# Étape 1 — Qui répond ? (build_flavor + tagline « You Know, for Search » = Elasticsearch)
+GET /
+
+# Étape 2 — Créer l'index avec le même mapping que sur OpenSearch
+PUT pratique-migration
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "analysis": { "analyzer": { "francais": { "type": "french" } } }
+  },
+  "mappings": {
+    "properties": {
+      "titre": { "type": "text", "analyzer": "francais" },
+      "categorie": { "type": "keyword" },
+      "prix": { "type": "float" }
+    }
+  }
+}
+
+# Étape 2 — Charger les 8 cours du catalogue de test (identiques sur les deux moteurs)
+POST pratique-migration/_bulk?refresh=true
+{ "index": { "_id": "M001" } }
+{ "titre": "Déployer des conteneurs Docker en production", "categorie": "DevOps", "prix": 49 }
+{ "index": { "_id": "M002" } }
+{ "titre": "Kubernetes pour les débutants", "categorie": "DevOps", "prix": 0 }
+{ "index": { "_id": "M003" } }
+{ "titre": "Sécuriser un cluster Kubernetes", "categorie": "Sécurité", "prix": 89 }
+{ "index": { "_id": "M004" } }
+{ "titre": "Introduction à Elasticsearch", "categorie": "Données", "prix": 39 }
+{ "index": { "_id": "M005" } }
+{ "titre": "Déployer une application React sur AWS", "categorie": "Cloud", "prix": 59 }
+{ "index": { "_id": "M006" } }
+{ "titre": "Les bases de Neo4j et Cypher", "categorie": "Données", "prix": 29 }
+{ "index": { "_id": "M007" } }
+{ "titre": "Docker Compose : orchestrer des conteneurs", "categorie": "DevOps", "prix": 19 }
+{ "index": { "_id": "M008" } }
+{ "titre": "Machine learning avec Python", "categorie": "IA", "prix": 99 }
+
+# Étape 3 — La recherche du catalogue : bool must + filter
+GET pratique-migration/_search
+{
+  "query": {
+    "bool": {
+      "must": [ { "match": { "titre": "déployer conteneurs" } } ],
+      "filter": [ { "term": { "categorie": "DevOps" } }, { "range": { "prix": { "lt": 60 } } } ]
+    }
+  },
+  "_source": ["titre", "prix"]
+}
+
+# Étape 4 — Faute de frappe : fuzzy
+GET pratique-migration/_search
+{
+  "query": { "match": { "titre": { "query": "kubernetess", "fuzziness": "AUTO" } } },
+  "_source": ["titre"]
+}
+
+# Étape 4 — La facette « catégorie » : agrégation terms
+GET pratique-migration/_search
+{
+  "size": 0,
+  "aggs": { "par_categorie": { "terms": { "field": "categorie", "size": 10 } } }
+}
+
+# Étape 5 — Ce qui n'existe pas côté Elasticsearch : le plugin SQL d'OpenSearch → 400
+# attendu: 400
+POST _plugins/_sql
+{
+  "query": "SELECT categorie, COUNT(*) AS n FROM pratique-migration GROUP BY categorie ORDER BY n DESC"
+}
+
+# Étape 5 — L'équivalent maison : ES|QL (n'existe que sur Elasticsearch)
+POST _query?format=txt
+{
+  "query": "FROM pratique-migration | STATS n = COUNT(*) BY categorie | SORT n DESC, categorie ASC"
+}
+
+# Étape 9 — Vérification finale : 8 documents et aucun plugin
+GET pratique-migration/_count
+
+GET _cat/plugins?v&h=component,version&s=component
+
+# Nettoyage
+DELETE pratique-migration

@@ -1,0 +1,630 @@
+﻿# Module 3 — Pratique guidée : la barre de recherche du catalogue, requête par requête
+# On construit LA requête qui alimente la page de recherche du catalogue de cours,
+# une brique à la fois. Lecture seule sur l'index `cours` : rien n'est créé,
+# rien à nettoyer.
+# Rejouer : node outils/tester-requetes.mjs elasticsearch/requetes/03-pratique-la-barre-de-recherche-du-catalogue.txt
+
+# ============================================================
+# Étape 1 — La saisie « kubernetes » sur le titre
+# ============================================================
+GET cours/_search
+{
+  "query": { "match": { "titre": "kubernetes" } },
+  "size": 5,
+  "_source": ["id", "titre"]
+}
+
+# ============================================================
+# Étape 2 — Titre (x3) et description : la saisie devient « kubernetes production »
+# ============================================================
+GET cours/_search
+{
+  "query": {
+    "multi_match": {
+      "query": "kubernetes production",
+      "fields": ["titre^3", "description"]
+    }
+  },
+  "size": 5,
+  "_source": ["id", "titre"]
+}
+
+# ============================================================
+# Étape 3 — bool : le texte dans must, les cases cochées dans filter
+# ============================================================
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": { "query": "kubernetes production", "fields": ["titre^3", "description"] } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } }
+      ]
+    }
+  },
+  "size": 5,
+  "_source": ["id", "titre", "niveau", "prix"]
+}
+
+# ============================================================
+# Étape 4 — Budget : prix <= 50 $ ou gratuit
+# ============================================================
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": { "query": "kubernetes production", "fields": ["titre^3", "description"] } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ]
+    }
+  },
+  "size": 10,
+  "_source": ["id", "titre", "prix", "gratuit"]
+}
+
+# ============================================================
+# Étape 5 — Faute de frappe : « kubrenetes production »
+# ============================================================
+
+# 5a. Sans tolérance : les cours Kubernetes ne sont plus reconnus par leur titre
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": { "query": "kubrenetes production", "fields": ["titre^3", "description"] } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ]
+    }
+  },
+  "size": 3,
+  "_source": ["id", "titre"]
+}
+
+# 5b. Avec fuzziness AUTO : ils reviennent en tête
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": {
+            "query": "kubrenetes production",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+        } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ]
+    }
+  },
+  "size": 3,
+  "_source": ["id", "titre"]
+}
+
+# ============================================================
+# Étape 6 — Bonus d'expression : match_phrase + slop dans should
+# ============================================================
+
+# 6a. Diagnostic : l'expression exacte, sans slop, ne trouve rien
+GET cours/_search
+{
+  "query": { "match_phrase": { "titre": "kubernetes production" } },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 6b. Diagnostic : avec slop 5, les titres où les deux mots sont proches
+GET cours/_search
+{
+  "query": { "match_phrase": { "titre": { "query": "kubernetes production", "slop": 5 } } },
+  "size": 3,
+  "_source": ["titre"]
+}
+
+# 6c. La brique dans la requête : should ne filtre pas, il récompense
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": {
+            "query": "kubernetes production",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+        } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ],
+      "should": [
+        { "match_phrase": { "titre": { "query": "kubernetes production", "slop": 5, "boost": 2 } } }
+      ]
+    }
+  },
+  "size": 3,
+  "_source": ["id", "titre"]
+}
+
+# ============================================================
+# Étape 7 — Surligner les mots trouvés
+# ============================================================
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": {
+            "query": "kubernetes production",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+        } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ],
+      "should": [
+        { "match_phrase": { "titre": { "query": "kubernetes production", "slop": 5, "boost": 2 } } }
+      ]
+    }
+  },
+  "size": 2,
+  "_source": ["id", "titre"],
+  "highlight": {
+    "pre_tags": ["<mark>"],
+    "post_tags": ["</mark>"],
+    "highlight_query": { "multi_match": { "query": "kubernetes production", "fields": ["titre", "description"] } },
+    "fields": {
+      "titre":       { "number_of_fragments": 0 },
+      "description": { "fragment_size": 120, "number_of_fragments": 1 }
+    }
+  }
+}
+
+# ============================================================
+# Étape 8 — Trier par note, paginer
+# ============================================================
+
+# 8a. Page 1 : from/size
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": {
+            "query": "kubernetes production",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+        } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ],
+      "should": [
+        { "match_phrase": { "titre": { "query": "kubernetes production", "slop": 5, "boost": 2 } } }
+      ]
+    }
+  },
+  "sort": [ { "note_moyenne": "desc" }, "_score", { "id": "asc" } ],
+  "from": 0,
+  "size": 3,
+  "_source": ["id", "titre", "note_moyenne"]
+}
+
+# 8b. Page 2 : from 3
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": {
+            "query": "kubernetes production",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+        } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ],
+      "should": [
+        { "match_phrase": { "titre": { "query": "kubernetes production", "slop": 5, "boost": 2 } } }
+      ]
+    }
+  },
+  "sort": [ { "note_moyenne": "desc" }, "_score", { "id": "asc" } ],
+  "from": 3,
+  "size": 3,
+  "_source": ["id", "titre", "note_moyenne"]
+}
+
+# 8c. Page 2 : search_after avec le sort du dernier résultat de la page 1
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": {
+            "query": "kubernetes production",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+        } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ],
+      "should": [
+        { "match_phrase": { "titre": { "query": "kubernetes production", "slop": 5, "boost": 2 } } }
+      ]
+    }
+  },
+  "sort": [ { "note_moyenne": "desc" }, "_score", { "id": "asc" } ],
+  "search_after": [4.7, 5.7487097, "C0084"],
+  "size": 3,
+  "_source": ["id", "titre", "note_moyenne"]
+}
+
+# ============================================================
+# Étape 9 — Les facettes de la page (size 0)
+# ============================================================
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": {
+            "query": "kubernetes production",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+        } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ],
+      "should": [
+        { "match_phrase": { "titre": { "query": "kubernetes production", "slop": 5, "boost": 2 } } }
+      ]
+    }
+  },
+  "size": 0,
+  "aggs": {
+    "categories": { "terms": { "field": "categorie", "size": 10 } },
+    "niveaux":    { "terms": { "field": "niveau",    "size": 10 } },
+    "sujets":     { "terms": { "field": "sujet",     "size": 10 } },
+    "prix_moyen": { "avg":   { "field": "prix" } },
+    "budgets": {
+      "range": {
+        "field": "prix",
+        "ranges": [
+          { "key": "gratuit",        "to": 1 },
+          { "key": "moins de 50 $",  "from": 1,   "to": 51 },
+          { "key": "50 à 99 $",      "from": 51,  "to": 100 },
+          { "key": "100 $ et plus",  "from": 100 }
+        ]
+      }
+    }
+  }
+}
+
+# 9 bis. Équivalent ES|QL de la facette catégorie, barre vide (tout le catalogue).
+# Dans la leçon on montre format=txt ; ici format=json pour que tester-requetes.mjs compte les lignes.
+POST _query?format=json
+{
+  "query": "FROM cours | STATS n = COUNT(*) BY categorie | SORT n DESC"
+}
+
+# ============================================================
+# Étape 10 — À toi de jouer : booster les cours publiés depuis le 2025-01-01
+# ============================================================
+
+# 10a. Solution, vue « Mieux notés » : le boost se lit dans la 2e valeur de sort
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": {
+            "query": "kubernetes production",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+        } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ],
+      "should": [
+        { "match_phrase": { "titre": { "query": "kubernetes production", "slop": 5, "boost": 2 } } },
+        { "range": { "date_publication": { "gte": "2025-01-01", "boost": 3 } } }
+      ]
+    }
+  },
+  "sort": [ { "note_moyenne": "desc" }, "_score", { "id": "asc" } ],
+  "size": 3,
+  "_source": ["id", "titre", "note_moyenne", "date_publication"]
+}
+
+# 10b. Solution, vue « Pertinence » (sort retiré) : le boost réordonne
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": {
+            "query": "kubernetes production",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+        } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ],
+      "should": [
+        { "match_phrase": { "titre": { "query": "kubernetes production", "slop": 5, "boost": 2 } } },
+        { "range": { "date_publication": { "gte": "2025-01-01", "boost": 3 } } }
+      ]
+    }
+  },
+  "size": 10,
+  "_source": ["id", "titre", "date_publication"]
+}
+
+# ============================================================
+# Requête finale assemblée : la barre de recherche du catalogue
+# ============================================================
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": {
+            "query": "kubernetes production",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+        } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ],
+      "should": [
+        { "match_phrase": { "titre": { "query": "kubernetes production", "slop": 5, "boost": 2 } } },
+        { "range": { "date_publication": { "gte": "2025-01-01", "boost": 3 } } }
+      ]
+    }
+  },
+  "sort": [ { "note_moyenne": "desc" }, "_score", { "id": "asc" } ],
+  "from": 0,
+  "size": 3,
+  "track_total_hits": true,
+  "_source": ["id", "titre", "niveau", "prix", "gratuit", "note_moyenne", "date_publication"],
+  "highlight": {
+    "pre_tags": ["<mark>"],
+    "post_tags": ["</mark>"],
+    "highlight_query": { "multi_match": { "query": "kubernetes production", "fields": ["titre", "description"] } },
+    "fields": {
+      "titre":       { "number_of_fragments": 0 },
+      "description": { "fragment_size": 120, "number_of_fragments": 1 }
+    }
+  },
+  "aggs": {
+    "categories": { "terms": { "field": "categorie", "size": 10 } },
+    "niveaux":    { "terms": { "field": "niveau",    "size": 10 } },
+    "sujets":     { "terms": { "field": "sujet",     "size": 10 } },
+    "prix_moyen": { "avg":   { "field": "prix" } },
+    "budgets": {
+      "range": {
+        "field": "prix",
+        "ranges": [
+          { "key": "gratuit",        "to": 1 },
+          { "key": "moins de 50 $",  "from": 1,   "to": 51 },
+          { "key": "50 à 99 $",      "from": 51,  "to": 100 },
+          { "key": "100 $ et plus",  "from": 100 }
+        ]
+      }
+    }
+  }
+}
+
+# ============================================================
+# Vérification finale : le compte exact
+# ============================================================
+GET cours/_count
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "multi_match": {
+            "query": "kubernetes production",
+            "fields": ["titre^3", "description"],
+            "fuzziness": "AUTO"
+        } }
+      ],
+      "filter": [
+        { "term":  { "categorie": "DevOps" } },
+        { "terms": { "niveau": ["debutant", "avance"] } },
+        { "term":  { "langue": "fr" } },
+        { "bool": {
+            "should": [
+              { "range": { "prix": { "lte": 50 } } },
+              { "term":  { "gratuit": true } }
+            ],
+            "minimum_should_match": 1
+        } }
+      ]
+    }
+  }
+}
+
+# ============================================================
+# Si ça coince : les erreurs classiques de cette pratique
+# ============================================================
+
+# S1. filter posé dans multi_match au lieu de bool
+# attendu: 400
+GET cours/_search
+{
+  "query": {
+    "multi_match": {
+      "query": "kubernetes production",
+      "fields": ["titre^3", "description"],
+      "filter": [ { "term": { "categorie": "DevOps" } } ]
+    }
+  }
+}
+
+# S2. terms avec une valeur seule au lieu d'un tableau
+# attendu: 400
+GET cours/_search
+{
+  "query": { "bool": { "filter": [ { "terms": { "niveau": "debutant" } } ] } }
+}
+
+# S3. search_after avec un tableau de 2 valeurs pour un sort à 3 critères
+# attendu: 400
+GET cours/_search
+{
+  "query": { "match": { "titre": "kubernetes" } },
+  "sort": [ { "note_moyenne": "desc" }, "_score", { "id": "asc" } ],
+  "search_after": [4.7, "C0084"],
+  "size": 3
+}
+
+# S4. fuzziness dans match_phrase
+# attendu: 400
+GET cours/_search
+{
+  "query": { "match_phrase": { "titre": { "query": "kubernetes production", "slop": 5, "fuzziness": "AUTO" } } }
+}
+
+# S5. highlight posé dans le bool au lieu d'être à côté de query
+# attendu: 400
+GET cours/_search
+{
+  "query": {
+    "bool": {
+      "must": [ { "match": { "titre": "kubernetes" } } ],
+      "highlight": { "fields": { "titre": {} } }
+    }
+  }
+}
+
+# S6. Pas d'erreur mais 0 résultat : la casse du keyword
+GET cours/_count
+{
+  "query": { "bool": { "filter": [ { "term": { "categorie": "devops" } } ] } }
+}
