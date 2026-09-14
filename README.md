@@ -70,7 +70,7 @@ Le même univers sert aux trois moteurs, pour comparer ce que chacun fait de mie
 | `cours` — titre, description, catégorie, niveau, prix, tags, note | 504 documents | recherche full-text, filtres, agrégations |
 | `avis` — note, texte, ville, date | 609 documents | analyse de texte, agrégations imbriquées |
 | `acces` — journaux web sur 30 jours | 12 000 lignes | Kibana Discover / Lens, OpenSearch Dashboards |
-| graphe Neo4j — étudiants, professeurs, cours, compétences, prérequis, inscriptions | 872 nœuds · ~2 900 relations | Cypher, recommandations, plus court chemin |
+| graphe Neo4j — étudiants, professeurs, cours, compétences, prérequis, inscriptions | 872 nœuds · 3 712 relations | Cypher, recommandations, plus court chemin |
 
 ## Quand quelque chose ne marche pas
 
